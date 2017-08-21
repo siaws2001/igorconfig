@@ -1,28 +1,30 @@
 <?xml version="1.0" ?><data>
 	<environment>
-		<night></night>
+		<morninggreeting/>
+		<latereminder>true</latereminder>
+		<night>true</night>
 		<location/>
 		<energy/>
 		<weather/>
-		<messages><message>'Igor has found'My_google_hardware</message></messages>
+		<messages><message>'this is Igor. The time is now' 23'.'30</message></messages>
 		<devices/>
 		<lights/>
 		<systemHealth>
 			<messages/>
 		</systemHealth>
 		<introspection>
-			<lastActivity><igor>2017-08-19T22:58:00.845723</igor><reboot>2017-08-19T22:58:00</reboot><ble>2017-08-19T22:58:01.527861</ble></lastActivity>
+			<lastActivity><igor>2017-08-21T23:30:00.670751</igor><reboot>2017-08-21T23:30:00</reboot></lastActivity>
 			<rebootCount>1.0</rebootCount>
 		</introspection>
 	</environment>
 	<sensors>
-		<ble><lastActivity>1503176281.35</lastActivity><bleDevice><available></available><bdaddr_type>random</bdaddr_type><advertisements><manufacturer_specific_data><raw>01092000094a6c87eba06f520387d28f5b212c2068f5d9f8a043a7</raw><manufacturerID>6</manufacturerID></manufacturer_specific_data></advertisements><raw_advertisements>1eff060001092000094a6c87eba06f520387d28f5b212c2068f5d9f8a043a7</raw_advertisements><lastSeen>1503175207.74</lastSeen><address>2a:d2:73:7a:c4:a2</address><rssi>-62</rssi><raw_evt_type>3</raw_evt_type></bleDevice><bleDevice><available>true</available><bdaddr_type>random</bdaddr_type><advertisements><manufacturer_specific_data><raw>01092000094a6c87eba06f520387d28f5b212c2068f5d9f8a043a7</raw><manufacturerID>6</manufacturerID></manufacturer_specific_data></advertisements><raw_advertisements>1eff060001092000094a6c87eba06f520387d28f5b212c2068f5d9f8a043a7</raw_advertisements><lastSeen>1503176281.34</lastSeen><address>38:40:1a:fa:2e:5e</address><rssi>-53</rssi><raw_evt_type>3</raw_evt_type><firstSeen>1503176107.89</firstSeen></bleDevice><bleDevice><available></available><bdaddr_type>random</bdaddr_type><advertisements><manufacturer_specific_data><raw>01092000094a6c87eba06f520387d28f5b212c2068f5d9f8a043a7</raw><manufacturerID>6</manufacturerID></manufacturer_specific_data></advertisements><raw_advertisements>1eff060001092000094a6c87eba06f520387d28f5b212c2068f5d9f8a043a7</raw_advertisements><lastSeen>1503176107.84</lastSeen><address>0e:89:a7:c9:19:84</address><rssi>-71</rssi><raw_evt_type>3</raw_evt_type></bleDevice><bleDevice><available></available><bdaddr_type>random</bdaddr_type><advertisements><manufacturer_specific_data><raw>010920003f79967edadbc1f32cd5fbb37ba6a1e1ede6d8e09b68bb</raw><manufacturerID>6</manufacturerID></manufacturer_specific_data></advertisements><raw_advertisements>1eff0600010920003f79967edadbc1f32cd5fbb37ba6a1e1ede6d8e09b68bb</raw_advertisements><lastSeen>1503173119.36</lastSeen><address>3b:39:a2:8d:6f:65</address><rssi>-78</rssi><raw_evt_type>3</raw_evt_type></bleDevice><bleDevice><available></available><raw_advertisements>0201061106ba5689a6fabfa2bd01467d6ea514abad05160a180804</raw_advertisements><advertisements><unknown_0x16>0a180804</unknown_0x16><flags><le_general_discoverable>true</le_general_discoverable><bredr_not_supported>true</bredr_not_supported></flags><unknown_0x06>ba5689a6fabfa2bd01467d6ea514abad</unknown_0x06></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1503174540.13</lastSeen><address>fb:bc:73:6d:2d:45</address><rssi>-86</rssi></bleDevice><bleDevice><available></available><bdaddr_type>random</bdaddr_type><advertisements><manufacturer_specific_data><raw>01092000094a6c87eba06f520387d28f5b212c2068f5d9f8a043a7</raw><manufacturerID>6</manufacturerID></manufacturer_specific_data></advertisements><raw_advertisements>1eff060001092000094a6c87eba06f520387d28f5b212c2068f5d9f8a043a7</raw_advertisements><lastSeen>1503174307.44</lastSeen><address>1a:b4:62:25:2e:68</address><rssi>-95</rssi><raw_evt_type>3</raw_evt_type></bleDevice><bleDevice><available>true</available><bdaddr_type>public</bdaddr_type><advertisements><unknown_0x16>9ffe0000000000000000000000000000000000000000</unknown_0x16><unknown_0x03>9ffe</unknown_0x03><flags><le_general_discoverable>true</le_general_discoverable><bredr_not_supported>true</bredr_not_supported></flags></advertisements><raw_advertisements>02010603039ffe17169ffe0000000000000000000000000000000000000000</raw_advertisements><lastSeen>1503176281.06</lastSeen><address>a4:77:33:c0:5d:8f</address><rssi>-78</rssi><raw_evt_type>2</raw_evt_type><firstSeen>1503098592.41</firstSeen></bleDevice><bleDevice><available></available><bdaddr_type>random</bdaddr_type><advertisements><manufacturer_specific_data><raw>01092000266cf36a397da8961a1b28d66de0ededd3e77dcd72a5ea</raw><manufacturerID>6</manufacturerID></manufacturer_specific_data></advertisements><raw_advertisements>1eff060001092000266cf36a397da8961a1b28d66de0ededd3e77dcd72a5ea</raw_advertisements><lastSeen>1503173375.31</lastSeen><address>25:d4:af:3e:1f:5d</address><rssi>-78</rssi><raw_evt_type>3</raw_evt_type></bleDevice></ble>
+		<ble/>
 	</sensors>
 	<sensors/>
 	<devices>
 	</devices>
 	<services>
-		<igor><url>http://igor.local:9333/data</url><host>igor.local</host><version>0.4</version><port>9333</port><startTime>1503176280</startTime></igor>
+		<igor><url>http://igor.local:9333/data</url><host>igor.local</host><version>0.4</version><port>9333</port><startTime>1503351000</startTime></igor>
 	</services>
 	<people/>
 	<identities/>
@@ -34,15 +36,25 @@
 			<method>POST</method>
 			<mimetype>text/plain</mimetype>
 			<data>'this is Igor. The time is now' {igor_hours_from_dateTime(igor_dateTime())}'.'{igor_minutes_from_dateTime(igor_dateTime())}</data>
-		<notBefore>1503176280</notBefore></action>
+		<notBefore>1503351000</notBefore></action>
 		<action>
-			<name>checkLate</name>
+			<name>checkLate_reminder</name>
 			<interval>500</interval>
-			<condition>/data/environment[night='true']</condition>
+			<condition>/data/environment[latereminder='true']</condition>
 		    <url>/data/environment/messages/message</url>
 			<method>POST</method>
 			<mimetype>text/plain</mimetype>
 			<data>'Its late, you should be sleeping!'</data>
+			<multiple>True</multiple>
+		</action>
+		<action>
+			<name>checkMorning_reminder</name>
+			<interval>500</interval>
+			<condition>/data/environment[morninggreeting='true']</condition>
+		    <url>/data/environment/messages/message</url>
+			<method>POST</method>
+			<mimetype>text/plain</mimetype>
+			<data>'Good morning, you are early!'</data>
 			<multiple>True</multiple>
 		</action>
 		<action>
@@ -53,17 +65,17 @@
             <mimetype>text/plain</mimetype>
             <data>'Igor has found'{/data/plugindata/bleDevices/bleDevice[id=string($originalContext/address)]/name}</data>
             <multiple>True</multiple>
-        <notBefore>1503176281</notBefore></action>
+        </action>
 	    <action>
 			<xpath>/data/environment/messages/*</xpath>
 			<condition>not(data/environment/night)</condition>
 			<url>/pluginscripts/say/message?args={.}</url>
-		<notBefore>1503176281</notBefore></action>
+		<notBefore>1503351000</notBefore></action>
 	    <action>
             <interval>60</interval>
             <url>/pluginscripts/ble/pull</url>
             <aggregate>true</aggregate>
-        <notBefore>1503176280</notBefore></action>
+        <notBefore>1503351000</notBefore></action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
             <condition>/data/plugindata/bleDevices/bleDevice[id=string($originalContext/address)]/name</condition>
@@ -72,18 +84,18 @@
             <mimetype>text/plain</mimetype>
             <data>{available}</data>
             <multiple>True</multiple>
-        <notBefore>1503176281</notBefore></action>
+        </action>
         <action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
             <url>/data/environment/introspection/lastActivity/ble</url>
             <method>PUT</method>
             <mimetype>text/plain</mimetype>
             <data>{igor_dateTime()}</data>
-        <notBefore>1503176281</notBefore></action>
+        </action>
 	    <action>
 	        <name>start</name>
 	        <url>/internal/started</url>
-	    <notBefore>1503176281</notBefore></action>
+	    <notBefore>1503351006</notBefore></action>
 		<action>
 			<name>rebooted</name>
             <xpath>/data/services/igor/startTime</xpath>
@@ -91,7 +103,7 @@
             <method>PUT</method>
             <mimetype>text/plain</mimetype>
             <data>{igor_dateTime(.)}</data>
-		<notBefore>1503176280</notBefore></action>
+		<notBefore>1503351000</notBefore></action>
 		<action>
 			<name>rebooted</name>
             <xpath>/data/services/igor/startTime</xpath>
@@ -99,14 +111,14 @@
             <method>PUT</method>
             <mimetype>text/plain</mimetype>
             <data>{number(/data/environment/introspection/rebootCount)+1}</data>
-		<notBefore>1503176280</notBefore></action>
+		<notBefore>1503351000</notBefore></action>
 		<action>
 			<name>save</name>
 			<interval>3600</interval>
 			<minInterval>60</minInterval>
 			<url>/internal/save</url>
 			<xpath>/data/plugindata//* | /data/actions/* | /data/triggers/* | /data/identities//* | /data/sandbox/*</xpath>
-		<notBefore>1503176340</notBefore></action>
+		<notBefore>1503351060</notBefore></action>
         <action>
             <name>cleanup</name>
             <method>DELETE</method>
@@ -124,7 +136,23 @@
             <url>/data/environment/night</url>
             <mimetype>text/plain</mimetype>
             <data>{igor_hours_from_dateTime(igor_dateTime()) &lt; 8 or igor_hours_from_dateTime(igor_dateTime()) &gt;= 23}</data>
-		<notBefore>1503176280</notBefore></action>
+		<notBefore>1503351000</notBefore></action>
+		<action>
+            <name>checkLate</name>
+            <interval>900</interval>
+            <method>PUT</method>
+            <url>/data/environment/latereminder</url>
+            <mimetype>text/plain</mimetype>
+            <data>{igor_hours_from_dateTime(igor_dateTime()) &lt; 2 or igor_hours_from_dateTime(igor_dateTime()) &gt;= 23}</data>
+		<notBefore>1503351000</notBefore></action>
+		<action>
+            <name>checkMorning</name>
+            <interval>900</interval>
+            <method>PUT</method>
+            <url>/data/environment/morninggreeting/</url>
+            <mimetype>text/plain</mimetype>
+            <data>{igor_hours_from_dateTime(igor_dateTime()) &lt; 9 or igor_hours_from_dateTime(igor_dateTime()) &gt;= 6}</data>
+		<notBefore>1503351000</notBefore></action>
 		<action>
 			<name>updatePeople</name>
 			<xpath>/data/environment/devices/*</xpath>
@@ -144,7 +172,7 @@
 			<method>PUT</method>
 			<mimetype>text/plain</mimetype>
 			<data>{igor_dateTime()}</data>
-		<notBefore>1503176280</notBefore></action>
+		<notBefore>1503351000</notBefore></action>
 	</actions>
 	<sandbox/>
 	<eventsources/>
