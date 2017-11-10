@@ -1,13 +1,13 @@
 <?xml version="1.0" ?><data>
 	<environment>
 		<morninggreeting/>
-		<latereminder></latereminder>
-		<night></night>
+		<latereminder/>
+		<night/>
 		<tokens><token/></tokens>
 		<location/>
 		<energy/>
 		<weather/>
-		<messages><message>'this is Igor. The time is now' 16'.'26</message></messages>
+		<messages><message>'this is Igor. The time is now' 16'.'26</message><message>'this is Igor. The time is now' 22'.'9</message></messages>
 		<devices><My_google_hardware>true</My_google_hardware></devices>
 		<lights/>
 		<systemHealth>
@@ -25,7 +25,7 @@
 	<devices>
 	</devices>
 	<services>
-		<igor><url>http://127.0.0.1:9333/data</url><host>127.0.0.1</host><version>0.4</version><port>9333</port><startTime>1510179428</startTime></igor>
+		<igor><url>http://boom.local:9333/data</url><host>boom.local</host><version>0.4</version><port>9333</port><startTime>1510348186</startTime></igor>
 	</services>
 	<people/>
 	<identities/>
@@ -37,7 +37,7 @@
 			<method>POST</method>
 			<mimetype>text/plain</mimetype>
 			<data>'this is Igor. The time is now' {igor_hours_from_dateTime(igor_dateTime())}'.'{igor_minutes_from_dateTime(igor_dateTime())}</data>
-		<notBefore>1510241208</notBefore></action>
+		<notBefore>1510348186</notBefore></action>
 		<action>
 			<name>checkLate_reminder</name>
 			<interval>500</interval>
@@ -71,12 +71,12 @@
 			<xpath>/data/environment/messages/*</xpath>
 			<condition>not(data/environment/night)</condition>
 			<url>/pluginscripts/say/message?args={.}</url>
-		<notBefore>1510241209</notBefore></action>
+		<notBefore>1510348187</notBefore></action>
 	    <action>
             <interval>60</interval>
             <url>/pluginscripts/ble/pull</url>
             <aggregate>true</aggregate>
-        <notBefore>1510241249</notBefore></action>
+        <notBefore>1510348186</notBefore></action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
             <condition>/data/plugindata/bleDevices/bleDevice[id=string($originalContext/address)]/name</condition>
@@ -96,7 +96,7 @@
 	    <action>
 	        <name>start</name>
 	        <url>/internal/started</url>
-	    <notBefore>1510179428</notBefore></action>
+	    <notBefore>1510348186</notBefore></action>
 		<action>
 			<name>rebooted</name>
             <xpath>/data/services/igor/startTime</xpath>
@@ -104,7 +104,7 @@
             <method>PUT</method>
             <mimetype>text/plain</mimetype>
             <data>{igor_dateTime(.)}</data>
-		<notBefore>1510179428</notBefore></action>
+		<notBefore>1510348186</notBefore></action>
 		<action>
 			<name>rebooted</name>
             <xpath>/data/services/igor/startTime</xpath>
@@ -112,14 +112,14 @@
             <method>PUT</method>
             <mimetype>text/plain</mimetype>
             <data>{number(/data/environment/introspection/rebootCount)+1}</data>
-		<notBefore>1510179428</notBefore></action>
+		<notBefore>1510348186</notBefore></action>
 		<action>
 			<name>save</name>
 			<interval>3600</interval>
 			<minInterval>60</minInterval>
 			<url>/internal/save</url>
 			<xpath>/data/plugindata//* | /data/actions/* | /data/triggers/* | /data/identities//* | /data/sandbox/*</xpath>
-		<notBefore>1510241353</notBefore></action>
+		<notBefore>1510348246</notBefore></action>
         <action>
             <name>cleanup</name>
             <method>DELETE</method>
@@ -137,7 +137,7 @@
             <url>/data/environment/night</url>
             <mimetype>text/plain</mimetype>
             <data>{igor_hours_from_dateTime(igor_dateTime()) &lt; 8 or igor_hours_from_dateTime(igor_dateTime()) &gt;= 23}</data>
-		<notBefore>1510240408</notBefore></action>
+		<notBefore>1510348186</notBefore></action>
 		<action>
             <name>checkLate</name>
             <interval>900</interval>
@@ -145,15 +145,15 @@
             <url>/data/environment/latereminder</url>
             <mimetype>text/plain</mimetype>
             <data>{igor_hours_from_dateTime(igor_dateTime()) &lt; 2 or igor_hours_from_dateTime(igor_dateTime()) &gt;= 23}</data>
-		<notBefore>1510240408</notBefore></action>
+		<notBefore>1510348186</notBefore></action>
 		<action>
             <name>checkMorning</name>
             <interval>900</interval>
             <method>PUT</method>
-            <url>/data/environment/morninggreeting/</url>
+            <url>/data/environment/morninggreeting</url>
             <mimetype>text/plain</mimetype>
             <data>{igor_hours_from_dateTime(igor_dateTime()) &lt; 9 or igor_hours_from_dateTime(igor_dateTime()) &gt;= 5}</data>
-		<notBefore>1510240408</notBefore></action>
+		<notBefore>1510348186</notBefore></action>
 		<action>
 			<name>updatePeople</name>
 			<xpath>/data/environment/devices/*</xpath>
@@ -173,7 +173,7 @@
 			<method>PUT</method>
 			<mimetype>text/plain</mimetype>
 			<data>{igor_dateTime()}</data>
-		<notBefore>1510241249</notBefore></action>
+		<notBefore>1510348186</notBefore></action>
 	<action>
 	<name>bellbutton</name>
 	<url>/data/environment/messages/message</url>
