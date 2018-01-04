@@ -85,7 +85,40 @@
 	    </igor>
 	</services>
 	<people/>
-	<identities/>
+	<identities>
+	    <pauline>
+            <encryptedPassword>xxxxxxxxxx</encryptedPassword>
+            <au:carries>xxxxxxxxxx</au:carries>
+	        <plugindata>
+                <ble>
+                    <device>
+                        <id>a4:77:33:c0:5d:8f</id>
+                        <name>chromecast.pauline</name>
+                    </device>
+                    <device>
+                        <id>0b:f7:01:e5:10:a7</id>
+                        <name>unknownmicrosoftdevice.pauline</name>
+                    </device>
+                </ble>
+	        </plugindata>
+	    </pauline>
+	    <jack>
+            <encryptedPassword>xxxxxxxxxx</encryptedPassword>
+            <au:carries>xxxxxxxxxx</au:carries>
+	        <plugindata>
+                <ble>
+                    <device>
+                        <id>0e:0a:00:00:0a:58</id>
+                        <name>keys.jack</name>
+                    </device>
+                </ble>
+	        </plugindata>
+	    </jack>
+	    <steven>
+            <encryptedPassword>xxxxxxxxxx</encryptedPassword>
+            <au:carries>xxxxxxxxxx</au:carries>
+	    </steven>
+	</identities>
 	<actions>
 		<action>
 			<name>updateMessage</name>
@@ -121,11 +154,11 @@
 		</action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
-            <condition>/data/plugindata/bleDevices/bleDevice[id=string($originalContext/address)]/name</condition>
+            <condition>/data/identities/*/plugindata/ble/device[id=string($originalContext/address)]/name</condition>
             <url>/data/environment/messages/message</url>
             <method>PUT</method>
             <mimetype>text/plain</mimetype>
-            <data>'Igor has found'{/data/plugindata/bleDevices/bleDevice[id=string($originalContext/address)]/name}</data>
+            <data>'Igor has found'{/data/identities/*/plugindata/ble/device[id=string($originalContext/address)]/name}</data>
             <multiple>True</multiple>
             <notBefore>1504552101</notBefore>
         </action>
@@ -144,8 +177,8 @@
         </action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
-            <condition>/data/plugindata/bleDevices/bleDevice[id=string($originalContext/address)]/name</condition>
-            <url>/data/environment/devices/{/data/plugindata/bleDevices/bleDevice[id=string($originalContext/address)]/name}</url>
+            <condition>/data/identities/*/plugindata/ble/device[id=string($originalContext/address)]/name</condition>
+            <url>/data/environment/devices/{/data/identities/*/plugindata/ble/device[id=string($originalContext/address)]/name}</url>
             <method>PUT</method>
             <mimetype>text/plain</mimetype>
             <data>{available}</data>
@@ -295,16 +328,6 @@
 	<sandbox/>
 	<eventsources/>
 	<plugindata>
-	    <bleDevices>
-			<bleDevice>
-				<id>a4:77:33:c0:5d:8f</id>
-				<name>My_google_hardware</name>
-			</bleDevice>
-			<bleDevice>
-				<id>0b:f7:01:e5:10:a7</id>
-				<name>My_microsoft_hardware</name>
-			</bleDevice>
-		</bleDevices>
 		<ringer>
 			<host>ringer.local</host>
 		</ringer>
