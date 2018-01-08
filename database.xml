@@ -1,17 +1,20 @@
 <?xml version="1.0" ?><data xmlns:au="http://jackjansen.nl/igor/authentication">
 	<environment>
 		<morninggreeting>true</morninggreeting>
-		<latereminder/>
-		<night/>
+		<latereminder>true</latereminder>
+		<night>true</night>
 		<tokens><token/></tokens>
 		<location/>
 		<energy/>
 		<weather/>
-		<messages><message>'this is Igor. The time is now' 16'.'51</message><message>'Good morning, you are early!'</message></messages>
+		<messages><message>'this is Igor. The time is now' 16'.'51</message><message>'Good morning, you are early!'</message><message>'this is Igor. The time is now' 23'.'25</message><message>'Good morning, you are early!'</message><message>'this is Igor. The time is now' 23'.'27</message><message>'Good morning, you are early!'</message><message>'this is Igor. The time is now' 21'.'43</message><message>'Good morning, you are early!'</message><message>'this is Igor. The time is now' 0'.'18</message><message>'Good morning, you are early!'</message><message>'this is Igor. The time is now' 0'.'36</message><message>'Good morning, you are early!'</message><message>'this is Igor. The time is now' 0'.'37</message><message>'Good morning, you are early!'</message><message>'this is Igor. The time is now' 0'.'39</message><message>'Good morning, you are early!'</message><message>'this is Igor. The time is now' 0'.'40</message><message>'Good morning, you are early!'</message><message>'this is Igor. The time is now' 0'.'42</message><message>'Good morning, you are early!'</message><message>'this is Igor. The time is now' 0'.'54</message><message>'Good morning, you are early!'</message><message>'this is Igor. The time is now' 0'.'54</message><message>'Good morning, you are early!'</message><message>'this is Igor. The time is now' 0'.'55</message><message>'Its late, you should be sleeping!'</message><message>'Good morning, you are early!'</message><message>'this is Igor. The time is now' 0'.'57</message><message>'Its late, you should be sleeping!'</message><message>'Good morning, you are early!'</message><message>'this is Igor. The time is now' 0'.'59</message><message>'Its late, you should be sleeping!'</message><message>'Good morning, you are early!'</message><message>'this is Igor. The time is now' 1'.'0</message><message>'Its late, you should be sleeping!'</message><message>'Good morning, you are early!'</message><message>'this is Igor. The time is now' 22'.'9</message><message>'Its late, you should be sleeping!'</message><message>'Good morning, you are early!'</message><message>'this is Igor. The time is now' 22'.'16</message><message>'Its late, you should be sleeping!'</message><message>'Good morning, you are early!'</message><message>'this is Igor. The time is now' 22'.'19</message><message>'Its late, you should be sleeping!'</message><message>'Good morning, you are early!'</message><message>'this is Igor. The time is now' 23'.'4</message><message>'Its late, you should be sleeping!'</message><message>'Good morning, you are early!'</message><message>'this is Igor. The time is now' 0'.'23</message><message>'Its late, you should be sleeping!'</message><message>'Good morning, you are early!'</message><message>'this is Igor. The time is now' 0'.'23</message><message>'Its late, you should be sleeping!'</message><message>'Good morning, you are early!'</message></messages>
 		<devices/>
 		<lights/>
 		<systemHealth>
-			<messages/>
+			<messages><ble>502 Command /Users/jack/.igor/plugins/ble/scripts/pull.sh exited with status code=1
+
+/usr/local/bin/igorVar: Error [Errno 61] Connection refused for http://localhost:8081/ble
+/usr/local/bin/igorVar: no data read from stdin</ble></messages>
 		</systemHealth>
 	</environment>
 	<status>
@@ -22,7 +25,7 @@
                 <lastsuccess>1515063013.83</lastsuccess>
                 <ignoreerrorsuntil/>
                 <errormessage/>
-            <lastActivity>1515081061.89</lastActivity><lastSuccess>1515081061.89</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></core>
+            <lastActivity>1515367437.87</lastActivity><lastSuccess>1515367437.87</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></core>
             <save>
                 <alive>true</alive>
                 <lastactivity>1515073813.81</lastactivity>
@@ -36,10 +39,14 @@
                 <lastsuccess>1515076154.56</lastsuccess>
                 <ignoreerrorsuntil/>
                 <errormessage/>
-            </web>
+            <lastActivity>1515367438.68</lastActivity><lastSuccess>1515367438.68</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></web>
         </igor>
 		<sensors>
-		    <ble/>
+		    <ble><alive></alive><lastActivity>1515367438.43</lastActivity><lastFailure>1515367438.43</lastFailure><errorMessage>502 Command /Users/jack/.igor/plugins/ble/scripts/pull.sh exited with status code=1
+
+/usr/local/bin/igorVar: Error [Errno 61] Connection refused for http://localhost:8081/ble
+/usr/local/bin/igorVar: no data read from stdin
+</errorMessage></ble>
             <button>
                 <alive>true</alive>
                 <lastActivity>1513551158.04</lastActivity>
@@ -52,17 +59,17 @@
 		<services>
 		    <announceTime>
 		        <alive>true</alive>
-		        <lastActivity>1515081061.96</lastActivity>
-		        <lastSuccess>1515081061.96</lastSuccess>
+		        <lastActivity>1515367437.99</lastActivity>
+		        <lastSuccess>1515367437.99</lastSuccess>
 		        <ignoreErrorsUntil></ignoreErrorsUntil>
 		        <errorMessage></errorMessage>
 		    </announceTime>
 		    <internet>
 		        <alive>true</alive>
-		        <lastActivity>1515076154.53</lastActivity>
-		        <lastSuccess>1515076154.53</lastSuccess>
-		        <ignoreErrorsUntil/>
-		        <errorMessage/>
+		        <lastActivity>1515367438.51</lastActivity>
+		        <lastSuccess>1515367438.51</lastSuccess>
+		        <ignoreErrorsUntil></ignoreErrorsUntil>
+		        <errorMessage></errorMessage>
 		    </internet>
 		</services>
 	</status>
@@ -73,12 +80,12 @@
 	<devices>
 	</devices>
 	<services>
-	    <igor><protocol>http</protocol><version>0.6</version><url>http://flauwte.dis.cwi.nl:9333/data</url><host>flauwte.dis.cwi.nl</host><rebootCount>10</rebootCount><startTime>1515081061</startTime><ticker>0</ticker><port>9333</port></igor>
+	    <igor><protocol>https</protocol><url>https://boom.local:9333/data</url><host>boom.local</host><version>0.6</version><startTime>1515367437</startTime><fingerprint>D9:42:0D:B9:4C:11:20:C4:B4:D8:EC:EB:B0:25:57:FE:E7:A6:CE:D4</fingerprint><rebootCount>31</rebootCount><ticker>0</ticker><port>9333</port></igor>
 	</services>
 	<people/>
 	<identities>
 	    <pauline>
-            <encryptedPassword>xxxxxxxxxx</encryptedPassword>
+            <encryptedPassword>$pbkdf2-sha256$29000$qTWmVCql9H6PUYqx9h4jhA$CMpYr3VTVFTlYLZ6Zihvhc/GnY1b1ZDc6q7d4HhZ3lA</encryptedPassword>
             <au:carries>xxxxxxxxxx</au:carries>
 	        <plugindata>
                 <ble>
@@ -94,7 +101,7 @@
 	        </plugindata>
 	    </pauline>
 	    <jack>
-            <encryptedPassword>xxxxxxxxxx</encryptedPassword>
+            <encryptedPassword>$pbkdf2-sha256$29000$WQvhHIPQei9F6P0fY8xZCw$KlxQnmW0.qclx0vLKuamweCRoo8b.1QMnLfZUM2yHI8</encryptedPassword>
             <au:carries>xxxxxxxxxx</au:carries>
 	        <plugindata>
                 <ble>
@@ -106,7 +113,7 @@
 	        </plugindata>
 	    </jack>
 	    <steven>
-            <encryptedPassword>xxxxxxxxxx</encryptedPassword>
+            <encryptedPassword>$pbkdf2-sha256$29000$FKK0VsqZk3KOkTKmFEJISQ$TgZO5yhvrztQDtT2A0HQx5jzPvFcb.QFDPJuTNJUyO0</encryptedPassword>
             <au:carries>xxxxxxxxxx</au:carries>
 	    </steven>
 	</identities>
@@ -119,7 +126,7 @@
 			<method>POST</method>
 			<mimetype>text/plain</mimetype>
 			<data>'this is Igor. The time is now' {igor_hours_from_dateTime(igor_dateTime())}'.'{igor_minutes_from_dateTime(igor_dateTime())}</data>
-		    <notBefore>1515081061</notBefore>
+		    <notBefore>1515367437</notBefore>
 		</action>
 		<action>
 			<name>checkLate_reminder</name>
@@ -130,7 +137,7 @@
 			<mimetype>text/plain</mimetype>
 			<data>'Its late, you should be sleeping!'</data>
 			<multiple>True</multiple>
-		    <notBefore>1515063013</notBefore>
+		    <notBefore>1515367437</notBefore>
 		</action>
 		<action>
 			<name>checkMorning_reminder</name>
@@ -141,7 +148,7 @@
 			<mimetype>text/plain</mimetype>
 			<data>'Good morning, you are early!'</data>
 			<multiple>True</multiple>
-		    <notBefore>1515081061</notBefore>
+		    <notBefore>1515367437</notBefore>
 		</action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
@@ -157,14 +164,14 @@
 			<xpath>/data/environment/messages/*</xpath>
 			<condition>not(data/environment/night)</condition>
 			<url>/pluginscripts/say/message?args={.}</url>
-		    <notBefore>1515081062</notBefore>
+		    <notBefore>1515367438</notBefore>
 		</action>
 	    <action>
             <interval>60</interval>
             <url>/pluginscripts/ble/pull</url>
 			<representing>sensors/ble</representing>
             <aggregate>true</aggregate>
-            <notBefore>1515081061</notBefore>
+            <notBefore>1515367437</notBefore>
         </action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
@@ -179,7 +186,7 @@
 	    <action>
 	        <name>start</name>
 	        <url>/internal/started</url>
-	        <notBefore>1515081062</notBefore>
+	        <notBefore>1515367438</notBefore>
 	    </action>
 		<action>
 			<name>save</name>
@@ -188,7 +195,7 @@
 			<url>/internal/save</url>
 			<representing>igor/save</representing>
 			<xpath>/data/plugindata//* | /data/actions/* | /data/triggers/* | /data/identities//* | /data/sandbox/*</xpath>
-		    <notBefore>1515081121</notBefore>
+		    <notBefore>1515367507</notBefore>
 		</action>
         <action>
             <name>cleanup</name>
@@ -209,7 +216,7 @@
             <url>/data/environment/night</url>
             <mimetype>text/plain</mimetype>
             <data>{igor_hours_from_dateTime(igor_dateTime()) &lt; 8 or igor_hours_from_dateTime(igor_dateTime()) &gt;= 23}</data>
-		    <notBefore>1515081061</notBefore>
+		    <notBefore>1515367437</notBefore>
 		</action>
 		<action>
             <name>checkLate</name>
@@ -218,7 +225,7 @@
             <url>/data/environment/latereminder</url>
             <mimetype>text/plain</mimetype>
             <data>{igor_hours_from_dateTime(igor_dateTime()) &lt; 2 or igor_hours_from_dateTime(igor_dateTime()) &gt;= 23}</data>
-		    <notBefore>1515081061</notBefore>
+		    <notBefore>1515367437</notBefore>
 		</action>
 		<action>
             <name>checkMorning</name>
@@ -227,7 +234,7 @@
             <url>/data/environment/morninggreeting</url>
             <mimetype>text/plain</mimetype>
             <data>{igor_hours_from_dateTime(igor_dateTime()) &lt; 9 or igor_hours_from_dateTime(igor_dateTime()) &gt;= 5}</data>
-		    <notBefore>1515081061</notBefore>
+		    <notBefore>1515367437</notBefore>
 		</action>
 		<action>
 			<name>updatePeople</name>
@@ -265,20 +272,20 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=internet&amp;ip=google.com.</url>
 			<aggregate>true</aggregate>
-		    <notBefore>1515081061</notBefore>
+		    <notBefore>1515367437</notBefore>
 		</action>
 		<action>
 			<interval>60</interval>
 			<url>/plugin/lan?name=igor&amp;service=igor/web&amp;ip={/data/services/igor/host}&amp;port={/data/services/igor/port}</url>
 			<aggregate>true</aggregate>
-			<notBefore>1515081061</notBefore>
+			<notBefore>1515367437</notBefore>
 		</action>
 		<action>
 			<name>systemHealth</name>
 			<interval>60</interval>
 			<xpath>/data/status/*/*/errorMessage</xpath>
 			<url>/plugin/systemHealth</url>
-			<notBefore>1515081062</notBefore>
+			<notBefore>1515367438</notBefore>
 			<aggregate>true</aggregate>
 		</action>
         <action>
