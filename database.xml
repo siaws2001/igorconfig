@@ -342,16 +342,6 @@
 	<au:access>
 	    <au:defaultCapabilities>
 	        <au:capability>
-	            <comment>This capabiliy allows everything</comment>
-	            <xpath>/data</xpath>
-	            <get>descendant-or-self</get>
-	            <put>descendant</put>
-	            <post>descendant</post>
-	            <delete>descendant</delete>
-	        </au:capability>
-	    </au:defaultCapabilities>
-	    <au:unusedCapabilities>
-	        <au:capability>
 	            <comment>This allows reading environment</comment>
 	            <xpath>/data/environment</xpath>
 	            <get>descendant-or-self</get>
@@ -362,6 +352,14 @@
 	        <au:capability>
 	            <comment>This allows reading status</comment>
 	            <xpath>/data/status</xpath>
+	            <get>descendant-or-self</get>
+	            <put/>
+	            <post/>
+	            <delete/>
+	        </au:capability>
+	        <au:capability>
+	            <comment>This allows reading igor data</comment>
+	            <xpath>/data/services/igor</xpath>
 	            <get>descendant-or-self</get>
 	            <put/>
 	            <post/>
@@ -383,6 +381,16 @@
 	            <post/>
 	            <delete/>
 	            <externalRepresentation>BUTTONTOKEN</externalRepresentation>
+	        </au:capability>
+	    </au:defaultCapabilities>
+	    <au:unusedCapabilities>
+	        <au:capability>
+	            <comment>This capabiliy allows everything</comment>
+	            <xpath>/data</xpath>
+	            <get>descendant-or-self</get>
+	            <put>descendant</put>
+	            <post>descendant</post>
+	            <delete>descendant</delete>
 	        </au:capability>
 	    </au:unusedCapabilities>
 	</au:access>
