@@ -57,7 +57,7 @@
                 <lastsuccess>1515063013.83</lastsuccess>
                 <ignoreerrorsuntil/>
                 <errormessage/>
-            <lastActivity>1515592559.73</lastActivity><lastSuccess>1515592559.73</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></core>
+            <lastActivity>1515592559.73</lastActivity><lastSuccess>1515592559.73</lastSuccess><ignoreErrorsUntil/><errorMessage/></core>
             <save>
                 <alive>true</alive>
                 <lastactivity>1515073813.81</lastactivity>
@@ -71,7 +71,7 @@
                 <lastsuccess>1515076154.56</lastsuccess>
                 <ignoreerrorsuntil/>
                 <errormessage/>
-            <lastActivity>1515450838.57</lastActivity><lastSuccess>1515450838.57</lastSuccess><ignoreErrorsUntil/><errorMessage/></web>
+            <lastActivity>1515596533.44</lastActivity><lastSuccess>1515596533.44</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></web>
         </igor>
 		<sensors>
 		    <ble><alive/><lastActivity>1515415772.01</lastActivity><lastFailure>1515415772.01</lastFailure><errorMessage>502 Command /Users/jack/.igor/plugins/ble/scripts/pull.sh exited with status code=1
@@ -93,15 +93,15 @@
 		        <alive>true</alive>
 		        <lastActivity>1515592559.79</lastActivity>
 		        <lastSuccess>1515592559.79</lastSuccess>
-		        <ignoreErrorsUntil></ignoreErrorsUntil>
-		        <errorMessage></errorMessage>
+		        <ignoreErrorsUntil/>
+		        <errorMessage/>
 		    </announceTime>
 		    <internet>
 		        <alive>true</alive>
-		        <lastActivity>1515518993.19</lastActivity>
-		        <lastSuccess>1515518993.19</lastSuccess>
-		        <ignoreErrorsUntil/>
-		        <errorMessage/>
+		        <lastActivity>1515596533.37</lastActivity>
+		        <lastSuccess>1515596533.37</lastSuccess>
+		        <ignoreErrorsUntil></ignoreErrorsUntil>
+		        <errorMessage></errorMessage>
 		    </internet>
 		</services>
 	</status>
@@ -112,7 +112,7 @@
 	<devices>
 	</devices>
 	<services>
-	    <igor><protocol>https</protocol><url>https://flauwte.dis.cwi.nl:9333/data</url><host>flauwte.dis.cwi.nl</host><version>0.6</version><startTime>1515592559</startTime><fingerprint>1E:25:E1:90:45:15:09:99:03:D1:01:3D:F6:3D:8C:B3:1E:1D:D4:42</fingerprint><rebootCount>67</rebootCount><ticker>0</ticker><port>9333</port></igor>
+	    <igor><protocol>https</protocol><url>https://flauwte.dis.cwi.nl:9333/data</url><host>flauwte.dis.cwi.nl</host><version>0.6</version><startTime>1515596532</startTime><fingerprint>1E:25:E1:90:45:15:09:99:03:D1:01:3D:F6:3D:8C:B3:1E:1D:D4:42</fingerprint><rebootCount>73</rebootCount><ticker>0</ticker><port>9333</port></igor>
 	</services>
 	<people/>
 	<identities>
@@ -170,16 +170,26 @@
 			    {igor_ifthenelse(boolean(string(/data/environment/morninggreeting)),'Good morning, you are early!','')}
 			    {igor_ifthenelse(boolean(string(/data/environment/latereminder)),'Its late, you should be sleeping!','')}
 			</data>
-		    <notBefore>1515592559</notBefore>
+	        <au:capability>
+	            <comment>This allows setting the variable</comment>
+	            <xpath>/data/environment/messages</xpath>
+	            <post>child</post>
+	        </au:capability>
+		    <notBefore>1515596532</notBefore>
 		</action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
             <condition>/data/identities/*/plugindata/ble/device[id=string($originalContext/address)]/name</condition>
             <url>/data/environment/messages/message</url>
-            <method>PUT</method>
+            <method>POST</method>
             <mimetype>text/plain</mimetype>
             <data>'Igor has found'{/data/identities/*/plugindata/ble/device[id=string($originalContext/address)]/name}</data>
             <multiple>True</multiple>
+	        <au:capability>
+	            <comment>This allows setting the variable</comment>
+	            <xpath>/data/environment/messages</xpath>
+	            <post>child</post>
+	        </au:capability>
             <notBefore>1504552101</notBefore>
         </action>
 	    <action>
@@ -193,7 +203,7 @@
             <url>/pluginscripts/ble/pull</url>
 			<representing>sensors/ble</representing>
             <aggregate>true</aggregate>
-            <notBefore>1515592559</notBefore>
+            <notBefore>1515596532</notBefore>
         </action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
@@ -208,7 +218,7 @@
 	    <action>
 	        <name>start</name>
 	        <url>/internal/started</url>
-	        <notBefore>1515518992</notBefore>
+	        <notBefore>1515596533</notBefore>
 	    </action>
 		<action>
 			<name>save</name>
@@ -217,12 +227,17 @@
 			<url>/internal/save</url>
 			<representing>igor/save</representing>
 			<xpath>/data/plugindata//* | /data/actions/* | /data/triggers/* | /data/identities//* | /data/sandbox/*</xpath>
-		    <notBefore>1515592619</notBefore>
+		    <notBefore>1515596597</notBefore>
 		</action>
         <action>
             <name>cleanup</name>
             <method>DELETE</method>
             <url>/data/environment/messages/message[position()&lt;last()]</url>
+	        <au:capability>
+	            <comment>This allows setting the variable</comment>
+	            <xpath>/data/environment/messages</xpath>
+	            <delete>child</delete>
+	        </au:capability>
             <notBefore>1510241259</notBefore>
         </action>
 		<action>
@@ -238,7 +253,12 @@
             <url>/data/environment/night</url>
             <mimetype>text/plain</mimetype>
             <data>{igor_hours_from_dateTime(igor_dateTime()) &lt; 8 or igor_hours_from_dateTime(igor_dateTime()) &gt;= 23}</data>
-		    <notBefore>1515592559</notBefore>
+	        <au:capability>
+	            <comment>This allows setting the variable</comment>
+	            <xpath>/data/environment/night</xpath>
+	            <put>self</put>
+	        </au:capability>
+		    <notBefore>1515596532</notBefore>
 		</action>
 		<action>
             <name>checkLate</name>
@@ -247,7 +267,12 @@
             <url>/data/environment/latereminder</url>
             <mimetype>text/plain</mimetype>
             <data>{igor_hours_from_dateTime(igor_dateTime()) &lt; 2 or igor_hours_from_dateTime(igor_dateTime()) &gt;= 23}</data>
-		    <notBefore>1515592559</notBefore>
+	        <au:capability>
+	            <comment>This allows setting the variable</comment>
+	            <xpath>/data/environment/latereminder</xpath>
+	            <put>self</put>
+	        </au:capability>
+		    <notBefore>1515596532</notBefore>
 		</action>
 		<action>
             <name>checkMorning</name>
@@ -256,7 +281,12 @@
             <url>/data/environment/morninggreeting</url>
             <mimetype>text/plain</mimetype>
             <data>{igor_hours_from_dateTime(igor_dateTime()) &lt; 9}</data>
-		    <notBefore>1515592559</notBefore>
+	        <au:capability>
+	            <comment>This allows setting the variable</comment>
+	            <xpath>/data/environment/morninggreeting</xpath>
+	            <put>self</put>
+	        </au:capability>
+		    <notBefore>1515596532</notBefore>
 		</action>
 		<action>
 			<name>updatePeople</name>
@@ -294,20 +324,20 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=internet&amp;ip=google.com.</url>
 			<aggregate>true</aggregate>
-		    <notBefore>1515592559</notBefore>
+		    <notBefore>1515596532</notBefore>
 		</action>
 		<action>
 			<interval>60</interval>
 			<url>/plugin/lan?name=igor&amp;service=igor/web&amp;ip={/data/services/igor/host}&amp;port={/data/services/igor/port}</url>
 			<aggregate>true</aggregate>
-			<notBefore>1515592559</notBefore>
+			<notBefore>1515596532</notBefore>
 		</action>
 		<action>
 			<name>systemHealth</name>
 			<interval>60</interval>
 			<xpath>/data/status/*/*/errorMessage</xpath>
 			<url>/plugin/systemHealth</url>
-			<notBefore>1515592559</notBefore>
+			<notBefore>1515596533</notBefore>
 			<aggregate>true</aggregate>
 		</action>
         <action>
@@ -317,6 +347,11 @@
             <method>POST</method>
             <mimetype>text/plain</mimetype>
             <data>Someone rang the bell beep beep!</data>
+	        <au:capability>
+	            <comment>This allows setting the variable</comment>
+	            <xpath>/data/environment/messages</xpath>
+	            <post>child</post>
+	        </au:capability>
             <notBefore>1513551158</notBefore>
         </action>
         <action>
@@ -326,6 +361,11 @@
             <method>POST</method>
             <mimetype>text/plain</mimetype>
             <data>You just turned the bell button</data>
+	        <au:capability>
+	            <comment>This allows setting the variable</comment>
+	            <xpath>/data/environment/messages</xpath>
+	            <post>child</post>
+	        </au:capability>
             <notBefore>1508419926</notBefore>
         </action>
         <action>
