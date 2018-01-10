@@ -145,6 +145,17 @@
 	    <steven>
             <encryptedPassword>$pbkdf2-sha256$29000$FKK0VsqZk3KOkTKmFEJISQ$TgZO5yhvrztQDtT2A0HQx5jzPvFcb.QFDPJuTNJUyO0</encryptedPassword>
 	    </steven>
+	    <admin>
+            <encryptedPassword>$pbkdf2-sha256$29000$FKK0VsqZk3KOkTKmFEJISQ$TgZO5yhvrztQDtT2A0HQx5jzPvFcb.QFDPJuTNJUyO0</encryptedPassword>
+	        <au:capability>
+	            <comment>This allows everything. Dangerous!</comment>
+	            <xpath>/data</xpath>
+	            <get>descendant-or-self</get>
+	            <put>descendant-or-self</put>
+	            <post>descendant</post>
+	            <delete>descendant</delete>
+	        </au:capability>
+	    </admin>
 	</identities>
 	<actions>
 		<action>
