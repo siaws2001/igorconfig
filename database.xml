@@ -1,8 +1,8 @@
 <?xml version="1.0" ?><data xmlns:au="http://jackjansen.nl/igor/authentication">
 	<environment>
 		<morninggreeting/>
-		<latereminder>true</latereminder>
-		<night>true</night>
+		<latereminder/>
+		<night/>
 		<location/>
 		<energy/>
 		<weather/>
@@ -39,7 +39,17 @@
 			    
 			    Its late, you should be sleeping!</message><message>The time is now 14 hours and 55 minutes.
 			    
-			    Its late, you should be sleeping!</message></messages>
+			    Its late, you should be sleeping!</message><message>The time is now 22 hours and 18 minutes.
+			    
+			    </message><message>The time is now 22 hours and 24 minutes.
+			    
+			    </message><message>The time is now 0 hours and 24 minutes.
+			    
+			    </message><message>The time is now 0 hours and 26 minutes.
+			    
+			    </message><message>The time is now 0 hours and 28 minutes.
+			    
+			    </message></messages>
 		<devices/>
 		<lights/>
 		<systemHealth>
@@ -71,7 +81,7 @@
                 <lastsuccess>1515076154.56</lastsuccess>
                 <ignoreerrorsuntil/>
                 <errormessage/>
-            <lastActivity>1515596533.44</lastActivity><lastSuccess>1515596533.44</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></web>
+            <lastActivity>1515596533.44</lastActivity><lastSuccess>1515596533.44</lastSuccess><ignoreErrorsUntil/><errorMessage/></web>
         </igor>
 		<sensors>
 		    <ble><alive/><lastActivity>1515415772.01</lastActivity><lastFailure>1515415772.01</lastFailure><errorMessage>502 Command /Users/jack/.igor/plugins/ble/scripts/pull.sh exited with status code=1
@@ -100,8 +110,8 @@
 		        <alive>true</alive>
 		        <lastActivity>1515596533.37</lastActivity>
 		        <lastSuccess>1515596533.37</lastSuccess>
-		        <ignoreErrorsUntil></ignoreErrorsUntil>
-		        <errorMessage></errorMessage>
+		        <ignoreErrorsUntil/>
+		        <errorMessage/>
 		    </internet>
 		</services>
 	</status>
@@ -112,7 +122,7 @@
 	<devices>
 	</devices>
 	<services>
-	    <igor><protocol>https</protocol><url>https://flauwte.dis.cwi.nl:9333/data</url><host>flauwte.dis.cwi.nl</host><version>0.6</version><startTime>1515596532</startTime><fingerprint>1E:25:E1:90:45:15:09:99:03:D1:01:3D:F6:3D:8C:B3:1E:1D:D4:42</fingerprint><rebootCount>73</rebootCount><ticker>0</ticker><port>9333</port></igor>
+	    <igor><protocol>https</protocol><url>https://boom.local:9333/data</url><host>boom.local</host><version>0.6</version><startTime>1515713315</startTime><fingerprint>D9:42:0D:B9:4C:11:20:C4:B4:D8:EC:EB:B0:25:57:FE:E7:A6:CE:D4</fingerprint><rebootCount>82</rebootCount><ticker>0</ticker><port>9333</port></igor>
 	</services>
 	<people/>
 	<identities>
@@ -155,6 +165,11 @@
 	            <post>descendant</post>
 	            <delete>descendant</delete>
 	        </au:capability>
+	        <au:capability>
+	            <comment>This allows all actions. Dangerous!</comment>
+	            <xpath>/action</xpath>
+	            <get>descendant-or-self</get>
+	        </au:capability>
 	    </admin>
 	</identities>
 	<actions>
@@ -175,7 +190,7 @@
 	            <xpath>/data/environment/messages</xpath>
 	            <post>child</post>
 	        </au:capability>
-		    <notBefore>1515596532</notBefore>
+		    <notBefore>1515713315</notBefore>
 		</action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
@@ -196,14 +211,14 @@
 			<xpath>/data/environment/messages/*</xpath>
 			<condition>not(data/environment/night)</condition>
 			<url>/pluginscripts/say/message?args={.}</url>
-		    <notBefore>1515592559</notBefore>
+		    <notBefore>1515713315</notBefore>
 		</action>
 	    <action>
             <interval>60</interval>
             <url>/pluginscripts/ble/pull</url>
 			<representing>sensors/ble</representing>
             <aggregate>true</aggregate>
-            <notBefore>1515596532</notBefore>
+            <notBefore>1515713315</notBefore>
         </action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
@@ -227,7 +242,7 @@
 			<url>/internal/save</url>
 			<representing>igor/save</representing>
 			<xpath>/data/plugindata//* | /data/actions/* | /data/triggers/* | /data/identities//* | /data/sandbox/*</xpath>
-		    <notBefore>1515596597</notBefore>
+		    <notBefore>1515713375</notBefore>
 		</action>
         <action>
             <name>cleanup</name>
@@ -258,7 +273,7 @@
 	            <xpath>/data/environment/night</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1515596532</notBefore>
+		    <notBefore>1515713315</notBefore>
 		</action>
 		<action>
             <name>checkLate</name>
@@ -272,7 +287,7 @@
 	            <xpath>/data/environment/latereminder</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1515596532</notBefore>
+		    <notBefore>1515713315</notBefore>
 		</action>
 		<action>
             <name>checkMorning</name>
@@ -286,7 +301,7 @@
 	            <xpath>/data/environment/morninggreeting</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1515596532</notBefore>
+		    <notBefore>1515713315</notBefore>
 		</action>
 		<action>
 			<name>updatePeople</name>
@@ -324,20 +339,20 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=internet&amp;ip=google.com.</url>
 			<aggregate>true</aggregate>
-		    <notBefore>1515596532</notBefore>
+		    <notBefore>1515713315</notBefore>
 		</action>
 		<action>
 			<interval>60</interval>
 			<url>/plugin/lan?name=igor&amp;service=igor/web&amp;ip={/data/services/igor/host}&amp;port={/data/services/igor/port}</url>
 			<aggregate>true</aggregate>
-			<notBefore>1515596532</notBefore>
+			<notBefore>1515713315</notBefore>
 		</action>
 		<action>
 			<name>systemHealth</name>
 			<interval>60</interval>
 			<xpath>/data/status/*/*/errorMessage</xpath>
 			<url>/plugin/systemHealth</url>
-			<notBefore>1515596533</notBefore>
+			<notBefore>1515713315</notBefore>
 			<aggregate>true</aggregate>
 		</action>
         <action>
@@ -376,7 +391,7 @@
 	            <put/>
 	            <post/>
 	            <delete/>
-	            <externalRepresentation>ALARMTOKEN</externalRepresentation>
+	            <externalKey>ALARMTOKEN</externalKey>
 	        </au:capability>
             <url>http://{/data/plugindata/ringer/host}/alarm?alarm=1</url>
             <representing>devices/ringer</representing>
