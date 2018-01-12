@@ -245,11 +245,21 @@
             <notBefore>1504552101</notBefore>
         </action>
 	    <action>
+            <au:capability>
+                <comment>This allows firing /internal/started</comment>
+                <xpath>/internal/started</xpath>
+                <get>self</get>
+            </au:capability>
 	        <name>start</name>
 	        <url>/internal/started</url>
 	        <notBefore>1515596533</notBefore>
 	    </action>
 		<action>
+            <au:capability>
+                <comment>This allows firing /internal/save</comment>
+                <xpath>/internal/save</xpath>
+                <get>self</get>
+            </au:capability>
 			<name>save</name>
 			<interval>3600</interval>
 			<minInterval>60</minInterval>
@@ -460,7 +470,7 @@
 	            <put/>
 	            <post/>
 	            <delete/>
-	            <externalRepresentation>BUTTONTOKEN</externalRepresentation>
+	            <externalKey>BUTTONTOKEN</externalKey>
 	        </au:capability>
 	    </au:defaultCapabilities>
 	    <au:unusedCapabilities>
