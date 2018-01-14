@@ -8,49 +8,7 @@
 		<weather/>
 		<messages>
 		<message>The time is now 14 hours and 45 minutes.
-			    
-			    </message><message>The time is now 16 hours and 1 minutes.
-			    
-			    </message><message>The time is now 16 hours and 3 minutes.
-			    
-			    </message><message>The time is now 16 hours and 30 minutes.
-			    
-			    </message><message>The time is now 17 hours and 5 minutes.
-			    
-			    </message><message>The time is now 17 hours and 6 minutes.
-			    
-			    </message><message>The time is now 17 hours and 8 minutes.
-			    
-			    </message><message>The time is now 17 hours and 9 minutes.
-			    
-			    </message><message>The time is now 17 hours and 13 minutes.
-			    
-			    </message><message>The time is now 17 hours and 22 minutes.
-			    
-			    </message><message>The time is now 23 hours and 21 minutes.
-			    
-			    </message><message>The time is now 23 hours and 26 minutes.
-			    
-			    </message><message>The time is now 23 hours and 33 minutes.
-			    
-			    </message><message>The time is now 23 hours and 33 minutes.
-			    
-			    </message><message>The time is now 23 hours and 39 minutes.
-			    
-			    Its late, you should be sleeping!</message><message>The time is now 14 hours and 55 minutes.
-			    
-			    Its late, you should be sleeping!</message><message>The time is now 22 hours and 18 minutes.
-			    
-			    </message><message>The time is now 22 hours and 24 minutes.
-			    
-			    </message><message>The time is now 0 hours and 24 minutes.
-			    
-			    </message><message>The time is now 0 hours and 26 minutes.
-			    
-			    </message><message>The time is now 0 hours and 28 minutes.
-			    
-			    </message><message>The time is now 23 hours and 54 minutes.
-			    
+
 			    </message></messages>
 		<devices/>
 		<lights/>
@@ -175,6 +133,16 @@
 	    </admin>
 	</identities>
 	<actions>
+        <au:capability>
+            <comment>This allows running any plugin</comment>
+            <xpath>/plugin</xpath>
+            <get>descendant</get>
+        </au:capability>
+        <au:capability>
+            <comment>This allows running any pluginscript</comment>
+            <xpath>/pluginscripts</xpath>
+            <get>descendant</get>
+        </au:capability>
 		<action>
 			<name>updateMessage</name>
 			<interval>500</interval>
@@ -210,8 +178,21 @@
             <notBefore>1504552101</notBefore>
         </action>
 	    <action>
+            <au:capability>
+                <comment>This allows running any pluginscript</comment>
+                <xpath>/pluginscripts</xpath>
+                <get>descendant</get>
+            </au:capability>
+	        <au:capability>
+	            <comment>This allows reading environment</comment>
+	            <xpath>/data/environment</xpath>
+	            <get>descendant-or-self</get>
+	            <put/>
+	            <post/>
+	            <delete/>
+	        </au:capability>
 			<xpath>/data/environment/messages/*</xpath>
-			<condition>not(data/environment/night)</condition>
+			<condition>not(/data/environment/night)</condition>
 			<url>/pluginscripts/say/message?args={.}</url>
 		    <notBefore>1515970441</notBefore>
 		</action>
@@ -233,11 +214,21 @@
             <notBefore>1504552101</notBefore>
         </action>
 	    <action>
+            <au:capability>
+                <comment>This allows firing /internal/started</comment>
+                <xpath>/internal/started</xpath>
+                <get>self</get>
+            </au:capability>
 	        <name>start</name>
 	        <url>/internal/started</url>
 	        <notBefore>1515596533</notBefore>
 	    </action>
 		<action>
+            <au:capability>
+                <comment>This allows firing /internal/save</comment>
+                <xpath>/internal/save</xpath>
+                <get>self</get>
+            </au:capability>
 			<name>save</name>
 			<interval>3600</interval>
 			<minInterval>60</minInterval>
@@ -344,6 +335,19 @@
 		    <notBefore>1515970441</notBefore>
 		</action>
 		<action>
+            <au:capability>
+                <comment>This allows running any plugin</comment>
+                <xpath>/plugin</xpath>
+                <get>descendant</get>
+            </au:capability>
+	        <au:capability>
+	            <comment>This allows reading igor data</comment>
+	            <xpath>/data/services/igor</xpath>
+	            <get>descendant-or-self</get>
+	            <put/>
+	            <post/>
+	            <delete/>
+	        </au:capability>
 			<interval>60</interval>
 			<url>/plugin/lan?name=igor&amp;service=igor/web&amp;ip={/data/services/igor/host}&amp;port={/data/services/igor/port}</url>
 			<aggregate>true</aggregate>
@@ -400,6 +404,14 @@
 	            <xpath>/data/plugindata/ringer</xpath>
 	            <get>descendant-or-self</get>
 	        </au:capability>
+	        <au:capability>
+	            <comment>This allows accessing ringer plugin data</comment>
+	            <xpath>/data/plugindata/ringer</xpath>
+	            <get>descendant-or-self</get>
+	            <put/>
+	            <post/>
+	            <delete/>
+	        </au:capability>
             <url>http://{/data/plugindata/ringer/host}/alarm?alarm=1</url>
             <representing>devices/ringer</representing>
             <notBefore>1510349255</notBefore>
@@ -453,7 +465,7 @@
 	            <put/>
 	            <post/>
 	            <delete/>
-	            <externalRepresentation>BUTTONTOKEN</externalRepresentation>
+	            <externalKey>BUTTONTOKEN</externalKey>
 	        </au:capability>
 	    </au:defaultCapabilities>
 	    <au:unusedCapabilities>
