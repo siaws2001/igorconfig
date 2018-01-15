@@ -13,6 +13,22 @@
 			    
 			    </message><message>The time is now 14 hours and 43 minutes.
 			    
+			    </message><message>The time is now 14 hours and 53 minutes.
+			    
+			    </message><message>The time is now 14 hours and 56 minutes.
+			    
+			    </message><message>The time is now 15 hours and 57 minutes.
+			    
+			    </message><message>The time is now 16 hours and 11 minutes.
+			    
+			    </message><message>The time is now 16 hours and 12 minutes.
+			    
+			    </message><message>The time is now 16 hours and 12 minutes.
+			    
+			    </message><message>The time is now 16 hours and 14 minutes.
+			    
+			    </message><message>The time is now 16 hours and 15 minutes.
+			    
 			    </message></messages>
 		<devices/>
 		<lights/>
@@ -20,7 +36,7 @@
 			<messages><ble>502 Command /Users/jack/.igor/plugins/ble/scripts/pull.sh exited with status code=1
 
 /usr/local/bin/igorVar: Error [Errno 61] Connection refused for http://localhost:8081/ble
-/usr/local/bin/igorVar: no data read from stdin</ble></messages>
+/usr/local/bin/igorVar: no data read from stdin</ble><ringer>401 Unauthorized (incorrect rights)</ringer></messages>
 		</systemHealth>
 	</environment>
 	<status>
@@ -45,7 +61,7 @@
                 <lastsuccess>1515076154.56</lastsuccess>
                 <ignoreerrorsuntil/>
                 <errormessage/>
-            <lastActivity>1515596533.44</lastActivity><lastSuccess>1515596533.44</lastSuccess><ignoreErrorsUntil/><errorMessage/></web>
+            <lastActivity>1516029266.37</lastActivity><lastSuccess>1516029266.37</lastSuccess><ignoreErrorsUntil/><errorMessage/></web>
         </igor>
 		<sensors>
 		    <ble><alive/><lastActivity>1515415772.01</lastActivity><lastFailure>1515415772.01</lastFailure><errorMessage>502 Command /Users/jack/.igor/plugins/ble/scripts/pull.sh exited with status code=1
@@ -61,7 +77,8 @@
                 <errorMessage/>
             </button>
         </sensors>
-		<devices/>
+		<devices><ringer><alive/><lastActivity>1516029186.93</lastActivity><lastFailure>1516029186.93</lastFailure><errorMessage>401 Unauthorized (incorrect rights)
+</errorMessage></ringer></devices>
 		<services>
 		    <announceTime>
 		        <alive>true</alive>
@@ -72,8 +89,8 @@
 		    </announceTime>
 		    <internet>
 		        <alive>true</alive>
-		        <lastActivity>1515596533.37</lastActivity>
-		        <lastSuccess>1515596533.37</lastSuccess>
+		        <lastActivity>1516029266.19</lastActivity>
+		        <lastSuccess>1516029266.19</lastSuccess>
 		        <ignoreErrorsUntil/>
 		        <errorMessage/>
 		    </internet>
@@ -86,7 +103,7 @@
 	<devices>
 	</devices>
 	<services>
-	    <igor><protocol>https</protocol><url>https://boom.local:9333/data</url><host>boom.local</host><version>0.6</version><startTime>1516023782</startTime><fingerprint>D9:42:0D:B9:4C:11:20:C4:B4:D8:EC:EB:B0:25:57:FE:E7:A6:CE:D4</fingerprint><rebootCount>85</rebootCount><ticker>0</ticker><port>9333</port></igor>
+	    <igor><protocol>https</protocol><url>https://boom.local:9333/data</url><host>boom.local</host><version>0.6</version><startTime>1516029346</startTime><fingerprint>D9:42:0D:B9:4C:11:20:C4:B4:D8:EC:EB:B0:25:57:FE:E7:A6:CE:D4</fingerprint><rebootCount>93</rebootCount><ticker>0</ticker><port>9333</port></igor>
 	</services>
 	<people/>
 	<identities>
@@ -164,7 +181,7 @@
 	            <xpath>/data/environment/messages</xpath>
 	            <post>child</post>
 	        </au:capability>
-		    <notBefore>1516023782</notBefore>
+		    <notBefore>1516029346</notBefore>
 		</action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
@@ -205,7 +222,7 @@
             <url>/pluginscripts/ble/pull</url>
 			<representing>sensors/ble</representing>
             <aggregate>true</aggregate>
-            <notBefore>1516023782</notBefore>
+            <notBefore>1516029346</notBefore>
         </action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
@@ -225,7 +242,7 @@
             </au:capability>
 	        <name>start</name>
 	        <url>/internal/started</url>
-	        <notBefore>1516023657</notBefore>
+	        <notBefore>1516029265</notBefore>
 	    </action>
 		<action>
             <au:capability>
@@ -239,7 +256,7 @@
 			<url>/internal/save</url>
 			<representing>igor/save</representing>
 			<xpath>/data/plugindata//* | /data/actions/* | /data/triggers/* | /data/identities//* | /data/sandbox/*</xpath>
-		    <notBefore>1516023842</notBefore>
+		    <notBefore>1516029406</notBefore>
 		</action>
         <action>
             <name>cleanup</name>
@@ -270,7 +287,7 @@
 	            <xpath>/data/environment/night</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1516023782</notBefore>
+		    <notBefore>1516029346</notBefore>
 		</action>
 		<action>
             <name>checkLate</name>
@@ -284,7 +301,7 @@
 	            <xpath>/data/environment/latereminder</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1516023782</notBefore>
+		    <notBefore>1516029346</notBefore>
 		</action>
 		<action>
             <name>checkMorning</name>
@@ -298,7 +315,7 @@
 	            <xpath>/data/environment/morninggreeting</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1516023782</notBefore>
+		    <notBefore>1516029346</notBefore>
 		</action>
 		<action>
 			<name>updatePeople</name>
@@ -336,7 +353,7 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=internet&amp;ip=google.com.</url>
 			<aggregate>true</aggregate>
-		    <notBefore>1516023782</notBefore>
+		    <notBefore>1516029346</notBefore>
 		</action>
 		<action>
             <au:capability>
@@ -355,14 +372,14 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=igor&amp;service=igor/web&amp;ip={/data/services/igor/host}&amp;port={/data/services/igor/port}</url>
 			<aggregate>true</aggregate>
-			<notBefore>1516023782</notBefore>
+			<notBefore>1516029346</notBefore>
 		</action>
 		<action>
 			<name>systemHealth</name>
 			<interval>60</interval>
 			<xpath>/data/status/*/*/errorMessage</xpath>
 			<url>/plugin/systemHealth</url>
-			<notBefore>1516023782</notBefore>
+			<notBefore>1516029346</notBefore>
 			<aggregate>true</aggregate>
 		</action>
         <action>
@@ -399,6 +416,7 @@
 	            <comment>This allows ringing the ringer on the iotsa buzzer</comment>
 	            <iss>http://igor.local:9333/issuer</iss>
 	            <aud>http://jack08.local</aud>
+	            <aud>http://ringer.local</aud>
 	            <right>alarm</right>
 	            <externalKey>ringersharedkey</externalKey>
 	        </au:capability>
@@ -417,7 +435,7 @@
 	        </au:capability>
             <url>http://{/data/plugindata/ringer/host}/alarm?alarm=1</url>
             <representing>devices/ringer</representing>
-            <notBefore>1510349255</notBefore>
+            <notBefore>1516029181</notBefore>
         </action>
     </actions>
 	<sandbox/>
