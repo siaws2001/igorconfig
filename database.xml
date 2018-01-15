@@ -29,6 +29,12 @@
 			    
 			    </message><message>The time is now 23 hours and 9 minutes.
 			    
+			    </message><message>The time is now 23 hours and 12 minutes.
+			    
+			    </message><message>The time is now 23 hours and 51 minutes.
+			    
+			    </message><message>The time is now 23 hours and 53 minutes.
+			    
 			    </message></messages>
 		<devices/>
 		<lights/>
@@ -99,7 +105,7 @@
 	<devices>
 	</devices>
 	<services>
-	    <igor><protocol>https</protocol><url>https://boom.local:9333/data</url><host>boom.local</host><version>0.6</version><startTime>1516054158</startTime><fingerprint>D9:42:0D:B9:4C:11:20:C4:B4:D8:EC:EB:B0:25:57:FE:E7:A6:CE:D4</fingerprint><rebootCount>107</rebootCount><ticker>0</ticker><port>9333</port></igor>
+	    <igor><protocol>https</protocol><url>https://boom.local:9333/data</url><host>boom.local</host><version>0.6</version><startTime>1516056834</startTime><fingerprint>D9:42:0D:B9:4C:11:20:C4:B4:D8:EC:EB:B0:25:57:FE:E7:A6:CE:D4</fingerprint><rebootCount>110</rebootCount><ticker>0</ticker><port>9333</port></igor>
 	</services>
 	<people/>
 	<identities>
@@ -278,7 +284,7 @@
 	            <xpath>/data/environment/messages</xpath>
 	            <post>child</post>
 	        </au:capability>
-		    <notBefore>1516054158</notBefore>
+		    <notBefore>1516056834</notBefore>
 		</action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
@@ -312,14 +318,14 @@
 			<xpath>/data/environment/messages/*</xpath>
 			<condition>not(string(/data/environment/night))</condition>
 			<url>/pluginscripts/say/message?args={.}</url>
-		    <notBefore>1515970441</notBefore>
+		    <notBefore>1516056834</notBefore>
 		</action>
 	    <action>
             <interval>60</interval>
             <url>/pluginscripts/ble/pull</url>
 			<representing>sensors/ble</representing>
             <aggregate>true</aggregate>
-            <notBefore>1516054158</notBefore>
+            <notBefore>1516056834</notBefore>
         </action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
@@ -353,7 +359,7 @@
 			<url>/internal/save</url>
 			<representing>igor/save</representing>
 			<xpath>/data/plugindata//* | /data/actions/* | /data/triggers/* | /data/identities//* | /data/sandbox/*</xpath>
-		    <notBefore>1516054218</notBefore>
+		    <notBefore>1516056894</notBefore>
 		</action>
         <action>
             <name>cleanup</name>
@@ -384,7 +390,7 @@
 	            <xpath>/data/environment/night</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1516054158</notBefore>
+		    <notBefore>1516056834</notBefore>
 		</action>
 		<action>
             <name>checkLate</name>
@@ -398,7 +404,7 @@
 	            <xpath>/data/environment/latereminder</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1516054158</notBefore>
+		    <notBefore>1516056834</notBefore>
 		</action>
 		<action>
             <name>checkMorning</name>
@@ -412,7 +418,7 @@
 	            <xpath>/data/environment/morninggreeting</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1516054158</notBefore>
+		    <notBefore>1516056834</notBefore>
 		</action>
 		<action>
 			<name>updatePeople</name>
@@ -450,7 +456,7 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=internet&amp;ip=google.com.</url>
 			<aggregate>true</aggregate>
-		    <notBefore>1516054158</notBefore>
+		    <notBefore>1516056834</notBefore>
 		</action>
 		<action>
             <au:capability>
@@ -469,14 +475,14 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=igor&amp;service=igor/web&amp;ip={/data/services/igor/host}&amp;port={/data/services/igor/port}</url>
 			<aggregate>true</aggregate>
-			<notBefore>1516054158</notBefore>
+			<notBefore>1516056834</notBefore>
 		</action>
 		<action>
 			<name>systemHealth</name>
 			<interval>60</interval>
 			<xpath>/data/status/*/*/errorMessage</xpath>
 			<url>/plugin/systemHealth</url>
-			<notBefore>1516054158</notBefore>
+			<notBefore>1516056834</notBefore>
 			<aggregate>true</aggregate>
 		</action>
         <action>
@@ -513,9 +519,7 @@
 	            <comment>This allows ringing the ringer on the iotsa buzzer</comment>
 	            <iss>http://igor.local:9333/issuer</iss>
 	            <aud>http://jack08.local</aud>
-	            <aud>http://ringer.local</aud>
-	            <right>unknown</right>
-	            <externalKey>ringersharedkey</externalKey>
+	            <right>alarm</right>
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows reading plugin data</comment>
@@ -587,5 +591,22 @@
 	            <delete>descendant</delete>
 	        </au:capability>
 	    </au:unusedCapabilities>
+	    <au:sharedKeys>
+	    	<au:sharedKey>
+	            <iss>http://igor.local:9333/issuer</iss>
+	            <aud>http://jack08.local</aud>
+	            <externalKey>ringersharedkey</externalKey>
+	    	</au:sharedKey>
+	    	<au:sharedKey>
+	            <iss>http://igor.local:9333/issuer</iss>
+	            <aud>http://ringer.local</aud>
+	            <externalKey>ringersharedkey</externalKey>
+	    	</au:sharedKey>
+	    	<au:sharedKey>
+	            <iss>http://igor.local:9333/issuer</iss>
+	            <sub>http://button.local</sub>
+	            <externalKey>buttonsharedkey</externalKey>
+	    	</au:sharedKey>
+	    </au:sharedKeys>
 	</au:access>
 </data>
