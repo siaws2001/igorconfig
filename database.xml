@@ -11,6 +11,24 @@
 			    
 			    </message><message>The time is now 21 hours and 34 minutes.
 			    
+			    </message><message>The time is now 21 hours and 53 minutes.
+			    
+			    </message><message>The time is now 22 hours and 32 minutes.
+			    
+			    </message><message>The time is now 22 hours and 43 minutes.
+			    
+			    </message><message>The time is now 22 hours and 50 minutes.
+			    
+			    </message><message>The time is now 22 hours and 52 minutes.
+			    
+			    </message><message>The time is now 22 hours and 56 minutes.
+			    
+			    </message><message>The time is now 22 hours and 59 minutes.
+			    
+			    </message><message>The time is now 23 hours and 1 minutes.
+			    
+			    </message><message>The time is now 23 hours and 9 minutes.
+			    
 			    </message></messages>
 		<devices/>
 		<lights/>
@@ -81,7 +99,7 @@
 	<devices>
 	</devices>
 	<services>
-	    <igor><protocol>https</protocol><url>https://boom.local:9333/data</url><host>boom.local</host><version>0.6</version><startTime>1516048458</startTime><fingerprint>D9:42:0D:B9:4C:11:20:C4:B4:D8:EC:EB:B0:25:57:FE:E7:A6:CE:D4</fingerprint><rebootCount>98</rebootCount><ticker>0</ticker><port>9333</port></igor>
+	    <igor><protocol>https</protocol><url>https://boom.local:9333/data</url><host>boom.local</host><version>0.6</version><startTime>1516054158</startTime><fingerprint>D9:42:0D:B9:4C:11:20:C4:B4:D8:EC:EB:B0:25:57:FE:E7:A6:CE:D4</fingerprint><rebootCount>107</rebootCount><ticker>0</ticker><port>9333</port></igor>
 	</services>
 	<people/>
 	<identities>
@@ -260,7 +278,7 @@
 	            <xpath>/data/environment/messages</xpath>
 	            <post>child</post>
 	        </au:capability>
-		    <notBefore>1516048458</notBefore>
+		    <notBefore>1516054158</notBefore>
 		</action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
@@ -292,7 +310,7 @@
 	            <delete/>
 	        </au:capability>
 			<xpath>/data/environment/messages/*</xpath>
-			<condition>not(/data/environment/night)</condition>
+			<condition>not(string(/data/environment/night))</condition>
 			<url>/pluginscripts/say/message?args={.}</url>
 		    <notBefore>1515970441</notBefore>
 		</action>
@@ -301,7 +319,7 @@
             <url>/pluginscripts/ble/pull</url>
 			<representing>sensors/ble</representing>
             <aggregate>true</aggregate>
-            <notBefore>1516048458</notBefore>
+            <notBefore>1516054158</notBefore>
         </action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
@@ -321,7 +339,7 @@
             </au:capability>
 	        <name>start</name>
 	        <url>/internal/started</url>
-	        <notBefore>1516032597</notBefore>
+	        <notBefore>1516054158</notBefore>
 	    </action>
 		<action>
             <au:capability>
@@ -335,7 +353,7 @@
 			<url>/internal/save</url>
 			<representing>igor/save</representing>
 			<xpath>/data/plugindata//* | /data/actions/* | /data/triggers/* | /data/identities//* | /data/sandbox/*</xpath>
-		    <notBefore>1516048518</notBefore>
+		    <notBefore>1516054218</notBefore>
 		</action>
         <action>
             <name>cleanup</name>
@@ -366,7 +384,7 @@
 	            <xpath>/data/environment/night</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1516048458</notBefore>
+		    <notBefore>1516054158</notBefore>
 		</action>
 		<action>
             <name>checkLate</name>
@@ -380,7 +398,7 @@
 	            <xpath>/data/environment/latereminder</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1516048458</notBefore>
+		    <notBefore>1516054158</notBefore>
 		</action>
 		<action>
             <name>checkMorning</name>
@@ -394,7 +412,7 @@
 	            <xpath>/data/environment/morninggreeting</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1516048458</notBefore>
+		    <notBefore>1516054158</notBefore>
 		</action>
 		<action>
 			<name>updatePeople</name>
@@ -432,7 +450,7 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=internet&amp;ip=google.com.</url>
 			<aggregate>true</aggregate>
-		    <notBefore>1516048458</notBefore>
+		    <notBefore>1516054158</notBefore>
 		</action>
 		<action>
             <au:capability>
@@ -451,14 +469,14 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=igor&amp;service=igor/web&amp;ip={/data/services/igor/host}&amp;port={/data/services/igor/port}</url>
 			<aggregate>true</aggregate>
-			<notBefore>1516048458</notBefore>
+			<notBefore>1516054158</notBefore>
 		</action>
 		<action>
 			<name>systemHealth</name>
 			<interval>60</interval>
 			<xpath>/data/status/*/*/errorMessage</xpath>
 			<url>/plugin/systemHealth</url>
-			<notBefore>1516048458</notBefore>
+			<notBefore>1516054158</notBefore>
 			<aggregate>true</aggregate>
 		</action>
         <action>
