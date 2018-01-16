@@ -35,6 +35,34 @@
 			    
 			    </message><message>The time is now 23 hours and 53 minutes.
 			    
+			    </message><message>The time is now 23 hours and 0 minutes.
+			    
+			    </message><message>The time is now 23 hours and 20 minutes.
+			    
+			    </message><message>The time is now 23 hours and 28 minutes.
+			    
+			    </message><message>The time is now 23 hours and 47 minutes.
+			    
+			    </message><message>The time is now 23 hours and 50 minutes.
+			    
+			    </message><message>The time is now 23 hours and 56 minutes.
+			    
+			    </message><message>The time is now 23 hours and 57 minutes.
+			    
+			    </message><message>The time is now 0 hours and 0 minutes.
+			    
+			    </message><message>The time is now 0 hours and 1 minutes.
+			    
+			    </message><message>The time is now 0 hours and 8 minutes.
+			    
+			    </message><message>The time is now 0 hours and 17 minutes.
+			    
+			    </message><message>The time is now 0 hours and 19 minutes.
+			    
+			    </message><message>The time is now 0 hours and 27 minutes.
+			    
+			    </message><message>The time is now 0 hours and 30 minutes.
+			    
 			    </message></messages>
 		<devices/>
 		<lights/>
@@ -53,7 +81,7 @@
                 <lastsuccess>1515063013.83</lastsuccess>
                 <ignoreerrorsuntil/>
                 <errormessage/>
-            <lastActivity>1515592559.73</lastActivity><lastSuccess>1515592559.73</lastSuccess><ignoreErrorsUntil/><errorMessage/></core>
+            <lastActivity>1516145409.18</lastActivity><lastSuccess>1516145409.18</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></core>
             <save>
                 <alive>true</alive>
                 <lastactivity>1515073813.81</lastactivity>
@@ -70,7 +98,7 @@
             <lastActivity>1516043339.16</lastActivity><lastSuccess>1516043339.16</lastSuccess><ignoreErrorsUntil/><errorMessage/></web>
         </igor>
 		<sensors>
-		    <ble><alive/><lastActivity>1515415772.01</lastActivity><lastFailure>1515415772.01</lastFailure></ble>
+		    <ble><alive>true</alive><lastActivity>1516145410.8</lastActivity><lastFailure>1515415772.01</lastFailure><lastSuccess>1516145410.8</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></ble>
             <button>
                 <alive>true</alive>
                 <lastActivity>1513551158.04</lastActivity>
@@ -84,10 +112,10 @@
 		<services>
 		    <announceTime>
 		        <alive>true</alive>
-		        <lastActivity>1515592559.79</lastActivity>
-		        <lastSuccess>1515592559.79</lastSuccess>
-		        <ignoreErrorsUntil/>
-		        <errorMessage/>
+		        <lastActivity>1516145411.65</lastActivity>
+		        <lastSuccess>1516145411.65</lastSuccess>
+		        <ignoreErrorsUntil></ignoreErrorsUntil>
+		        <errorMessage></errorMessage>
 		    </announceTime>
 		    <internet>
 		        <alive>true</alive>
@@ -99,13 +127,13 @@
 		</services>
 	</status>
 	<sensors>
-		<ble/>
+		<ble><lastActivity>1516145409.6</lastActivity><bleDevice><available>true</available><bdaddr_type>public</bdaddr_type><advertisements><unknown_0x16>9ffe0000000000000000000000000000000000000000</unknown_0x16><unknown_0x03>9ffe</unknown_0x03></advertisements><raw_advertisements>03039ffe17169ffe0000000000000000000000000000000000000000</raw_advertisements><lastSeen>1516145409.55</lastSeen><address>a4:77:33:c0:5d:8f</address><rssi>-81</rssi><raw_evt_type>2</raw_evt_type><firstSeen>1516141857.01</firstSeen></bleDevice><bleDevice><available>true</available><bdaddr_type>public</bdaddr_type><advertisements><unknown_0x16>9ffe02316c4c4570704a654c337700000161015801db</unknown_0x16><unknown_0x03>9ffe</unknown_0x03></advertisements><raw_advertisements>03039ffe17169ffe02316c4c4570704a654c337700000161015801db</raw_advertisements><lastSeen>1516145409.49</lastSeen><address>54:60:09:de:87:55</address><rssi>-77</rssi><raw_evt_type>2</raw_evt_type><firstSeen>1516141857.35</firstSeen></bleDevice></ble>
 	</sensors>
 	<sensors/>
 	<devices>
 	</devices>
 	<services>
-	    <igor><protocol>https</protocol><url>https://boom.local:9333/data</url><host>boom.local</host><version>0.6</version><startTime>1516056834</startTime><fingerprint>D9:42:0D:B9:4C:11:20:C4:B4:D8:EC:EB:B0:25:57:FE:E7:A6:CE:D4</fingerprint><rebootCount>110</rebootCount><ticker>0</ticker><port>9333</port></igor>
+	    <igor><version>0.5</version><url>http://igor.local:9333/data</url><host>igor.local</host><rebootCount>14</rebootCount><startTime>1516145408</startTime><ticker>0</ticker><port>9333</port></igor>
 	</services>
 	<people/>
 	<identities>
@@ -284,7 +312,7 @@
 	            <xpath>/data/environment/messages</xpath>
 	            <post>child</post>
 	        </au:capability>
-		    <notBefore>1516056834</notBefore>
+		    <notBefore>1516145408</notBefore>
 		</action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
@@ -292,16 +320,17 @@
             <url>/data/environment/messages/message</url>
             <method>POST</method>
             <mimetype>text/plain</mimetype>
-            <data>'Igor has found'{/data/identities/*/plugindata/ble/device[id=string($originalContext/address)]/name}</data>
+            <data>Igor has found {/data/identities/*/plugindata/ble/device[id=string($originalContext/address)]/name}. We are at home.</data>
             <multiple>True</multiple>
 	        <au:capability>
 	            <comment>This allows setting the variable</comment>
 	            <xpath>/data/environment/messages</xpath>
 	            <post>child</post>
 	        </au:capability>
-            <notBefore>1504552101</notBefore>
+            <notBefore>1516145410</notBefore>
         </action>
 	    <action>
+	    
             <au:capability>
                 <comment>This allows running any pluginscript</comment>
                 <xpath>/pluginscripts</xpath>
@@ -315,17 +344,18 @@
 	            <post/>
 	            <delete/>
 	        </au:capability>
+	  
 			<xpath>/data/environment/messages/*</xpath>
 			<condition>not(string(/data/environment/night))</condition>
 			<url>/pluginscripts/say/message?args={.}</url>
-		    <notBefore>1516056834</notBefore>
+		    <notBefore>1516145410</notBefore>
 		</action>
 	    <action>
             <interval>60</interval>
             <url>/pluginscripts/ble/pull</url>
 			<representing>sensors/ble</representing>
             <aggregate>true</aggregate>
-            <notBefore>1516056834</notBefore>
+            <notBefore>1516145408</notBefore>
         </action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
@@ -335,7 +365,7 @@
             <mimetype>text/plain</mimetype>
             <data>{available}</data>
             <multiple>True</multiple>
-            <notBefore>1504552101</notBefore>
+            <notBefore>1516145410</notBefore>
         </action>
 	    <action>
             <au:capability>
@@ -345,7 +375,7 @@
             </au:capability>
 	        <name>start</name>
 	        <url>/internal/started</url>
-	        <notBefore>1516054158</notBefore>
+	        <notBefore>1516145410</notBefore>
 	    </action>
 		<action>
             <au:capability>
@@ -359,7 +389,7 @@
 			<url>/internal/save</url>
 			<representing>igor/save</representing>
 			<xpath>/data/plugindata//* | /data/actions/* | /data/triggers/* | /data/identities//* | /data/sandbox/*</xpath>
-		    <notBefore>1516056894</notBefore>
+		    <notBefore>1516145468</notBefore>
 		</action>
         <action>
             <name>cleanup</name>
@@ -390,7 +420,7 @@
 	            <xpath>/data/environment/night</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1516056834</notBefore>
+		    <notBefore>1516145408</notBefore>
 		</action>
 		<action>
             <name>checkLate</name>
@@ -404,7 +434,7 @@
 	            <xpath>/data/environment/latereminder</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1516056834</notBefore>
+		    <notBefore>1516145408</notBefore>
 		</action>
 		<action>
             <name>checkMorning</name>
@@ -418,7 +448,7 @@
 	            <xpath>/data/environment/morninggreeting</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1516056834</notBefore>
+		    <notBefore>1516145408</notBefore>
 		</action>
 		<action>
 			<name>updatePeople</name>
@@ -456,7 +486,7 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=internet&amp;ip=google.com.</url>
 			<aggregate>true</aggregate>
-		    <notBefore>1516056834</notBefore>
+		    <notBefore>1516145408</notBefore>
 		</action>
 		<action>
             <au:capability>
@@ -475,14 +505,14 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=igor&amp;service=igor/web&amp;ip={/data/services/igor/host}&amp;port={/data/services/igor/port}</url>
 			<aggregate>true</aggregate>
-			<notBefore>1516056834</notBefore>
+			<notBefore>1516145408</notBefore>
 		</action>
 		<action>
 			<name>systemHealth</name>
 			<interval>60</interval>
 			<xpath>/data/status/*/*/errorMessage</xpath>
 			<url>/plugin/systemHealth</url>
-			<notBefore>1516056834</notBefore>
+			<notBefore>1516145412</notBefore>
 			<aggregate>true</aggregate>
 		</action>
         <action>
@@ -538,7 +568,58 @@
             <representing>devices/ringer</representing>
             <notBefore>1516032664</notBefore>
         </action>
-    </actions>
+        <!--  new BLE -->
+		<action>
+			<au:capability>
+                <comment>This allows running any pluginscript</comment>
+                <xpath>/pluginscripts</xpath>
+                <get>descendant</get>
+            </au:capability>
+			<interval>60</interval>
+			<url>/pluginscripts/ble/pull</url>
+			<aggregate>true</aggregate>
+			<notBefore>1516145408</notBefore>
+		</action>
+		<action>
+			<au:capability>
+	            <comment>This allows putting variable into environment/devices</comment>
+	            <xpath>/data/environment/devices</xpath>
+	            <get>descendant-or-self</get>
+	            <put>descendant</put>
+	            <post/>
+	            <delete/>
+	        </au:capability>
+			<xpath>/data/sensors/ble/bleDevice</xpath>
+			<condition>
+			/data/plugindata/bleDevices/bleDevice[id=string($originalContext/address)]/name
+			</condition>
+			<url>
+			/data/environment/devices/{/data/plugindata/bleDevices/bleDevice[id=string($originalContext/address)]/name}
+			</url>
+			<method>PUT</method>
+			<mimetype>text/plain</mimetype>
+			<data>{available}</data>
+			<multiple>True</multiple>
+			<notBefore>1502697952</notBefore>
+		</action>
+		<action>
+			<au:capability>
+	            <comment>This allows putting the name of ble device found into sensors/ble/bleDevice</comment>
+	            <xpath>/data/sensors/ble</xpath>
+	            <get>descendant-or-self</get>
+	            <put>descendant</put>
+	            <post/>
+	            <delete/>
+	        </au:capability>
+			<xpath>/data/sensors/ble/bleDevice</xpath>
+			<url>/data/environment/introspection/lastActivity/ble</url>
+			<method>PUT</method>
+			<mimetype>text/plain</mimetype>
+			<data>{igor_dateTime()}</data>
+			<notBefore>1516145410</notBefore>
+		</action>
+		<!--  end  -->
+     </actions>
 	<sandbox/>
 	<eventsources/>
 	<plugindata>
