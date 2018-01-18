@@ -35,14 +35,67 @@
 			    
 			    </message><message>The time is now 23 hours and 53 minutes.
 			    
+			    </message><message>The time is now 12 hours and 49 minutes.
+			    
+			    </message><message>The time is now 12 hours and 50 minutes.
+			    
+			    </message><message>The time is now 12 hours and 54 minutes.
+			    
+			    </message><message>The time is now 12 hours and 57 minutes.
+			    
+			    </message><message>The time is now 13 hours and 5 minutes.
+			    
+			    </message><message>The time is now 13 hours and 14 minutes.
+			    
+			    </message><message>The time is now 13 hours and 22 minutes.
+			    
+			    </message><message>The time is now 13 hours and 30 minutes.
+			    
+			    </message><message>The time is now 13 hours and 39 minutes.
+			    
+			    </message><message>The time is now 13 hours and 47 minutes.
+			    
+			    </message><message>The time is now 13 hours and 55 minutes.
+			    
+			    </message><message>The time is now 14 hours and 4 minutes.
+			    
+			    </message><message>The time is now 14 hours and 12 minutes.
+			    
+			    </message><message>The time is now 14 hours and 20 minutes.
+			    
+			    </message><message>The time is now 14 hours and 29 minutes.
+			    
+			    </message><message>The time is now 14 hours and 37 minutes.
+			    
+			    </message><message>The time is now 14 hours and 45 minutes.
+			    
+			    </message><message>The time is now 14 hours and 54 minutes.
+			    
+			    </message><message>The time is now 15 hours and 2 minutes.
+			    
+			    </message><message>The time is now 15 hours and 10 minutes.
+			    
+			    </message><message>The time is now 15 hours and 19 minutes.
+			    
+			    </message><message>The time is now 15 hours and 27 minutes.
+			    
+			    </message><message>The time is now 15 hours and 35 minutes.
+			    
+			    </message><message>The time is now 15 hours and 44 minutes.
+			    
+			    </message><message>The time is now 15 hours and 52 minutes.
+			    
+			    </message><message>The time is now 20 hours and 40 minutes.
+			    
+			    </message><message>The time is now 21 hours and 3 minutes.
+			    
+			    </message><message>The time is now 21 hours and 8 minutes.
+			    
 			    </message></messages>
 		<devices/>
 		<lights/>
 		<systemHealth>
-			<messages><ble>502 Command /Users/jack/.igor/plugins/ble/scripts/pull.sh exited with status code=1
-
-/usr/local/bin/igorVar: Error [Errno 61] Connection refused for http://localhost:8081/ble
-/usr/local/bin/igorVar: no data read from stdin</ble><ringer>401 Unauthorized (incorrect rights)</ringer></messages>
+			<messages><ringer>401 Unauthorized (incorrect rights)</ringer><say>502 Command /home/jack/.igor/plugins/say/scripts/message.sh exited with status code=1: For speech output Install speak, flite or festival if you do not have say</say></messages>
 		</systemHealth>
 	</environment>
 	<status>
@@ -67,7 +120,7 @@
                 <lastsuccess>1515076154.56</lastsuccess>
                 <ignoreerrorsuntil/>
                 <errormessage/>
-            <lastActivity>1516043339.16</lastActivity><lastSuccess>1516043339.16</lastSuccess><ignoreErrorsUntil/><errorMessage/></web>
+            <lastActivity>1516290989.94</lastActivity><lastSuccess>1516290989.94</lastSuccess><ignoreErrorsUntil/><errorMessage/></web>
         </igor>
 		<sensors>
 		    <ble><alive/><lastActivity>1515415772.01</lastActivity><lastFailure>1515415772.01</lastFailure></ble>
@@ -91,12 +144,12 @@
 		    </announceTime>
 		    <internet>
 		        <alive>true</alive>
-		        <lastActivity>1516043338.05</lastActivity>
-		        <lastSuccess>1516043338.05</lastSuccess>
+		        <lastActivity>1516290989.51</lastActivity>
+		        <lastSuccess>1516290989.51</lastSuccess>
 		        <ignoreErrorsUntil/>
 		        <errorMessage/>
 		    </internet>
-		</services>
+		<say><alive/><lastActivity>1516280253.03</lastActivity><lastFailure>1516280253.03</lastFailure><errorMessage>502 Command /home/jack/.igor/plugins/say/scripts/message.sh exited with status code=1: For speech output Install speak, flite or festival if you do not have say</errorMessage></say></services>
 	</status>
 	<sensors>
 		<ble/>
@@ -105,7 +158,7 @@
 	<devices>
 	</devices>
 	<services>
-	    <igor><protocol>https</protocol><url>https://boom.local:9333/data</url><host>boom.local</host><version>0.6</version><startTime>1516056834</startTime><fingerprint>D9:42:0D:B9:4C:11:20:C4:B4:D8:EC:EB:B0:25:57:FE:E7:A6:CE:D4</fingerprint><rebootCount>110</rebootCount><ticker>0</ticker><port>9333</port></igor>
+	    <igor><protocol>https</protocol><url>https://dispi06.local:9333/data</url><host>dispi06.local</host><version>0.6</version><startTime>1516309735</startTime><fingerprint>AE:D3:49:5C:3F:AF:4E:AF:2D:C3:3C:9C:01:65:45:BF:E6:58:53:A6</fingerprint><rebootCount>117</rebootCount><ticker>0</ticker><port>9333</port></igor>
 	</services>
 	<people/>
 	<identities>
@@ -208,7 +261,7 @@
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows all access to own data</comment>
-	            <xpath>/identities/pauline</xpath>
+	            <xpath>/identities/jack</xpath>
 	            <get>descendant-or-self</get>
 	            <put>descendant</put>
 	            <post>descendant</post>
@@ -284,7 +337,7 @@
 	            <xpath>/data/environment/messages</xpath>
 	            <post>child</post>
 	        </au:capability>
-		    <notBefore>1516056834</notBefore>
+		    <notBefore>1516309735</notBefore>
 		</action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
@@ -318,14 +371,15 @@
 			<xpath>/data/environment/messages/*</xpath>
 			<condition>not(string(/data/environment/night))</condition>
 			<url>/pluginscripts/say/message?args={.}</url>
-		    <notBefore>1516056834</notBefore>
+			<representing>services/say</representing>
+		    <notBefore>1516309736</notBefore>
 		</action>
 	    <action>
             <interval>60</interval>
             <url>/pluginscripts/ble/pull</url>
 			<representing>sensors/ble</representing>
             <aggregate>true</aggregate>
-            <notBefore>1516056834</notBefore>
+            <notBefore>1516309735</notBefore>
         </action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
@@ -345,7 +399,7 @@
             </au:capability>
 	        <name>start</name>
 	        <url>/internal/started</url>
-	        <notBefore>1516054158</notBefore>
+	        <notBefore>1516309412</notBefore>
 	    </action>
 		<action>
             <au:capability>
@@ -359,7 +413,7 @@
 			<url>/internal/save</url>
 			<representing>igor/save</representing>
 			<xpath>/data/plugindata//* | /data/actions/* | /data/triggers/* | /data/identities//* | /data/sandbox/*</xpath>
-		    <notBefore>1516056894</notBefore>
+		    <notBefore>1516309795</notBefore>
 		</action>
         <action>
             <name>cleanup</name>
@@ -390,7 +444,7 @@
 	            <xpath>/data/environment/night</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1516056834</notBefore>
+		    <notBefore>1516309735</notBefore>
 		</action>
 		<action>
             <name>checkLate</name>
@@ -404,7 +458,7 @@
 	            <xpath>/data/environment/latereminder</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1516056834</notBefore>
+		    <notBefore>1516309735</notBefore>
 		</action>
 		<action>
             <name>checkMorning</name>
@@ -418,7 +472,7 @@
 	            <xpath>/data/environment/morninggreeting</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1516056834</notBefore>
+		    <notBefore>1516309735</notBefore>
 		</action>
 		<action>
 			<name>updatePeople</name>
@@ -456,7 +510,7 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=internet&amp;ip=google.com.</url>
 			<aggregate>true</aggregate>
-		    <notBefore>1516056834</notBefore>
+		    <notBefore>1516309735</notBefore>
 		</action>
 		<action>
             <au:capability>
@@ -475,14 +529,14 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=igor&amp;service=igor/web&amp;ip={/data/services/igor/host}&amp;port={/data/services/igor/port}</url>
 			<aggregate>true</aggregate>
-			<notBefore>1516056834</notBefore>
+			<notBefore>1516309735</notBefore>
 		</action>
 		<action>
 			<name>systemHealth</name>
 			<interval>60</interval>
 			<xpath>/data/status/*/*/errorMessage</xpath>
 			<url>/plugin/systemHealth</url>
-			<notBefore>1516056834</notBefore>
+			<notBefore>1516309735</notBefore>
 			<aggregate>true</aggregate>
 		</action>
         <action>
