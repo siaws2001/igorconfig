@@ -91,6 +91,14 @@
 			    
 			    </message><message>The time is now 21 hours and 8 minutes.
 			    
+			    </message><message>The time is now 21 hours and 11 minutes.
+			    
+			    </message><message>The time is now 21 hours and 11 minutes.
+			    
+			    </message><message>The time is now 21 hours and 15 minutes.
+			    
+			    </message><message>The time is now 21 hours and 17 minutes.
+			    
 			    </message></messages>
 		<devices/>
 		<lights/>
@@ -120,7 +128,7 @@
                 <lastsuccess>1515076154.56</lastsuccess>
                 <ignoreerrorsuntil/>
                 <errormessage/>
-            <lastActivity>1516290989.94</lastActivity><lastSuccess>1516290989.94</lastSuccess><ignoreErrorsUntil/><errorMessage/></web>
+            <lastActivity>1516309915.88</lastActivity><lastSuccess>1516309915.88</lastSuccess><ignoreErrorsUntil/><errorMessage/></web>
         </igor>
 		<sensors>
 		    <ble><alive/><lastActivity>1515415772.01</lastActivity><lastFailure>1515415772.01</lastFailure></ble>
@@ -144,8 +152,8 @@
 		    </announceTime>
 		    <internet>
 		        <alive>true</alive>
-		        <lastActivity>1516290989.51</lastActivity>
-		        <lastSuccess>1516290989.51</lastSuccess>
+		        <lastActivity>1516309914.97</lastActivity>
+		        <lastSuccess>1516309914.97</lastSuccess>
 		        <ignoreErrorsUntil/>
 		        <errorMessage/>
 		    </internet>
@@ -158,7 +166,7 @@
 	<devices>
 	</devices>
 	<services>
-	    <igor><protocol>https</protocol><url>https://dispi06.local:9333/data</url><host>dispi06.local</host><version>0.6</version><startTime>1516309735</startTime><fingerprint>AE:D3:49:5C:3F:AF:4E:AF:2D:C3:3C:9C:01:65:45:BF:E6:58:53:A6</fingerprint><rebootCount>117</rebootCount><ticker>0</ticker><port>9333</port></igor>
+	    <igor><protocol>https</protocol><url>https://dispi06.local:9333/data</url><host>dispi06.local</host><version>0.6</version><startTime>1516310239</startTime><fingerprint>AE:D3:49:5C:3F:AF:4E:AF:2D:C3:3C:9C:01:65:45:BF:E6:58:53:A6</fingerprint><rebootCount>121</rebootCount><ticker>0</ticker><port>9333</port></igor>
 	</services>
 	<people/>
 	<identities>
@@ -197,7 +205,7 @@
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows all access to own data</comment>
-	            <xpath>/identities/pauline</xpath>
+	            <xpath>/data/identities/pauline</xpath>
 	            <get>descendant-or-self</get>
 	            <put>descendant</put>
 	            <post>descendant</post>
@@ -261,7 +269,7 @@
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows all access to own data</comment>
-	            <xpath>/identities/jack</xpath>
+	            <xpath>/data/identities/jack</xpath>
 	            <get>descendant-or-self</get>
 	            <put>descendant</put>
 	            <post>descendant</post>
@@ -337,7 +345,7 @@
 	            <xpath>/data/environment/messages</xpath>
 	            <post>child</post>
 	        </au:capability>
-		    <notBefore>1516309735</notBefore>
+		    <notBefore>1516310240</notBefore>
 		</action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
@@ -372,14 +380,14 @@
 			<condition>not(string(/data/environment/night))</condition>
 			<url>/pluginscripts/say/message?args={.}</url>
 			<representing>services/say</representing>
-		    <notBefore>1516309736</notBefore>
+		    <notBefore>1516310240</notBefore>
 		</action>
 	    <action>
             <interval>60</interval>
             <url>/pluginscripts/ble/pull</url>
 			<representing>sensors/ble</representing>
             <aggregate>true</aggregate>
-            <notBefore>1516309735</notBefore>
+            <notBefore>1516310240</notBefore>
         </action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
@@ -399,7 +407,7 @@
             </au:capability>
 	        <name>start</name>
 	        <url>/internal/started</url>
-	        <notBefore>1516309412</notBefore>
+	        <notBefore>1516310240</notBefore>
 	    </action>
 		<action>
             <au:capability>
@@ -413,7 +421,7 @@
 			<url>/internal/save</url>
 			<representing>igor/save</representing>
 			<xpath>/data/plugindata//* | /data/actions/* | /data/triggers/* | /data/identities//* | /data/sandbox/*</xpath>
-		    <notBefore>1516309795</notBefore>
+		    <notBefore>1516310300</notBefore>
 		</action>
         <action>
             <name>cleanup</name>
@@ -444,7 +452,7 @@
 	            <xpath>/data/environment/night</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1516309735</notBefore>
+		    <notBefore>1516310240</notBefore>
 		</action>
 		<action>
             <name>checkLate</name>
@@ -458,7 +466,7 @@
 	            <xpath>/data/environment/latereminder</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1516309735</notBefore>
+		    <notBefore>1516310240</notBefore>
 		</action>
 		<action>
             <name>checkMorning</name>
@@ -472,7 +480,7 @@
 	            <xpath>/data/environment/morninggreeting</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1516309735</notBefore>
+		    <notBefore>1516310240</notBefore>
 		</action>
 		<action>
 			<name>updatePeople</name>
@@ -510,7 +518,7 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=internet&amp;ip=google.com.</url>
 			<aggregate>true</aggregate>
-		    <notBefore>1516309735</notBefore>
+		    <notBefore>1516310240</notBefore>
 		</action>
 		<action>
             <au:capability>
@@ -529,14 +537,14 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=igor&amp;service=igor/web&amp;ip={/data/services/igor/host}&amp;port={/data/services/igor/port}</url>
 			<aggregate>true</aggregate>
-			<notBefore>1516309735</notBefore>
+			<notBefore>1516310240</notBefore>
 		</action>
 		<action>
 			<name>systemHealth</name>
 			<interval>60</interval>
 			<xpath>/data/status/*/*/errorMessage</xpath>
 			<url>/plugin/systemHealth</url>
-			<notBefore>1516309735</notBefore>
+			<notBefore>1516310240</notBefore>
 			<aggregate>true</aggregate>
 		</action>
         <action>
