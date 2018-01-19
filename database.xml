@@ -7,7 +7,13 @@
 		<energy/>
 		<weather/>
 		<messages>
-        </messages>
+        <message>The time is now 23 hours and 55 minutes.
+			    
+			    </message><message>The time is now 0 hours and 41 minutes.
+			    
+			    </message><message>The time is now 0 hours and 42 minutes.
+			    
+			    </message></messages>
 		<devices/>
 		<lights/>
 		<systemHealth>
@@ -22,7 +28,7 @@
                 <lastsuccess>1515063013.83</lastsuccess>
                 <ignoreerrorsuntil/>
                 <errormessage/>
-            <lastActivity>1516145409.18</lastActivity><lastSuccess>1516145409.18</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></core>
+            <lastActivity>1516145409.18</lastActivity><lastSuccess>1516145409.18</lastSuccess><ignoreErrorsUntil/><errorMessage/></core>
             <save>
                 <alive>true</alive>
                 <lastactivity>1515073813.81</lastactivity>
@@ -39,7 +45,7 @@
             <lastActivity>1516309915.88</lastActivity><lastSuccess>1516309915.88</lastSuccess><ignoreErrorsUntil/><errorMessage/></web>
         </igor>
 		<sensors>
-		    <ble><alive>true</alive><lastActivity>1516145410.8</lastActivity><lastFailure>1515415772.01</lastFailure><lastSuccess>1516145410.8</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></ble>
+		    <ble><alive>true</alive><lastActivity>1516145410.8</lastActivity><lastFailure>1515415772.01</lastFailure><lastSuccess>1516145410.8</lastSuccess><ignoreErrorsUntil/><errorMessage/></ble>
             <button>
                 <alive>true</alive>
                 <lastActivity>1513551158.04</lastActivity>
@@ -55,8 +61,8 @@
 		        <alive>true</alive>
 		        <lastActivity>1516145411.65</lastActivity>
 		        <lastSuccess>1516145411.65</lastSuccess>
-		        <ignoreErrorsUntil></ignoreErrorsUntil>
-		        <errorMessage></errorMessage>
+		        <ignoreErrorsUntil/>
+		        <errorMessage/>
 		    </announceTime>
 		    <internet>
 		        <alive>true</alive>
@@ -74,7 +80,7 @@
 	<devices>
 	</devices>
 	<services>
-	    <igor><version>0.5</version><url>http://igor.local:9333/data</url><host>igor.local</host><rebootCount>14</rebootCount><startTime>1516145408</startTime><ticker>0</ticker><port>9333</port></igor>
+	    <igor><protocol>https</protocol><url>https://boom.local:9333/data</url><host>boom.local</host><version>0.6</version><startTime>1516405340</startTime><fingerprint>D9:42:0D:B9:4C:11:20:C4:B4:D8:EC:EB:B0:25:57:FE:E7:A6:CE:D4</fingerprint><rebootCount>17</rebootCount><ticker>0</ticker><port>9333</port></igor>
 	</services>
 	<people/>
 	<identities>
@@ -126,6 +132,14 @@
 	            <put/>
 	            <post>descendant</post>
 	            <delete>descendant</delete>
+	        </au:capability>
+	        <au:capability>
+	            <comment>This allows running action/ringringer</comment>
+	            <xpath>/action/ringringer</xpath>
+	            <get>self</get>
+	            <iss>https://igor.local:9333/issuer</iss>
+	            <aud>https://igor.local:9333/data</aud>
+	            <cid>1B79E63F-2C8F-439F-A0BE-A2C18C91FD4C</cid>
 	        </au:capability>
             <encryptedPassword>$pbkdf2-sha256$29000$qTWmVCql9H6PUYqx9h4jhA$CMpYr3VTVFTlYLZ6Zihvhc/GnY1b1ZDc6q7d4HhZ3lA</encryptedPassword>
 	        <plugindata>
@@ -182,6 +196,22 @@
 	            <put>descendant</put>
 	            <post>descendant</post>
 	            <delete>descendant</delete>
+	        </au:capability>
+	        <au:capability>
+	            <comment>This allows running action/ringringer</comment>
+	            <xpath>/action/ringringer</xpath>
+	            <get>self</get>
+	            <iss>https://igor.local:9333/issuer</iss>
+	            <aud>https://boom.local:9333/data</aud>
+	            <cid>276478EE-AF3B-4928-BE04-069BCA6B4BD0</cid>
+	        </au:capability>
+	        <au:capability>
+	            <comment>This allows running action/ringringer</comment>
+	            <xpath>/action/ringringer</xpath>
+	            <get>self</get>
+	            <iss>https://igor.local:9333/issuer</iss>
+	            <aud>https://igor.local:9333/data</aud>
+	            <cid>1B79E63F-2C8F-439F-A0BE-A2C18C91FD4C</cid>
 	        </au:capability>
 	        <plugindata>
                 <ble>
@@ -253,7 +283,7 @@
 	            <xpath>/data/environment/messages</xpath>
 	            <post>child</post>
 	        </au:capability>
-		    <notBefore>1516145408</notBefore>
+		    <notBefore>1516405340</notBefore>
 		</action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
@@ -290,7 +320,7 @@
 			<condition>not(string(/data/environment/night))</condition>
 			<url>/pluginscripts/say/message?args={.}</url>
 			<representing>services/say</representing>
-		    <notBefore>1516310240</notBefore>
+		    <notBefore>1516405340</notBefore>
 		</action>
 	    <action>
             <au:capability>
@@ -314,7 +344,7 @@
 			<url>/internal/save</url>
 			<representing>igor/save</representing>
 			<xpath>/data/plugindata//* | /data/actions/* | /data/triggers/* | /data/identities//* | /data/sandbox/*</xpath>
-		    <notBefore>1516145468</notBefore>
+		    <notBefore>1516405400</notBefore>
 		</action>
         <action>
             <name>cleanup</name>
@@ -345,7 +375,7 @@
 	            <xpath>/data/environment/night</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1516310240</notBefore>
+		    <notBefore>1516405340</notBefore>
 		</action>
 		<action>
             <name>checkLate</name>
@@ -359,7 +389,7 @@
 	            <xpath>/data/environment/latereminder</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1516310240</notBefore>
+		    <notBefore>1516405340</notBefore>
 		</action>
 		<action>
             <name>checkMorning</name>
@@ -373,7 +403,7 @@
 	            <xpath>/data/environment/morninggreeting</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1516310240</notBefore>
+		    <notBefore>1516405340</notBefore>
 		</action>
 		<action>
 			<name>updatePeople</name>
@@ -411,7 +441,7 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=internet&amp;ip=google.com.</url>
 			<aggregate>true</aggregate>
-		    <notBefore>1516310240</notBefore>
+		    <notBefore>1516405340</notBefore>
 		</action>
 		<action>
             <au:capability>
@@ -430,14 +460,14 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=igor&amp;service=igor/web&amp;ip={/data/services/igor/host}&amp;port={/data/services/igor/port}</url>
 			<aggregate>true</aggregate>
-			<notBefore>1516310240</notBefore>
+			<notBefore>1516405340</notBefore>
 		</action>
 		<action>
 			<name>systemHealth</name>
 			<interval>60</interval>
 			<xpath>/data/status/*/*/errorMessage</xpath>
 			<url>/plugin/systemHealth</url>
-			<notBefore>1516310240</notBefore>
+			<notBefore>1516405340</notBefore>
 			<aggregate>true</aggregate>
 		</action>
         <action>
@@ -502,7 +532,7 @@
 			<interval>60</interval>
 			<url>/pluginscripts/ble/pull</url>
 			<aggregate>true</aggregate>
-			<notBefore>1516145408</notBefore>
+			<notBefore>1516405340</notBefore>
 		</action>
 		<action>
 			<au:capability>
@@ -580,6 +610,16 @@
 	        </au:capability>
 	    </au:unusedCapabilities>
 	    <au:sharedKeys>
+	    	<au:sharedKey>
+	            <iss>https://igor.local:9333/issuer</iss>
+	            <aud>https://igor.local:9333/data</aud>
+	            <externalKey>igorissuersharedkey</externalKey>
+	    	</au:sharedKey>
+	    	<au:sharedKey>
+	            <iss>https://igor.local:9333/issuer</iss>
+	            <aud>https://boom.local:9333/data</aud>
+	            <externalKey>igorissuersharedkey</externalKey>
+	    	</au:sharedKey>
 	    	<au:sharedKey>
 	            <iss>http://igor.local:9333/issuer</iss>
 	            <aud>http://jack08.local</aud>
