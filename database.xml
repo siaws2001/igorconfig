@@ -21,6 +21,14 @@
 			    
 			    </message><message>The time is now 11 hours and 19 minutes.
 			    
+			    </message><message>The time is now 12 hours and 57 minutes.
+			    
+			    </message><message>The time is now 13 hours and 8 minutes.
+			    
+			    </message><message>The time is now 13 hours and 9 minutes.
+			    
+			    </message><message>The time is now 13 hours and 59 minutes.
+			    
 			    </message></messages>
 		<devices/>
 		<lights/>
@@ -50,7 +58,7 @@
                 <lastsuccess>1515076154.56</lastsuccess>
                 <ignoreerrorsuntil/>
                 <errormessage/>
-            <lastActivity>1516309915.88</lastActivity><lastSuccess>1516309915.88</lastSuccess><ignoreErrorsUntil/><errorMessage/></web>
+            <lastActivity>1517404153.28</lastActivity><lastSuccess>1517404153.28</lastSuccess><ignoreErrorsUntil/><errorMessage/></web>
         </igor>
 		<sensors>
 		    <ble><alive>true</alive><lastActivity>1516145410.8</lastActivity><lastFailure>1515415772.01</lastFailure><lastSuccess>1516145410.8</lastSuccess><ignoreErrorsUntil/><errorMessage/></ble>
@@ -74,27 +82,27 @@
 		    </announceTime>
 		    <internet>
 		        <alive>true</alive>
-		        <lastActivity>1516309914.97</lastActivity>
-		        <lastSuccess>1516309914.97</lastSuccess>
+		        <lastActivity>1517404151.55</lastActivity>
+		        <lastSuccess>1517404151.55</lastSuccess>
 		        <ignoreErrorsUntil/>
 		        <errorMessage/>
 		    </internet>
 		<say><alive/><lastActivity>1516280253.03</lastActivity><lastFailure>1516280253.03</lastFailure><errorMessage>502 Command /home/jack/.igor/plugins/say/scripts/message.sh exited with status code=1: For speech output Install speak, flite or festival if you do not have say</errorMessage></say></services>
 	</status>
 	<sensors>
-		<ble><lastActivity>1516145409.6</lastActivity><bleDevice><available>true</available><bdaddr_type>public</bdaddr_type><advertisements><unknown_0x16>9ffe0000000000000000000000000000000000000000</unknown_0x16><unknown_0x03>9ffe</unknown_0x03></advertisements><raw_advertisements>03039ffe17169ffe0000000000000000000000000000000000000000</raw_advertisements><lastSeen>1516145409.55</lastSeen><address>a4:77:33:c0:5d:8f</address><rssi>-81</rssi><raw_evt_type>2</raw_evt_type><firstSeen>1516141857.01</firstSeen></bleDevice><bleDevice><available>true</available><bdaddr_type>public</bdaddr_type><advertisements><unknown_0x16>9ffe02316c4c4570704a654c337700000161015801db</unknown_0x16><unknown_0x03>9ffe</unknown_0x03></advertisements><raw_advertisements>03039ffe17169ffe02316c4c4570704a654c337700000161015801db</raw_advertisements><lastSeen>1516145409.49</lastSeen><address>54:60:09:de:87:55</address><rssi>-77</rssi><raw_evt_type>2</raw_evt_type><firstSeen>1516141857.35</firstSeen></bleDevice></ble>
+		<ble><lastActivity>1517404151.56</lastActivity><bleDevice><available>true</available><raw_advertisements>02011a0aff4c0010050b10b709a1</raw_advertisements><advertisements><flags><simultaneous_le_bredr_c>true</simultaneous_le_bredr_c><le_general_discoverable>true</le_general_discoverable><simultaneous_le_bredr_h>true</simultaneous_le_bredr_h></flags><manufacturer_specific_data><raw>10050b10b709a1</raw><manufacturerID>76</manufacturerID></manufacturer_specific_data></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1517404147.27</lastSeen><address>7c:11:d5:95:4d:f0</address><rssi>-100</rssi><firstSeen>1517404063.11</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>02010403030f1817ff5d01011bade23a6617972a048558013504ff40640253</raw_advertisements><advertisements><unknown_0x03>0f18</unknown_0x03><flags><bredr_not_supported>true</bredr_not_supported></flags><nearable><major>26135</major><accelerometer><y>-0.015625</y><x>0.0625</x><z>1.0</z></accelerometer><is_moving/><temp>21.5</temp><power>3</power><version>1</version><voltage>2.98768328446</voltage><current_motion_state>2160</current_motion_state><previous_motion_state>2</previous_motion_state><minor>38698</minor><channel>5</channel><uuid>d0d3fa86ca7645ec9bd96af41bade23a</uuid></nearable></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1517404131.34</lastSeen><address>f6:17:4f:a0:33:98</address><rssi>-81</rssi><raw_evt_type>3</raw_evt_type><firstSeen>1517404131.34</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>0201041aff4c000215d0d3fa86ca7645ec9bd96af41bade23a6617972abc</raw_advertisements><advertisements><ibeacon><major>26135</major><minor>38698</minor><uuid>d0d3fa86-ca76-45ec-9bd9-6af41bade23a</uuid><power>-68</power></ibeacon><flags><bredr_not_supported>true</bredr_not_supported></flags></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1517404133.95</lastSeen><address>f6:6d:28:9d:9f:98</address><rssi>-91</rssi><raw_evt_type>3</raw_evt_type><firstSeen>1517404133.95</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>02010607ff4c0010020b00</raw_advertisements><advertisements><flags><le_general_discoverable>true</le_general_discoverable><bredr_not_supported>true</bredr_not_supported></flags><manufacturer_specific_data><raw>10020b00</raw><manufacturerID>76</manufacturerID></manufacturer_specific_data></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1517404151.44</lastSeen><address>71:44:5f:76:e8:f1</address><rssi>-74</rssi><firstSeen>1517403142.57</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>02010403030f1817ff5d010167e46ceb65a80c74040158a1adfc0541630063</raw_advertisements><advertisements><unknown_0x03>0f18</unknown_0x03><flags><bredr_not_supported>true</bredr_not_supported></flags><nearable><major>26024</major><accelerometer><y>0.078125</y><x>-0.0625</x><z>1.015625</z></accelerometer><is_moving/><temp>21.5</temp><power>3</power><version>1</version><voltage>0</voltage><current_motion_state>2100</current_motion_state><previous_motion_state>0</previous_motion_state><minor>3188</minor><channel>6</channel><uuid>d0d3fa86ca7645ec9bd96af467e46ceb</uuid></nearable></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1517404142.78</lastSeen><address>f7:2e:c7:a6:20:38</address><rssi>-83</rssi><raw_evt_type>3</raw_evt_type><firstSeen>1517404142.78</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>02010403030f1817ff5d010167e46ceb65a80c74040158a1adfc0441630063</raw_advertisements><advertisements><unknown_0x03>0f18</unknown_0x03><flags><bredr_not_supported>true</bredr_not_supported></flags><nearable><major>26024</major><accelerometer><y>0.0625</y><x>-0.0625</x><z>1.015625</z></accelerometer><is_moving/><temp>21.5</temp><power>3</power><version>1</version><voltage>0</voltage><current_motion_state>2100</current_motion_state><previous_motion_state>0</previous_motion_state><minor>3188</minor><channel>6</channel><uuid>d0d3fa86ca7645ec9bd96af467e46ceb</uuid></nearable></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1517404134.99</lastSeen><address>f7:7c:71:3f:39:38</address><rssi>-83</rssi><raw_evt_type>3</raw_evt_type><firstSeen>1517404134.99</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>02010613ff4c000c0e00e0ffd0566866ac04c7b84f3b19</raw_advertisements><advertisements><flags><le_general_discoverable>true</le_general_discoverable><bredr_not_supported>true</bredr_not_supported></flags><manufacturer_specific_data><raw>0c0e00e0ffd0566866ac04c7b84f3b19</raw><manufacturerID>76</manufacturerID></manufacturer_specific_data></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1517404149.8</lastSeen><address>4c:0e:71:10:5e:2a</address><rssi>-97</rssi><firstSeen>1517403485.97</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>02010403030f1817ff5d01011bade23a6617972a048558013504ff3f640263</raw_advertisements><advertisements><unknown_0x03>0f18</unknown_0x03><flags><bredr_not_supported>true</bredr_not_supported></flags><nearable><major>26135</major><accelerometer><y>-0.015625</y><x>0.0625</x><z>0.984375</z></accelerometer><is_moving/><temp>21.5</temp><power>3</power><version>1</version><voltage>2.98768328446</voltage><current_motion_state>2160</current_motion_state><previous_motion_state>2</previous_motion_state><minor>38698</minor><channel>6</channel><uuid>d0d3fa86ca7645ec9bd96af41bade23a</uuid></nearable></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1517404146.92</lastSeen><address>f6:34:89:ba:09:98</address><rssi>-90</rssi><raw_evt_type>3</raw_evt_type><firstSeen>1517404146.92</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>020105020a000319c1030302e0ff</raw_advertisements><advertisements><unknown_0x0a>00</unknown_0x0a><unknown_0x02>e0ff</unknown_0x02><flags><bredr_not_supported>true</bredr_not_supported><le_limited_discoverable>true</le_limited_discoverable></flags><unknown_0x19>c103</unknown_0x19></advertisements><bdaddr_type>public</bdaddr_type><lastSeen>1517404149.5</lastSeen><address>ff:ff:20:00:14:3f</address><rssi>-63</rssi><firstSeen>1517403516.47</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>0201041aff4c000215d0d3fa86ca7645ec9bd96af467e46ceb65a80c74bc</raw_advertisements><advertisements><ibeacon><major>26024</major><minor>3188</minor><uuid>d0d3fa86-ca76-45ec-9bd9-6af467e46ceb</uuid><power>-68</power></ibeacon><flags><bredr_not_supported>true</bredr_not_supported></flags></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1517404129.8</lastSeen><address>f7:74:f9:86:0a:38</address><rssi>-88</rssi><raw_evt_type>3</raw_evt_type><firstSeen>1517404129.8</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>02011a0aff4c00100503106966f9</raw_advertisements><advertisements><flags><simultaneous_le_bredr_c>true</simultaneous_le_bredr_c><le_general_discoverable>true</le_general_discoverable><simultaneous_le_bredr_h>true</simultaneous_le_bredr_h></flags><manufacturer_specific_data><raw>100503106966f9</raw><manufacturerID>76</manufacturerID></manufacturer_specific_data></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1517404151.45</lastSeen><address>5c:46:8a:38:0e:d5</address><rssi>-79</rssi><firstSeen>1517403519.88</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>02010403030f1817ff5d010167e46ceb65a80c74048558a135fc0441630063</raw_advertisements><advertisements><unknown_0x03>0f18</unknown_0x03><flags><bredr_not_supported>true</bredr_not_supported></flags><nearable><major>26024</major><accelerometer><y>0.0625</y><x>-0.0625</x><z>1.015625</z></accelerometer><is_moving/><temp>21.5</temp><power>3</power><version>1</version><voltage>2.98768328446</voltage><current_motion_state>2100</current_motion_state><previous_motion_state>0</previous_motion_state><minor>3188</minor><channel>6</channel><uuid>d0d3fa86ca7645ec9bd96af467e46ceb</uuid></nearable></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1517404137.59</lastSeen><address>f7:34:d5:fd:88:38</address><rssi>-82</rssi><raw_evt_type>3</raw_evt_type><firstSeen>1517404137.59</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>02010607ff4c0010020b00</raw_advertisements><advertisements><flags><le_general_discoverable>true</le_general_discoverable><bredr_not_supported>true</bredr_not_supported></flags><manufacturer_specific_data><raw>10020b00</raw><manufacturerID>76</manufacturerID></manufacturer_specific_data></advertisements><bdaddr_type>public</bdaddr_type><lastSeen>1517404148.78</lastSeen><address>78:4f:43:55:65:c6</address><rssi>-98</rssi><firstSeen>1517403141.4</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>02010403030f1817ff5d010167e46ceb65a80c74048558a135fc0441630073</raw_advertisements><advertisements><unknown_0x03>0f18</unknown_0x03><flags><bredr_not_supported>true</bredr_not_supported></flags><nearable><major>26024</major><accelerometer><y>0.0625</y><x>-0.0625</x><z>1.015625</z></accelerometer><is_moving/><temp>21.5</temp><power>3</power><version>1</version><voltage>2.98768328446</voltage><current_motion_state>2100</current_motion_state><previous_motion_state>0</previous_motion_state><minor>3188</minor><channel>7</channel><uuid>d0d3fa86ca7645ec9bd96af467e46ceb</uuid></nearable></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1517404124.61</lastSeen><address>f7:4c:71:27:d9:38</address><rssi>-89</rssi><raw_evt_type>3</raw_evt_type><firstSeen>1517404124.61</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>1eff0600010920000b0222e4910330a5cc65349a4b6ecc0f0b1fa240ecda06</raw_advertisements><advertisements><manufacturer_specific_data><raw>010920000b0222e4910330a5cc65349a4b6ecc0f0b1fa240ecda06</raw><manufacturerID>6</manufacturerID></manufacturer_specific_data></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1517404134.47</lastSeen><address>17:2a:f6:d5:ce:40</address><rssi>-95</rssi><raw_evt_type>3</raw_evt_type><firstSeen>1517403504.04</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>02010403030f1817ff5d01011bade23a6617972a04015831af04ff3f640273</raw_advertisements><advertisements><unknown_0x03>0f18</unknown_0x03><flags><bredr_not_supported>true</bredr_not_supported></flags><nearable><major>26135</major><accelerometer><y>-0.015625</y><x>0.0625</x><z>0.984375</z></accelerometer><is_moving/><temp>21.5</temp><power>3</power><version>1</version><voltage>0</voltage><current_motion_state>2160</current_motion_state><previous_motion_state>2</previous_motion_state><minor>38698</minor><channel>7</channel><uuid>d0d3fa86ca7645ec9bd96af41bade23a</uuid></nearable></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1517404149.52</lastSeen><address>f6:20:2a:30:b6:98</address><rssi>-95</rssi><raw_evt_type>3</raw_evt_type><firstSeen>1517404149.52</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>02010403030f1817ff5d01011bade23a6617972a04015831af04ff40630263</raw_advertisements><advertisements><unknown_0x03>0f18</unknown_0x03><flags><bredr_not_supported>true</bredr_not_supported></flags><nearable><major>26135</major><accelerometer><y>-0.015625</y><x>0.0625</x><z>1.0</z></accelerometer><is_moving/><temp>21.5</temp><power>3</power><version>1</version><voltage>0</voltage><current_motion_state>2100</current_motion_state><previous_motion_state>2</previous_motion_state><minor>38698</minor><channel>6</channel><uuid>d0d3fa86ca7645ec9bd96af41bade23a</uuid></nearable></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1517404128.75</lastSeen><address>f6:7b:3b:38:ff:98</address><rssi>-87</rssi><raw_evt_type>3</raw_evt_type><firstSeen>1517404128.75</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>02010403030f1817ff5d01011bade23a6617972a048558013504ff40630273</raw_advertisements><advertisements><unknown_0x03>0f18</unknown_0x03><flags><bredr_not_supported>true</bredr_not_supported></flags><nearable><major>26135</major><accelerometer><y>-0.015625</y><x>0.0625</x><z>1.0</z></accelerometer><is_moving/><temp>21.5</temp><power>3</power><version>1</version><voltage>2.98768328446</voltage><current_motion_state>2100</current_motion_state><previous_motion_state>2</previous_motion_state><minor>38698</minor><channel>7</channel><uuid>d0d3fa86ca7645ec9bd96af41bade23a</uuid></nearable></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1517404126.15</lastSeen><address>f6:2c:b2:1c:c9:98</address><rssi>-89</rssi><raw_evt_type>3</raw_evt_type><firstSeen>1517404126.15</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>02010403030f1817ff5d01011bade23a6617972a04015831af04ff3f640253</raw_advertisements><advertisements><unknown_0x03>0f18</unknown_0x03><flags><bredr_not_supported>true</bredr_not_supported></flags><nearable><major>26135</major><accelerometer><y>-0.015625</y><x>0.0625</x><z>0.984375</z></accelerometer><is_moving/><temp>21.5</temp><power>3</power><version>1</version><voltage>0</voltage><current_motion_state>2160</current_motion_state><previous_motion_state>2</previous_motion_state><minor>38698</minor><channel>5</channel><uuid>d0d3fa86ca7645ec9bd96af41bade23a</uuid></nearable></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1517404136.54</lastSeen><address>f6:40:ed:56:b2:98</address><rssi>-80</rssi><raw_evt_type>3</raw_evt_type><firstSeen>1517404136.54</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>02010403030f1817ff5d010167e46ceb65a80c74040158a1adfc0541640063</raw_advertisements><advertisements><unknown_0x03>0f18</unknown_0x03><flags><bredr_not_supported>true</bredr_not_supported></flags><nearable><major>26024</major><accelerometer><y>0.078125</y><x>-0.0625</x><z>1.015625</z></accelerometer><is_moving/><temp>21.5</temp><power>3</power><version>1</version><voltage>0</voltage><current_motion_state>2160</current_motion_state><previous_motion_state>0</previous_motion_state><minor>3188</minor><channel>6</channel><uuid>d0d3fa86ca7645ec9bd96af467e46ceb</uuid></nearable></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1517404147.98</lastSeen><address>f7:4e:c0:c3:86:38</address><rssi>-84</rssi><raw_evt_type>3</raw_evt_type><firstSeen>1517404147.98</firstSeen></bleDevice></ble>
 	</sensors>
-	<sensors/>
 	<devices>
 	</devices>
 	<services>
-	    <igor><protocol>https</protocol><url>https://igor2.local:9333/data</url><host>igor2.local</host><version>0.6</version><startTime>1517397593</startTime><fingerprint>75:F7:33:89:88:39:14:DB:21:B9:70:59:33:C3:9C:CF:25:13:51:B7</fingerprint><rebootCount>21</rebootCount><ticker>0</ticker><port>9333</port></igor>
+	    <igor><protocol>https</protocol><url>https://igor2.local:9333/data</url><host>igor2.local</host><version>0.6</version><startTime>1517407160</startTime><fingerprint>75:F7:33:89:88:39:14:DB:21:B9:70:59:33:C3:9C:CF:25:13:51:B7</fingerprint><rebootCount>25</rebootCount><ticker>0</ticker><port>9333</port></igor>
 	</services>
 	<people/>
 	<identities>
 	    <pauline>
 	        <au:capability>
 	            <comment>This allows reading environment</comment>
+	            <id>id-pauline-readenv</id>
 	            <xpath>/data/environment</xpath>
 	            <get>descendant-or-self</get>
 	            <put/>
@@ -103,6 +111,7 @@
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows reading status</comment>
+	            <id>id-pauline-readstatus</id>
 	            <xpath>/data/status</xpath>
 	            <get>descendant-or-self</get>
 	            <put/>
@@ -111,6 +120,7 @@
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows reading igor data</comment>
+	            <id>id-pauline-readigor</id>
 	            <xpath>/data/services/igor</xpath>
 	            <get>descendant-or-self</get>
 	            <put/>
@@ -119,6 +129,7 @@
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows reading static web pages</comment>
+	            <id>id-pauline-readstatic</id>
 	            <xpath>/static</xpath>
 	            <get>child</get>
 	            <put/>
@@ -127,6 +138,7 @@
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows all access to own data</comment>
+	            <id>id-pauline-readself</id>
 	            <xpath>/data/identities/pauline</xpath>
 	            <get>descendant-or-self</get>
 	            <put>descendant</put>
@@ -135,6 +147,7 @@
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows reading identity existence, and adding or deleting users</comment>
+	            <id>id-pauline-readidentities</id>
 	            <xpath>/identities</xpath>
 	            <get>self</get>
 	            <put/>
@@ -143,6 +156,7 @@
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows running action/ringringer</comment>
+	            <id>id-pauline-ringringer</id>
 	            <xpath>/action/ringringer</xpath>
 	            <get>self</get>
 	            <iss>https://igor.local:9333/issuer</iss>
@@ -171,6 +185,7 @@
             <encryptedPassword>$pbkdf2-sha256$29000$WQvhHIPQei9F6P0fY8xZCw$KlxQnmW0.qclx0vLKuamweCRoo8b.1QMnLfZUM2yHI8</encryptedPassword>
 	        <au:capability>
 	            <comment>This allows reading environment</comment>
+	            <id>id-jack-readenv</id>
 	            <xpath>/data/environment</xpath>
 	            <get>descendant-or-self</get>
 	            <put/>
@@ -179,6 +194,7 @@
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows reading status</comment>
+	            <id>id-jack-readstatus</id>
 	            <xpath>/data/status</xpath>
 	            <get>descendant-or-self</get>
 	            <put/>
@@ -187,6 +203,7 @@
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows reading igor data</comment>
+	            <id>id-jack-readigor</id>
 	            <xpath>/data/services/igor</xpath>
 	            <get>descendant-or-self</get>
 	            <put/>
@@ -195,6 +212,7 @@
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows reading static web pages</comment>
+	            <id>id-jack-readstatic</id>
 	            <xpath>/static</xpath>
 	            <get>child</get>
 	            <put/>
@@ -203,6 +221,7 @@
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows all access to own data</comment>
+	            <id>id-jack-readself</id>
 	            <xpath>/data/identities/jack</xpath>
 	            <get>descendant-or-self</get>
 	            <put>descendant</put>
@@ -211,6 +230,7 @@
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows running action/ringringer</comment>
+	            <id>id-jack-ringringer</id>
 	            <xpath>/action/ringringer</xpath>
 	            <get>self</get>
 	            <iss>https://igor.local:9333/issuer</iss>
@@ -219,6 +239,7 @@
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows running action/ringringer</comment>
+	            <id>id-jack-ringringer-2</id>
 	            <xpath>/action/ringringer</xpath>
 	            <get>self</get>
 	            <iss>https://igor.local:9333/issuer</iss>
@@ -249,6 +270,7 @@
             <encryptedPassword>$pbkdf2-sha256$29000$FKK0VsqZk3KOkTKmFEJISQ$TgZO5yhvrztQDtT2A0HQx5jzPvFcb.QFDPJuTNJUyO0</encryptedPassword>
 	        <au:capability>
 	            <comment>This allows everything. Dangerous!</comment>
+	            <id>id-admin-readall</id>
 	            <xpath>/data</xpath>
 	            <get>descendant-or-self</get>
 	            <put>descendant-or-self</put>
@@ -257,6 +279,7 @@
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows reading static web pages</comment>
+	            <id>id-admin-readstatic</id>
 	            <xpath>/static</xpath>
 	            <get>child</get>
 	            <put/>
@@ -265,11 +288,13 @@
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows all actions. Dangerous!</comment>
+	            <id>id-admin-allactions</id>
 	            <xpath>/action</xpath>
 	            <get>descendant</get>
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows all internal actions. Dangerous!</comment>
+	            <id>id-admin-internalactions</id>
 	            <xpath>/internal</xpath>
 	            <get>descendant</get>
 	        </au:capability>
@@ -278,11 +303,13 @@
 	<actions>
         <au:capability>
             <comment>This allows running any plugin</comment>
+            <id>id-anyaction-anyplugin</id>
             <xpath>/plugin</xpath>
             <get>descendant</get>
         </au:capability>
         <au:capability>
             <comment>This allows running any pluginscript</comment>
+            <id>id-anyaction-anypluginscript</id>
             <xpath>/pluginscripts</xpath>
             <get>descendant</get>
         </au:capability>
@@ -300,10 +327,11 @@
 			</data>
 	        <au:capability>
 	            <comment>This allows setting the variable</comment>
+                <id>id-action-setmessage</id>
 	            <xpath>/data/environment/messages</xpath>
 	            <post>child</post>
 	        </au:capability>
-		    <notBefore>1517397593</notBefore>
+		    <notBefore>1517407160</notBefore>
 		</action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
@@ -315,20 +343,22 @@
             <multiple>True</multiple>
 	        <au:capability>
 	            <comment>This allows setting the variable</comment>
+                <id>id-action-bledevice-setmessage</id>
 	            <xpath>/data/environment/messages</xpath>
 	            <post>child</post>
 	        </au:capability>
             <notBefore>1516145410</notBefore>
         </action>
 	    <action>
-	    
             <au:capability>
                 <comment>This allows running any pluginscript</comment>
+                <id>id-action-messages-pluginscript</id>
                 <xpath>/pluginscripts</xpath>
                 <get>descendant</get>
             </au:capability>
 	        <au:capability>
 	            <comment>This allows reading environment</comment>
+                <id>id-action-messages-readenv</id>
 	            <xpath>/data/environment</xpath>
 	            <get>descendant-or-self</get>
 	            <put/>
@@ -340,21 +370,23 @@
 			<condition>not(string(/data/environment/night))</condition>
 			<url>/pluginscripts/say/message?args={.}</url>
 			<representing>services/say</representing>
-		    <notBefore>1517397597</notBefore>
+		    <notBefore>1517407165</notBefore>
 		</action>
 	    <action>
             <au:capability>
                 <comment>This allows firing /internal/started</comment>
+                <id>id-action-started-fire</id>
                 <xpath>/internal/started</xpath>
                 <get>self</get>
             </au:capability>
 	        <name>start</name>
 	        <url>/internal/started</url>
-	        <notBefore>1517397596</notBefore>
+	        <notBefore>1517407164</notBefore>
 	    </action>
 		<action>
             <au:capability>
                 <comment>This allows firing /internal/save</comment>
+                <id>id-action-save-save</id>
                 <xpath>/internal/save</xpath>
                 <get>self</get>
             </au:capability>
@@ -364,7 +396,7 @@
 			<url>/internal/save</url>
 			<representing>igor/save</representing>
 			<xpath>/data/plugindata//* | /data/actions/* | /data/triggers/* | /data/identities//* | /data/sandbox/*</xpath>
-		    <notBefore>1517397653</notBefore>
+		    <notBefore>1517407220</notBefore>
 		</action>
         <action>
             <name>cleanup</name>
@@ -372,6 +404,7 @@
             <url>/data/environment/messages/message[position()&lt;last()]</url>
 	        <au:capability>
 	            <comment>This allows setting the variable</comment>
+                <id>id-action-cleanup-delete</id>
 	            <xpath>/data/environment/messages</xpath>
 	            <delete>child</delete>
 	        </au:capability>
@@ -392,10 +425,11 @@
             <data>{igor_hours_from_dateTime(igor_dateTime()) &lt; 8 or igor_hours_from_dateTime(igor_dateTime()) &gt;= 23}</data>
 	        <au:capability>
 	            <comment>This allows setting the variable</comment>
+                <id>id-action-checknight-night</id>
 	            <xpath>/data/environment/night</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1517397593</notBefore>
+		    <notBefore>1517407160</notBefore>
 		</action>
 		<action>
             <name>checkLate</name>
@@ -406,10 +440,11 @@
             <data>{igor_hours_from_dateTime(igor_dateTime()) &lt; 2 or igor_hours_from_dateTime(igor_dateTime()) &gt;= 23}</data>
 	        <au:capability>
 	            <comment>This allows setting the variable</comment>
+                <id>id-action-checklate-latereminder</id>
 	            <xpath>/data/environment/latereminder</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1517397593</notBefore>
+		    <notBefore>1517407160</notBefore>
 		</action>
 		<action>
             <name>checkMorning</name>
@@ -420,10 +455,11 @@
             <data>{igor_hours_from_dateTime(igor_dateTime()) &lt; 9}</data>
 	        <au:capability>
 	            <comment>This allows setting the variable</comment>
+                <id>id-action-checkmorngin-morning</id>
 	            <xpath>/data/environment/morninggreeting</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1517397593</notBefore>
+		    <notBefore>1517407160</notBefore>
 		</action>
 		<action>
 			<name>updatePeople</name>
@@ -461,16 +497,18 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=internet&amp;ip=google.com.</url>
 			<aggregate>true</aggregate>
-		    <notBefore>1517397593</notBefore>
+		    <notBefore>1517407160</notBefore>
 		</action>
 		<action>
             <au:capability>
                 <comment>This allows running any plugin</comment>
+                <id>id-action-lan-plugin</id>
                 <xpath>/plugin</xpath>
                 <get>descendant</get>
             </au:capability>
 	        <au:capability>
 	            <comment>This allows reading igor data</comment>
+                <id>id-action-lan-readigor</id>
 	            <xpath>/data/services/igor</xpath>
 	            <get>descendant-or-self</get>
 	            <put/>
@@ -480,14 +518,14 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=igor&amp;service=igor/web&amp;ip={/data/services/igor/host}&amp;port={/data/services/igor/port}</url>
 			<aggregate>true</aggregate>
-			<notBefore>1517397593</notBefore>
+			<notBefore>1517407160</notBefore>
 		</action>
 		<action>
 			<name>systemHealth</name>
 			<interval>60</interval>
 			<xpath>/data/status/*/*/errorMessage</xpath>
 			<url>/plugin/systemHealth</url>
-			<notBefore>1517397593</notBefore>
+			<notBefore>1517407160</notBefore>
 			<aggregate>true</aggregate>
 		</action>
         <action>
@@ -499,6 +537,7 @@
             <data>Someone rang the bell beep beep!</data>
 	        <au:capability>
 	            <comment>This allows setting the variable</comment>
+                <id>id-action-bellbutton-messages</id>
 	            <xpath>/data/environment/messages</xpath>
 	            <post>child</post>
 	        </au:capability>
@@ -513,6 +552,7 @@
             <data>You just turned the bell button</data>
 	        <au:capability>
 	            <comment>This allows setting the variable</comment>
+                <id>id-action-turnbellbutton-messages</id>
 	            <xpath>/data/environment/messages</xpath>
 	            <post>child</post>
 	        </au:capability>
@@ -522,22 +562,16 @@
             <name>ringringer</name>
 	        <au:capability>
 	            <comment>This allows ringing the ringer on the iotsa buzzer</comment>
+                <id>id-action-ringringer-alarm</id>
 	            <iss>http://igor.local:9333/issuer</iss>
 	            <aud>http://jack08.local</aud>
 	            <right>alarm</right>
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows reading plugin data</comment>
+                <id>id-action-ringringer-readplugindata</id>
 	            <xpath>/data/plugindata/ringer</xpath>
 	            <get>descendant-or-self</get>
-	        </au:capability>
-	        <au:capability>
-	            <comment>This allows accessing ringer plugin data</comment>
-	            <xpath>/data/plugindata/ringer</xpath>
-	            <get>descendant-or-self</get>
-	            <put/>
-	            <post/>
-	            <delete/>
 	        </au:capability>
             <url>http://{/data/plugindata/ringer/host}/alarm?alarm=1</url>
             <representing>devices/ringer</representing>
@@ -546,17 +580,19 @@
 		<action>
 			<au:capability>
                 <comment>This allows running any pluginscript</comment>
+                <id>id-action-blepull-pluginscript</id>
                 <xpath>/pluginscripts</xpath>
                 <get>descendant</get>
             </au:capability>
 			<interval>60</interval>
 			<url>/pluginscripts/ble/pull</url>
 			<aggregate>true</aggregate>
-			<notBefore>1517397593</notBefore>
+			<notBefore>1517407160</notBefore>
 		</action>
 		<action>
 			<au:capability>
 	            <comment>This allows putting variable into environment/devices</comment>
+                <id>id-action-bledata-devices</id>
 	            <xpath>/data/environment/devices</xpath>
 	            <get>descendant-or-self</get>
 	            <put>descendant</put>
@@ -564,17 +600,26 @@
 	            <delete/>
 	        </au:capability>
 			<au:capability>
+	            <comment>This allows getting /data/sensors/ble</comment>
+                <id>id-action-bledata-sensors</id>
+	            <xpath>/data/sensors/ble</xpath>
+	            <get>descendant-or-self</get>
+	        </au:capability>
+			<au:capability>
 	            <comment>This allows getting plguindata/ble for user pauline</comment>
+                <id>id-action-bledata-pauline</id>
 	            <xpath>/data/identities/pauline/plugindata/ble</xpath>
 	            <get>descendant-or-self</get>
 	        </au:capability>
 			<au:capability>
 	            <comment>This allows getting plguindata/ble for user jack</comment>
+                <id>id-action-bledata-jack</id>
 	            <xpath>/data/identities/jack/plugindata/ble</xpath>
 	            <get>descendant-or-self</get>
 	        </au:capability>
 			<au:capability>
 	            <comment>This allows getting plguindata/ble for user steven</comment>
+                <id>id-action-bledata-steven</id>
 	            <xpath>/data/identities/steven/plugindata/ble</xpath>
 	            <get>descendant-or-self</get>
 	        </au:capability>
@@ -598,11 +643,23 @@
 		<ringer>
 			<host>jack08.local</host>
 		</ringer>
+		<ble>
+	        <au:capability>
+	            <comment>This allows accessing sensors/ble</comment>
+                <id>id-plugin-ble-self</id>
+	            <xpath>/data/sensors/ble</xpath>
+	            <get>descendant-or-self</get>
+	            <put>descendant</put>
+	            <post>descendant</post>
+	            <delete>descendant</delete>
+	        </au:capability>
+		</ble>
 	</plugindata>
 	<au:access>
 	    <au:defaultCapabilities>
 	        <au:capability>
 	            <comment>This allows reading environment</comment>
+                <id>id-default-environment</id>
 	            <xpath>/data/environment</xpath>
 	            <get>descendant-or-self</get>
 	            <put/>
@@ -611,6 +668,7 @@
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows reading status</comment>
+                <id>id-default-status</id>
 	            <xpath>/data/status</xpath>
 	            <get>descendant-or-self</get>
 	            <put/>
@@ -619,6 +677,7 @@
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows reading igor data</comment>
+                <id>id-default-igor</id>
 	            <xpath>/data/services/igor</xpath>
 	            <get>descendant-or-self</get>
 	            <put/>
@@ -627,6 +686,7 @@
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows reading static web pages</comment>
+                <id>id-default-static</id>
 	            <xpath>/static</xpath>
 	            <get>child</get>
 	            <put/>
@@ -637,6 +697,7 @@
 	    <au:unusedCapabilities>
 	        <au:capability>
 	            <comment>This capabiliy allows everything</comment>
+                <id>id-dangerous-everything</id>
 	            <xpath>/data</xpath>
 	            <get>descendant-or-self</get>
 	            <put>descendant</put>
