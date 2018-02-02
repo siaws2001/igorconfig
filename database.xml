@@ -319,7 +319,11 @@
 	            <xpath>/data/environment/messages</xpath>
 	            <post>child</post>
 	        </au:capability>
+<<<<<<< HEAD
 		    <notBefore>1517578037</notBefore>
+=======
+		    <notBefore>1517440709</notBefore>
+>>>>>>> 59f1bcecd17fc4096dbde9876815aeb897a9a618
 		</action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
@@ -605,6 +609,7 @@
             </au:capability>
 			<interval>60</interval>
 			<url>/pluginscripts/ble/pull</url>
+			<representing>sensors/ble</representing>
 			<aggregate>true</aggregate>
 			<notBefore>1517578037</notBefore>
 		</action>
