@@ -1,8 +1,8 @@
 <?xml version="1.0" ?><data xmlns:au="http://jackjansen.nl/igor/authentication">
 	<environment>
-		<morninggreeting/>
-		<latereminder/>
-		<night/>
+		<morninggreeting></morninggreeting>
+		<latereminder></latereminder>
+		<night></night>
 		<location/>
 		<energy/>
 		<weather/>
@@ -10,11 +10,15 @@
 		    <count>0</count>
 		</people>
         <messages>
-        </messages>
+        <message>The time is now 13 hours and 38 minutes.
+			    
+			    </message><message>The time is now 13 hours and 40 minutes.
+			    
+			    </message></messages>
 		<devices><keys.jack/><keys.pauline/><keys.steven/></devices>
 		<lights/>
 		<systemHealth>
-			<messages><ringer>ConnectionError: HTTPConnectionPool(host='jack08.local', port=80): Max retries exceeded with url: /alarm?alarm=1 (Caused by NewConnectionError('&lt;requests.packages.urllib3.connection.HTTPConnection object at 0x6df4c9f0&gt;: Failed to establish a new connection: [Errno -2] Name or service not known',))</ringer></messages>
+			<messages><ringer>ConnectionError: HTTPConnectionPool(host='jack08.local', port=80): Max retries exceeded with url: /alarm?alarm=1 (Caused by NewConnectionError('&lt;requests.packages.urllib3.connection.HTTPConnection object at 0x6df4c9f0&gt;: Failed to establish a new connection: [Errno -2] Name or service not known',))</ringer><ble>502 Command /home/jack/.igor/plugins/ble/scripts/pull.sh exited with status code=1: /usr/local/bin/igorVar: http://localhost:8081/ble: Connection refused</ble></messages>
 		</systemHealth>
 	</environment>
 	<status>
@@ -25,24 +29,24 @@
                 <lastsuccess>1515063013.83</lastsuccess>
                 <ignoreerrorsuntil/>
                 <errormessage/>
-            <lastActivity>1517578039.12</lastActivity><lastSuccess>1517578039.12</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></core>
+            <lastActivity>1517578814.19</lastActivity><lastSuccess>1517578814.19</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></core>
             <save>
                 <alive>true</alive>
                 <lastactivity>1515073813.81</lastactivity>
                 <lastsuccess>1515073813.81</lastsuccess>
                 <ignoreerrorsuntil/>
                 <errormessage/>
-            <lastActivity>1517569012.64</lastActivity><lastSuccess>1517569012.64</lastSuccess><ignoreErrorsUntil/><errorMessage/></save>
+            <lastActivity>1517578824.77</lastActivity><lastSuccess>1517578824.77</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></save>
             <web>
                 <alive>true</alive>
                 <lastactivity>1515076154.56</lastactivity>
                 <lastsuccess>1515076154.56</lastsuccess>
                 <ignoreerrorsuntil/>
                 <errormessage/>
-            <lastActivity>1517572578.85</lastActivity><lastSuccess>1517572578.85</lastSuccess><ignoreErrorsUntil/><errorMessage/></web>
+            <lastActivity>1517578874.05</lastActivity><lastSuccess>1517578874.05</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></web>
         </igor>
 		<sensors>
-		    <ble><alive>true</alive><lastActivity>1516145410.8</lastActivity><lastFailure>1515415772.01</lastFailure><lastSuccess>1516145410.8</lastSuccess><ignoreErrorsUntil/><errorMessage/></ble>
+		    <ble><alive></alive><lastActivity>1517578875.7</lastActivity><lastFailure>1517578875.7</lastFailure><lastSuccess>1516145410.8</lastSuccess><ignoreErrorsUntil/><errorMessage>502 Command /home/jack/.igor/plugins/ble/scripts/pull.sh exited with status code=1: /usr/local/bin/igorVar: http://localhost:8081/ble: Connection refused</errorMessage></ble>
             <button>
                 <alive>true</alive>
                 <lastActivity>1513551158.04</lastActivity>
@@ -55,27 +59,27 @@
 		<services>
 		    <announceTime>
 		        <alive>true</alive>
-		        <lastActivity>1517578051.99</lastActivity>
-		        <lastSuccess>1517578051.99</lastSuccess>
+		        <lastActivity>1517578820.54</lastActivity>
+		        <lastSuccess>1517578820.54</lastSuccess>
 		        <ignoreErrorsUntil></ignoreErrorsUntil>
 		        <errorMessage></errorMessage>
 		    </announceTime>
 		    <internet>
 		        <alive>true</alive>
-		        <lastActivity>1517572571.15</lastActivity>
-		        <lastSuccess>1517572571.15</lastSuccess>
-		        <ignoreErrorsUntil/>
-		        <errorMessage/>
+		        <lastActivity>1517578872.92</lastActivity>
+		        <lastSuccess>1517578872.92</lastSuccess>
+		        <ignoreErrorsUntil></ignoreErrorsUntil>
+		        <errorMessage></errorMessage>
 		    </internet>
-		<say><alive>true</alive><lastActivity>1517578054.17</lastActivity><lastFailure>1516280253.03</lastFailure><errorMessage></errorMessage><lastSuccess>1517578054.17</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil></say></services>
+		<say><alive>true</alive><lastActivity>1517578831.49</lastActivity><lastFailure>1516280253.03</lastFailure><errorMessage></errorMessage><lastSuccess>1517578831.49</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil></say></services>
 	</status>
 	<sensors>
-        <ble></ble>
+        <ble/>
 	</sensors>
 	<devices>
 	</devices>
 	<services>
-	    <igor><protocol>https</protocol><url>https://igor2.local:9333/data</url><host>igor2.local</host><version>0.6</version><startTime>1517578037</startTime><fingerprint>75:F7:33:89:88:39:14:DB:21:B9:70:59:33:C3:9C:CF:25:13:51:B7</fingerprint><rebootCount>39</rebootCount><ticker>0</ticker><port>9333</port></igor>
+	    <igor><protocol>https</protocol><url>https://igor2.local:9333/data</url><host>igor2.local</host><version>0.6</version><startTime>1517578812</startTime><fingerprint>75:F7:33:89:88:39:14:DB:21:B9:70:59:33:C3:9C:CF:25:13:51:B7</fingerprint><rebootCount>41</rebootCount><ticker>0</ticker><port>9333</port></igor>
 	</services>
 	<people>
 	    <jack>
@@ -138,6 +142,15 @@
 	            <get>self</get>
 	            <post>descendant</post>
 	            <delete>descendant</delete>
+	        </au:capability>
+	        <au:capability>
+	            <comment>This allows accessing capability information</comment>
+                <id>id-pauline-capabilities</id>
+	            <xpath>/internal/accessControl</xpath>
+	            <get>child</get>
+	            <put/>
+	            <post/>
+	            <delete/>
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows running action/ringringer</comment>
@@ -214,6 +227,15 @@
 	            <put>descendant</put>
 	            <post>descendant</post>
 	            <delete>descendant</delete>
+	        </au:capability>
+	        <au:capability>
+	            <comment>This allows accessing capability information</comment>
+                <id>id-jack-capabilities</id>
+	            <xpath>/internal/accessControl</xpath>
+	            <get>child</get>
+	            <put/>
+	            <post/>
+	            <delete/>
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows running action/ringringer</comment>
@@ -319,7 +341,7 @@
 	            <xpath>/data/environment/messages</xpath>
 	            <post>child</post>
 	        </au:capability>
-		    <notBefore>1517578037</notBefore>
+		    <notBefore>1517578812</notBefore>
 		</action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
@@ -376,7 +398,7 @@
 			<condition>not(string(/data/environment/night))</condition>
 			<url>/pluginscripts/say/message?args={.}</url>
 			<representing>services/say</representing>
-		    <notBefore>1517578048</notBefore>
+		    <notBefore>1517578820</notBefore>
 		</action>
 	    <action>
             <au:capability>
@@ -387,7 +409,7 @@
             </au:capability>
 	        <name>start</name>
 	        <url>/internal/started</url>
-	        <notBefore>1517578054</notBefore>
+	        <notBefore>1517578816</notBefore>
 	    </action>
 		<action>
             <au:capability>
@@ -402,7 +424,7 @@
 			<url>/internal/save</url>
 			<representing>igor/save</representing>
 			<xpath>/data/plugindata//* | /data/actions/* | /data/triggers/* | /data/identities//* | /data/sandbox/*</xpath>
-		    <notBefore>1517578097</notBefore>
+		    <notBefore>1517578940</notBefore>
 		</action>
         <action>
             <name>cleanup</name>
@@ -435,7 +457,7 @@
 	            <xpath>/data/environment/night</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1517578037</notBefore>
+		    <notBefore>1517578812</notBefore>
 		</action>
 		<action>
             <name>checkLate</name>
@@ -450,7 +472,7 @@
 	            <xpath>/data/environment/latereminder</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1517578037</notBefore>
+		    <notBefore>1517578812</notBefore>
 		</action>
 		<action>
             <name>checkMorning</name>
@@ -465,7 +487,7 @@
 	            <xpath>/data/environment/morninggreeting</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1517578037</notBefore>
+		    <notBefore>1517578812</notBefore>
 		</action>
 		<action>
 			<name>updatePeople</name>
@@ -516,7 +538,7 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=internet&amp;ip=google.com.</url>
 			<aggregate>true</aggregate>
-		    <notBefore>1517578037</notBefore>
+		    <notBefore>1517578872</notBefore>
 		</action>
 		<action>
             <au:capability>
@@ -537,14 +559,14 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=igor&amp;service=igor/web&amp;ip={/data/services/igor/host}&amp;port={/data/services/igor/port}</url>
 			<aggregate>true</aggregate>
-			<notBefore>1517578037</notBefore>
+			<notBefore>1517578873</notBefore>
 		</action>
 		<action>
 			<name>systemHealth</name>
 			<interval>60</interval>
 			<xpath>/data/status/*/*/errorMessage</xpath>
 			<url>/plugin/systemHealth</url>
-			<notBefore>1517578056</notBefore>
+			<notBefore>1517578841</notBefore>
 			<aggregate>true</aggregate>
 		</action>
         <action>
@@ -607,7 +629,7 @@
 			<url>/pluginscripts/ble/pull</url>
 			<representing>sensors/ble</representing>
 			<aggregate>true</aggregate>
-			<notBefore>1517578037</notBefore>
+			<notBefore>1517578873</notBefore>
 		</action>
 		<action>
 			<au:capability>
@@ -664,7 +686,7 @@
 			<url>/data/environment/people/count</url>
 			<mimetype>text/plain</mimetype>
 			<data>{count(/data/people/*[home='true'])}</data>
-			<notBefore>1517578037</notBefore>
+			<notBefore>1517578812</notBefore>
 			<au:capability>
 	            <comment>This allows counting people</comment>
                 <id>id-action-countpeople-read</id>
@@ -730,6 +752,15 @@
 	            <comment>This allows reading static web pages</comment>
                 <id>id-default-static</id>
 	            <xpath>/static</xpath>
+	            <get>child</get>
+	            <put/>
+	            <post/>
+	            <delete/>
+	        </au:capability>
+	        <au:capability>
+	            <comment>This allows accessing capability information</comment>
+                <id>id-default-capabilities</id>
+	            <xpath>/internal/accessControl</xpath>
 	            <get>child</get>
 	            <put/>
 	            <post/>
