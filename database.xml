@@ -24,6 +24,22 @@
 			    
 			    </message><message>The time is now 15 hours and 1 minutes.
 			    
+			    </message><message>The time is now 15 hours and 4 minutes.
+			    
+			    </message><message>The time is now 15 hours and 23 minutes.
+			    
+			    </message><message>The time is now 15 hours and 25 minutes.
+			    
+			    </message><message>The time is now 15 hours and 27 minutes.
+			    
+			    </message><message>The time is now 15 hours and 30 minutes.
+			    
+			    </message><message>The time is now 15 hours and 32 minutes.
+			    
+			    </message><message>The time is now 16 hours and 5 minutes.
+			    
+			    </message><message>The time is now 16 hours and 7 minutes.
+			    
 			    </message></messages>
 		<devices><keys.jack/><keys.pauline/><keys.steven/></devices>
 		<lights/>
@@ -39,7 +55,7 @@
                 <lastsuccess>1515063013.83</lastsuccess>
                 <ignoreerrorsuntil/>
                 <errormessage/>
-            <lastActivity>1519135311.3</lastActivity><lastSuccess>1519135311.3</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></core>
+            <lastActivity>1519139277.72</lastActivity><lastSuccess>1519139277.72</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></core>
             <save>
                 <alive>true</alive>
                 <lastactivity>1515073813.81</lastactivity>
@@ -56,7 +72,7 @@
             <lastActivity>1519124351.0</lastActivity><lastSuccess>1519124351.0</lastSuccess><ignoreErrorsUntil/><errorMessage/></web>
         </igor>
 		<sensors>
-		    <ble><alive/><lastActivity>1519134417.9</lastActivity><lastFailure>1519134417.9</lastFailure><lastSuccess>1516145410.8</lastSuccess><ignoreErrorsUntil/><errorMessage>502 Command /Users/jack/.igor/plugins/ble/scripts/pull.sh exited with status code=1: /usr/local/bin/igorVar: http://localhost:8081/ble: Connection refused</errorMessage></ble>
+		    <ble><alive/><lastActivity>1519137151.76</lastActivity><lastFailure>1519137151.76</lastFailure><lastSuccess>1516145410.8</lastSuccess><ignoreErrorsUntil/><errorMessage>502 Command /Users/jack/.igor/plugins/ble/scripts/pull.sh exited with status code=1: /usr/local/bin/igorVar: http://localhost:8081/ble: Connection refused</errorMessage></ble>
             <button>
                 <alive>true</alive>
                 <lastActivity>1513551158.04</lastActivity>
@@ -69,8 +85,8 @@
 		<services>
 		    <announceTime>
 		        <alive>true</alive>
-		        <lastActivity>1519135313.53</lastActivity>
-		        <lastSuccess>1519135313.53</lastSuccess>
+		        <lastActivity>1519139279.84</lastActivity>
+		        <lastSuccess>1519139279.84</lastSuccess>
 		        <ignoreErrorsUntil></ignoreErrorsUntil>
 		        <errorMessage></errorMessage>
 		    </announceTime>
@@ -89,7 +105,7 @@
 	<devices>
 	</devices>
 	<services>
-	    <igor><protocol>https</protocol><url>https://flauwte.dis.cwi.nl:9333/data</url><host>flauwte.dis.cwi.nl</host><version>0.6</version><startTime>1519135310</startTime><fingerprint>1E:25:E1:90:45:15:09:99:03:D1:01:3D:F6:3D:8C:B3:1E:1D:D4:42</fingerprint><rebootCount>87</rebootCount><ticker>0</ticker><port>9333</port></igor>
+	    <igor><protocol>https</protocol><url>https://flauwte.dis.cwi.nl:9333/data</url><host>flauwte.dis.cwi.nl</host><version>0.6</version><startTime>1519139277</startTime><fingerprint>1E:25:E1:90:45:15:09:99:03:D1:01:3D:F6:3D:8C:B3:1E:1D:D4:42</fingerprint><rebootCount>96</rebootCount><ticker>0</ticker><port>9333</port></igor>
 	</services>
 	<people>
 	    <jack>
@@ -377,7 +393,7 @@
 	            <xpath>/data/environment/messages</xpath>
 	            <post>child</post>
 	        </au:capability>
-		    <notBefore>1519135310</notBefore>
+		    <notBefore>1519139277</notBefore>
 		</action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
@@ -434,7 +450,7 @@
 			<condition>not(string(/data/environment/night))</condition>
 			<url>/pluginscripts/say/message?args={.}</url>
 			<representing>services/say</representing>
-		    <notBefore>1519135312</notBefore>
+		    <notBefore>1519139279</notBefore>
 		</action>
 	    <action>
             <au:capability>
@@ -445,7 +461,7 @@
             </au:capability>
 	        <name>start</name>
 	        <url>/internal/started</url>
-	        <notBefore>1519049711</notBefore>
+	        <notBefore>1519135618</notBefore>
 	    </action>
 		<action>
             <au:capability>
@@ -460,7 +476,7 @@
 			<url>/internal/save</url>
 			<representing>igor/save</representing>
 			<xpath>/data/plugindata//* | /data/actions/* | /data/triggers/* | /data/identities//* | /data/sandbox/*</xpath>
-		    <notBefore>1519135370</notBefore>
+		    <notBefore>1519139337</notBefore>
 		</action>
         <action>
             <name>cleanup</name>
@@ -473,7 +489,7 @@
 	            <xpath>/data/environment/messages</xpath>
 	            <delete>child</delete>
 	        </au:capability>
-            <notBefore>1519135310</notBefore>
+            <notBefore>1519139277</notBefore>
         </action>
 		<action>
 			<name>updateActions</name>
@@ -494,7 +510,7 @@
 	            <xpath>/data/environment/night</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1519135310</notBefore>
+		    <notBefore>1519139277</notBefore>
 		</action>
 		<action>
             <name>checkLate</name>
@@ -509,7 +525,7 @@
 	            <xpath>/data/environment/latereminder</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1519135310</notBefore>
+		    <notBefore>1519139277</notBefore>
 		</action>
 		<action>
             <name>checkMorning</name>
@@ -524,7 +540,7 @@
 	            <xpath>/data/environment/morninggreeting</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1519135311</notBefore>
+		    <notBefore>1519139277</notBefore>
 		</action>
 		<action>
 			<name>updatePeople</name>
@@ -575,7 +591,7 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=internet&amp;ip=google.com.</url>
 			<aggregate>true</aggregate>
-		    <notBefore>1519135311</notBefore>
+		    <notBefore>1519139277</notBefore>
 		</action>
 		<action>
             <au:capability>
@@ -596,14 +612,14 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=igor&amp;service=igor/web&amp;ip={/data/services/igor/host}&amp;port={/data/services/igor/port}</url>
 			<aggregate>true</aggregate>
-			<notBefore>1519135311</notBefore>
+			<notBefore>1519139277</notBefore>
 		</action>
 		<action>
 			<name>systemHealth</name>
 			<interval>60</interval>
 			<xpath>/data/status/*/*/errorMessage</xpath>
 			<url>/plugin/systemHealth</url>
-			<notBefore>1519135314</notBefore>
+			<notBefore>1519139280</notBefore>
 			<aggregate>true</aggregate>
 		</action>
         <action>
@@ -666,7 +682,7 @@
 			<url>/pluginscripts/ble/pull</url>
 			<representing>sensors/ble</representing>
 			<aggregate>true</aggregate>
-			<notBefore>1519135311</notBefore>
+			<notBefore>1519139277</notBefore>
 		</action>
 		<action>
 			<au:capability>
@@ -723,7 +739,7 @@
 			<url>/data/environment/people/count</url>
 			<mimetype>text/plain</mimetype>
 			<data>{count(/data/people/*[home='true'])}</data>
-			<notBefore>1519135311</notBefore>
+			<notBefore>1519139277</notBefore>
 			<au:capability>
 	            <comment>This allows counting people</comment>
                 <cid>id-action-countpeople-read</cid>
@@ -824,8 +840,13 @@
 	            <externalKey>igorissuersharedkey</externalKey>
 	    	</au:sharedKey>
 	    	<au:sharedKey>
-	            <iss>https://igor.local:9333/issuer</iss>
+	            <iss>https://boom.local:9333/issuer</iss>
 	            <aud>https://boom.local:9333/data</aud>
+	            <externalKey>igorissuersharedkey</externalKey>
+	    	</au:sharedKey>
+	    	<au:sharedKey>
+	            <iss>https://flauwte.dis.cwi.nl:9333/issuer</iss>
+	            <aud>https://flauwte.dis.cwi.nl:9333/data</aud>
 	            <externalKey>igorissuersharedkey</externalKey>
 	    	</au:sharedKey>
 	    	<au:sharedKey>
