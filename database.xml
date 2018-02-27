@@ -1,24 +1,26 @@
 <?xml version="1.0" ?><data xmlns:au="http://jackjansen.nl/igor/authentication">
 	<environment>
-		<morninggreeting></morninggreeting>
-		<latereminder></latereminder>
-		<night></night>
+		<morninggreeting/>
+		<latereminder>true</latereminder>
+		<night>true</night>
 		<location/>
 		<energy/>
 		<weather/>
 		<people>
-		    <count>0</count>
+		    <count>1</count>
 		</people>
         <messages>
-        <message>The time is now 14 hours and 53 minutes.
+        <message>Igor has found chromecast.pauline. We are at home.</message><message>Igor has found keys.pauline. We are at home.</message><message>Igor has found chromecast.pauline. We are at home.</message><message>Igor has found keys.pauline. We are at home.</message><message>Igor has found chromecast.pauline. We are at home.</message><message>Igor has found keys.pauline. We are at home.</message><message>Igor has found chromecast.pauline. We are at home.</message><message>Igor has found chromecast.pauline. We are at home.</message><message>Igor has found keys.pauline. We are at home.</message><message>Igor has found chromecast.pauline. We are at home.</message><message>Igor has found keys.pauline. We are at home.</message><message>Igor has found chromecast.pauline. We are at home.</message><message>Igor has found keys.pauline. We are at home.</message><message>Igor has found chromecast.pauline. We are at home.</message><message>Igor has found keys.pauline. We are at home.</message><message>The time is now 23 hours and 23 minutes.
 			    
-			    </message><message>The time is now 15 hours and 1 minutes.
+			    Its late, you should be sleeping!</message><message>Igor has found chromecast.pauline. We are at home.</message><message>Igor has found keys.pauline. We are at home.</message><message>Igor has found chromecast.pauline. We are at home.</message><message>Igor has found keys.pauline. We are at home.</message><message>Igor has found chromecast.pauline. We are at home.</message><message>Igor has found keys.pauline. We are at home.</message><message>The time is now 0 hours and 18 minutes.
 			    
-			    </message></messages>
-		<devices><keys.jack/><keys.pauline/><keys.steven/></devices>
+			    Its late, you should be sleeping!</message><message>The time is now 0 hours and 47 minutes.
+			    
+			    Its late, you should be sleeping!</message></messages>
+		<devices><keys.jack/><keys.pauline>true</keys.pauline><keys.steven/><chromecast.pauline>true</chromecast.pauline></devices>
 		<lights/>
 		<systemHealth>
-			<messages><ringer>ConnectionError: HTTPConnectionPool(host='jack08.local', port=80): Max retries exceeded with url: /alarm?alarm=1 (Caused by NewConnectionError('&lt;requests.packages.urllib3.connection.HTTPConnection object at 0x105b60b10&gt;: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))</ringer><ble>502 Command /Users/jack/.igor/plugins/ble/scripts/pull.sh exited with status code=1: /usr/local/bin/igorVar: http://localhost:8081/ble: Connection refused</ble></messages>
+			<messages><ringer>ConnectionError: ('Connection aborted.', gaierror(-2, 'Name or service not known'))</ringer></messages>
 		</systemHealth>
 	</environment>
 	<status>
@@ -29,24 +31,24 @@
                 <lastsuccess>1515063013.83</lastsuccess>
                 <ignoreerrorsuntil/>
                 <errormessage/>
-            <lastActivity>1519211192.34</lastActivity><lastSuccess>1519211192.34</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></core>
+            <lastActivity>1519688849.36</lastActivity><lastSuccess>1519688849.36</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></core>
             <save>
                 <alive>true</alive>
                 <lastactivity>1515073813.81</lastactivity>
                 <lastsuccess>1515073813.81</lastsuccess>
                 <ignoreerrorsuntil/>
                 <errormessage/>
-            <lastActivity>1519218392.1</lastActivity><lastSuccess>1519218392.1</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></save>
+            <lastActivity>1519680423.14</lastActivity><lastSuccess>1519680423.14</lastSuccess><ignoreErrorsUntil/><errorMessage/></save>
             <web>
                 <alive>true</alive>
                 <lastactivity>1515076154.56</lastactivity>
                 <lastsuccess>1515076154.56</lastsuccess>
                 <ignoreerrorsuntil/>
                 <errormessage/>
-            <lastActivity>1519221933.5</lastActivity><lastSuccess>1519221933.5</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></web>
+            <lastActivity>1519683968.04</lastActivity><lastSuccess>1519683968.04</lastSuccess><ignoreErrorsUntil/><errorMessage/><lastFailure>1519677070.59</lastFailure></web>
         </igor>
 		<sensors>
-		    <ble><alive></alive><lastActivity>1519221934.16</lastActivity><lastFailure>1519221934.16</lastFailure><lastSuccess>1516145410.8</lastSuccess><ignoreErrorsUntil/><errorMessage>502 Command /Users/jack/.igor/plugins/ble/scripts/pull.sh exited with status code=1: /usr/local/bin/igorVar: http://localhost:8081/ble: Connection refused</errorMessage></ble>
+		    <ble><alive>true</alive><lastActivity>1519683970.26</lastActivity><lastFailure>1519666501.07</lastFailure><lastSuccess>1519683970.26</lastSuccess><ignoreErrorsUntil/><errorMessage/></ble>
             <button>
                 <alive>true</alive>
                 <lastActivity>1513551158.04</lastActivity>
@@ -55,31 +57,31 @@
                 <errorMessage/>
             </button>
         </sensors>
-		<devices><ringer><alive></alive><lastActivity>1519211264.19</lastActivity><lastFailure>1519211264.19</lastFailure><errorMessage>ConnectionError: HTTPConnectionPool(host='jack08.local', port=80): Max retries exceeded with url: /alarm?alarm=1 (Caused by NewConnectionError('&lt;requests.packages.urllib3.connection.HTTPConnection object at 0x105b60b10&gt;: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))</errorMessage></ringer></devices>
+		<devices><ringer><alive/><lastActivity>1519677466.12</lastActivity><lastFailure>1519677466.12</lastFailure><errorMessage>ConnectionError: ('Connection aborted.', gaierror(-2, 'Name or service not known'))</errorMessage></ringer></devices>
 		<services>
 		    <announceTime>
 		        <alive>true</alive>
-		        <lastActivity>1519221692.46</lastActivity>
-		        <lastSuccess>1519221692.46</lastSuccess>
+		        <lastActivity>1519688850.65</lastActivity>
+		        <lastSuccess>1519688850.65</lastSuccess>
 		        <ignoreErrorsUntil></ignoreErrorsUntil>
 		        <errorMessage></errorMessage>
 		    </announceTime>
 		    <internet>
 		        <alive>true</alive>
-		        <lastActivity>1519221933.03</lastActivity>
-		        <lastSuccess>1519221933.03</lastSuccess>
-		        <ignoreErrorsUntil></ignoreErrorsUntil>
-		        <errorMessage></errorMessage>
-		    </internet>
-		<say><alive>true</alive><lastActivity>1519221695.84</lastActivity><lastFailure>1516280253.03</lastFailure><errorMessage></errorMessage><lastSuccess>1519221695.84</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil></say><announceRinger><alive>true</alive><lastActivity>1519211259.38</lastActivity><lastSuccess>1519211259.38</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></announceRinger></services>
+		        <lastActivity>1519683965.14</lastActivity>
+		        <lastSuccess>1519683965.14</lastSuccess>
+		        <ignoreErrorsUntil/>
+		        <errorMessage/>
+		    <lastFailure>1519677063.04</lastFailure></internet>
+		<say><alive>true</alive><lastActivity>1519683080.28</lastActivity><lastFailure>1516280253.03</lastFailure><errorMessage/><lastSuccess>1519683080.28</lastSuccess><ignoreErrorsUntil/></say><announceRinger><alive>true</alive><lastActivity>1519677456.86</lastActivity><lastSuccess>1519677456.86</lastSuccess><ignoreErrorsUntil/><errorMessage/></announceRinger></services>
 	</status>
 	<sensors>
-        <ble/>
+        <ble><lastActivity>1519683968.51</lastActivity><bleDevice><available>true</available><raw_advertisements>03039ffe17169ffe0000000000000000000000000000000000000000</raw_advertisements><advertisements><unknown_0x16>9ffe0000000000000000000000000000000000000000</unknown_0x16><unknown_0x03>9ffe</unknown_0x03></advertisements><bdaddr_type>public</bdaddr_type><lastSeen>1519683968.1</lastSeen><address>a4:77:33:c0:5d:8f</address><rssi>-62</rssi><raw_evt_type>2</raw_evt_type><firstSeen>1519674475.88</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>020105020a000319c1030302e0ff</raw_advertisements><advertisements><unknown_0x0a>00</unknown_0x0a><unknown_0x02>e0ff</unknown_0x02><flags><bredr_not_supported>true</bredr_not_supported><le_limited_discoverable>true</le_limited_discoverable></flags><unknown_0x19>c103</unknown_0x19></advertisements><bdaddr_type>public</bdaddr_type><lastSeen>1519683966.72</lastSeen><address>ff:ff:20:00:14:3f</address><rssi>-38</rssi><firstSeen>1519674476.22</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>03039ffe17169ffe02483074506669644b79485100000161d43ca7e4</raw_advertisements><advertisements><unknown_0x16>9ffe02483074506669644b79485100000161d43ca7e4</unknown_0x16><unknown_0x03>9ffe</unknown_0x03></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1519683968.34</lastSeen><address>58:30:64:d0:be:d0</address><rssi>-73</rssi><raw_evt_type>2</raw_evt_type><firstSeen>1519683601.69</firstSeen></bleDevice></ble>
 	</sensors>
 	<devices>
 	</devices>
 	<services>
-	    <igor><protocol>https</protocol><url>https://flauwte.dis.cwi.nl:9333/data</url><host>flauwte.dis.cwi.nl</host><version>0.6</version><startTime>1519211192</startTime><fingerprint>1E:25:E1:90:45:15:09:99:03:D1:01:3D:F6:3D:8C:B3:1E:1D:D4:42</fingerprint><rebootCount>112</rebootCount><ticker>0</ticker><port>9333</port></igor>
+	    <igor><protocol>https</protocol><url>https://igor.local:9333/data</url><host>igor.local</host><version>0.6</version><startTime>1519688848</startTime><fingerprint>02:3D:17:56:90:66:B0:D1:2D:17:6A:8E:96:4A:0E:98:8E:8D:C1:FB</fingerprint><rebootCount>124</rebootCount><ticker>0</ticker><port>9333</port></igor>
 	</services>
 	<people>
 	    <jack>
@@ -87,80 +89,13 @@
 	    <home/></jack>
 	    <pauline>
 	        <device>keys.pauline</device>
-	    <home/></pauline>
+	    <home>true</home></pauline>
 	    <steven>
 	        <device>keys.steven</device>
 	    <home/></steven>
 	</people>
 	<identities>
 	    <pauline>
-	        <au:capability>
-	            <comment>This allows reading environment</comment>
-	            <cid>id-pauline-readenv</cid>
-	            <xpath>/data/environment</xpath>
-	            <get>descendant-or-self</get>
-	        </au:capability>
-	        <au:capability>
-	            <comment>This allows reading status</comment>
-	            <cid>id-pauline-readstatus</cid>
-	            <xpath>/data/status</xpath>
-	            <get>descendant-or-self</get>
-	        </au:capability>
-	        <au:capability>
-	            <comment>This allows reading static web pages</comment>
-	            <cid>id-pauline-readstatic</cid>
-	            <xpath>/static</xpath>
-	            <get>child</get>
-	        </au:capability>
-	        <au:capability>
-	            <comment>This allows all access to own data</comment>
-	            <cid>id-pauline-readself</cid>
-	            <xpath>/data/identities/pauline</xpath>
-	            <get>descendant-or-self</get>
-	            <put>descendant</put>
-	            <post>descendant</post>
-	            <delete>descendant</delete>
-	        </au:capability>
-	        <au:capability>
-	            <comment>This allows reading people data</comment>
-	            <cid>id-pauline-readpeople</cid>
-	            <xpath>/data/people</xpath>
-	            <get>descendant-or-self</get>
-	        </au:capability>
-	        <au:capability>
-	            <comment>This allows writing pauline people data</comment>
-	            <cid>id-pauline-writepeopleself</cid>
-	            <xpath>/data/people/pauline</xpath>
-	            <put>descendant</put>
-	            <post>descendant</post>
-	            <delete>descendant</delete>
-	        </au:capability>
-	        <au:capability>
-	            <comment>This allows reading identity existence, and adding or deleting users</comment>
-	            <cid>id-pauline-readidentities</cid>
-	            <xpath>/identities</xpath>
-	            <get>self</get>
-	            <post>descendant</post>
-	            <delete>descendant</delete>
-	        </au:capability>
-	        <au:capability>
-	            <comment>This allows accessing capability information</comment>
-                <cid>id-pauline-capabilities</cid>
-	            <xpath>/internal/accessControl</xpath>
-	            <get>child</get>
-	            <put/>
-	            <post/>
-	            <delete/>
-	        </au:capability>
-	        <au:capability>
-	            <comment>This allows running action/ringringer</comment>
-	            <cid>id-pauline-ringringer</cid>
-	            <xpath>/action/ringringer</xpath>
-	            <get>self</get>
-	            <iss>https://igor.local:9333/issuer</iss>
-	            <aud>https://igor.local:9333/data</aud>
-	            <cid>1B79E63F-2C8F-439F-A0BE-A2C18C91FD4C</cid>
-	        </au:capability>
             <encryptedPassword>$pbkdf2-sha256$29000$qTWmVCql9H6PUYqx9h4jhA$CMpYr3VTVFTlYLZ6Zihvhc/GnY1b1ZDc6q7d4HhZ3lA</encryptedPassword>
 	        <plugindata>
                 <ble>
@@ -181,63 +116,6 @@
 	    </pauline>
 	    <jack>
             <encryptedPassword>$pbkdf2-sha256$29000$WQvhHIPQei9F6P0fY8xZCw$KlxQnmW0.qclx0vLKuamweCRoo8b.1QMnLfZUM2yHI8</encryptedPassword>
-	        <au:capability>
-	            <comment>This allows reading environment</comment>
-	            <cid>id-jack-readenv</cid>
-	            <xpath>/data/environment</xpath>
-	            <get>descendant-or-self</get>
-	        </au:capability>
-	        <au:capability>
-	            <comment>This allows reading status</comment>
-	            <cid>id-jack-readstatus</cid>
-	            <xpath>/data/status</xpath>
-	            <get>descendant-or-self</get>
-	        </au:capability>
-	        <au:capability>
-	            <comment>This allows reading igor data</comment>
-	            <cid>id-jack-readigor</cid>
-	            <xpath>/data/services/igor</xpath>
-	            <get>descendant-or-self</get>
-	        </au:capability>
-	        <au:capability>
-	            <comment>This allows reading static web pages</comment>
-	            <cid>id-jack-readstatic</cid>
-	            <xpath>/static</xpath>
-	            <get>child</get>
-	        </au:capability>
-	        <au:capability>
-	            <comment>This allows all access to own data</comment>
-	            <cid>id-jack-readself</cid>
-	            <xpath>/data/identities/jack</xpath>
-	            <get>descendant-or-self</get>
-	            <put>descendant</put>
-	            <post>descendant</post>
-	            <delete>descendant</delete>
-	        </au:capability>
-	        <au:capability>
-	            <comment>This allows reading people data</comment>
-	            <cid>id-jack-readpeople</cid>
-	            <xpath>/data/people</xpath>
-	            <get>descendant-or-self</get>
-	        </au:capability>
-	        <au:capability>
-	            <comment>This allows writing jack people data</comment>
-	            <cid>id-jack-writepeopleself</cid>
-	            <xpath>/data/people/jack</xpath>
-	            <put>descendant</put>
-	            <post>descendant</post>
-	            <delete>descendant</delete>
-	        </au:capability>
-	        <au:capability>
-	            <comment>This allows accessing capability information</comment>
-                <cid>id-jack-capabilities</cid>
-	            <xpath>/internal/accessControl</xpath>
-	            <get>child</get>
-	            <put/>
-	            <post/>
-	            <delete/>
-	        </au:capability>
-	        <au:capability><comment>This allows Jack running action/ringringer</comment><xpath>/action/ringringer</xpath><get>self</get><cid>id-jack-ringringer</cid><delegate>true</delegate><child>token-7584012115343525939</child></au:capability>
 
 	        <plugindata>
                 <ble>
@@ -247,53 +125,8 @@
                     </device>
                 </ble>
 	        </plugindata>
-	    <au:capability><xpath>/data</xpath><comment>Readonly access from admin to jack</comment><parent>id-admin-readall</parent><cid>token-17388627758257581876</cid><put/><post/><get>descendant-or-self</get><delete/></au:capability></jack>
+        </jack>
 	    <steven>
-	        <au:capability>
-	            <comment>This allows reading environment</comment>
-                <cid>id-default-environment</cid>
-	            <xpath>/data/environment</xpath>
-	            <get>descendant-or-self</get>
-	            <put/>
-	            <post/>
-	            <delete/>
-	        </au:capability>
-	        <au:capability>
-	            <comment>This allows reading status</comment>
-                <cid>id-default-status</cid>
-	            <xpath>/data/status</xpath>
-	            <get>descendant-or-self</get>
-	            <put/>
-	            <post/>
-	            <delete/>
-	        </au:capability>
-	        <au:capability>
-	            <comment>This allows reading igor data</comment>
-                <cid>id-default-igor</cid>
-	            <xpath>/data/services/igor</xpath>
-	            <get>descendant-or-self</get>
-	            <put/>
-	            <post/>
-	            <delete/>
-	        </au:capability>
-	        <au:capability>
-	            <comment>This allows reading static web pages</comment>
-                <cid>id-default-static</cid>
-	            <xpath>/static</xpath>
-	            <get>child</get>
-	            <put/>
-	            <post/>
-	            <delete/>
-	        </au:capability>
-	        <au:capability>
-	            <comment>This allows accessing capability information</comment>
-                <cid>id-default-capabilities</cid>
-	            <xpath>/internal/accessControl</xpath>
-	            <get>child</get>
-	            <put/>
-	            <post/>
-	            <delete/>
-	        </au:capability>
             <encryptedPassword>$pbkdf2-sha256$29000$FKK0VsqZk3KOkTKmFEJISQ$TgZO5yhvrztQDtT2A0HQx5jzPvFcb.QFDPJuTNJUyO0</encryptedPassword>
 	        <plugindata>
                 <ble>
@@ -361,7 +194,7 @@
 	            <xpath>/data/environment/messages</xpath>
 	            <post>child</post>
 	        </au:capability>
-		    <notBefore>1519221692</notBefore>
+		    <notBefore>1519688848</notBefore>
 		</action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
@@ -395,7 +228,7 @@
 	            <xpath>/data/identities/steven/plugindata/ble</xpath>
 	            <get>descendant-or-self</get>
 	        </au:capability>
-            <notBefore>1517497763</notBefore>
+            <notBefore>1519683970</notBefore>
         </action>
 	    <action>
             <au:capability>
@@ -418,7 +251,7 @@
 			<condition>not(string(/data/environment/night))</condition>
 			<url>/pluginscripts/say/message?args={.}</url>
 			<representing>services/say</representing>
-		    <notBefore>1519221692</notBefore>
+		    <notBefore>1519683072</notBefore>
 		</action>
 	    <action>
             <au:capability>
@@ -429,7 +262,7 @@
             </au:capability>
 	        <name>start</name>
 	        <url>/internal/started</url>
-	        <notBefore>1519211198</notBefore>
+	        <notBefore>1519688849</notBefore>
 	    </action>
 		<action>
             <au:capability>
@@ -444,7 +277,7 @@
 			<url>/internal/save</url>
 			<representing>igor/save</representing>
 			<xpath>/data/plugindata//* | /data/actions/* | /data/triggers/* | /data/identities//* | /data/sandbox/*</xpath>
-		    <notBefore>1519222052</notBefore>
+		    <notBefore>1519688908</notBefore>
 		</action>
         <action>
             <name>cleanup</name>
@@ -457,7 +290,7 @@
 	            <xpath>/data/environment/messages</xpath>
 	            <delete>child</delete>
 	        </au:capability>
-            <notBefore>1519221392</notBefore>
+            <notBefore>1519688848</notBefore>
         </action>
 		<action>
 			<name>updateActions</name>
@@ -478,7 +311,7 @@
 	            <xpath>/data/environment/night</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1519221092</notBefore>
+		    <notBefore>1519688848</notBefore>
 		</action>
 		<action>
             <name>checkLate</name>
@@ -493,7 +326,7 @@
 	            <xpath>/data/environment/latereminder</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1519221092</notBefore>
+		    <notBefore>1519688848</notBefore>
 		</action>
 		<action>
             <name>checkMorning</name>
@@ -508,7 +341,7 @@
 	            <xpath>/data/environment/morninggreeting</xpath>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1519221092</notBefore>
+		    <notBefore>1519688849</notBefore>
 		</action>
 		<action>
 			<name>updatePeople</name>
@@ -532,7 +365,7 @@
 	            <get>descendant</get>
 	            <put>descendant</put>
 	        </au:capability>
-		<notBefore>1517497767</notBefore></action>
+		<notBefore>1519598440</notBefore></action>
 		<action>
 			<name>locationpauline</name>
 			<url>/data/plugindata/ringer/host</url>
@@ -559,7 +392,7 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=internet&amp;ip=google.com.</url>
 			<aggregate>true</aggregate>
-		    <notBefore>1519221933</notBefore>
+		    <notBefore>1519688849</notBefore>
 		</action>
 		<action>
             <au:capability>
@@ -580,14 +413,14 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=igor&amp;service=igor/web&amp;ip={/data/services/igor/host}&amp;port={/data/services/igor/port}</url>
 			<aggregate>true</aggregate>
-			<notBefore>1519221933</notBefore>
+			<notBefore>1519688849</notBefore>
 		</action>
 		<action>
 			<name>systemHealth</name>
 			<interval>60</interval>
 			<xpath>/data/status/*/*/errorMessage</xpath>
 			<url>/plugin/systemHealth</url>
-			<notBefore>1519221945</notBefore>
+			<notBefore>1519688850</notBefore>
 			<aggregate>true</aggregate>
 		</action>
         <action>
@@ -626,7 +459,7 @@
 	            <comment>This allows ringing the ringer on the iotsa buzzer</comment>
                 <cid>id-action-ringringer-alarm</cid>
 	            <iss>http://igor.local:9333/issuer</iss>
-	            <aud>http://jack08.local</aud>
+	            <aud>http://ringer.local</aud>
 	            <right>alarm</right>
 	        </au:capability>
 	        <au:capability>
@@ -637,8 +470,9 @@
 	        </au:capability>
             <url>http://{/data/plugindata/ringer/host}/alarm?alarm=1</url>
             <representing>devices/ringer</representing>
-            <notBefore>1519211259</notBefore>
+            <notBefore>1519677456</notBefore>
         </action>
+
         <action>
             <name>ringringer</name>
 			<url>/data/environment/messages/message</url>
@@ -654,8 +488,9 @@
 	            <xpath>/data/environment/messages</xpath>
 	            <post>child</post>
 	        </au:capability>
-            <notBefore>1519211259</notBefore>
+            <notBefore>1519677456</notBefore>
         </action>
+
 		<action>
 			<au:capability>
                 <comment>This allows running any pluginscript</comment>
@@ -667,7 +502,7 @@
 			<url>/pluginscripts/ble/pull</url>
 			<representing>sensors/ble</representing>
 			<aggregate>true</aggregate>
-			<notBefore>1519221933</notBefore>
+			<notBefore>1519688849</notBefore>
 		</action>
 		<action>
 			<au:capability>
@@ -714,7 +549,7 @@
 			<mimetype>text/plain</mimetype>
 			<data>{available}</data>
 			<multiple>True</multiple>
-			<notBefore>1517497764</notBefore>
+			<notBefore>1519683970</notBefore>
 		</action>
 		<action>
 			<name>countPeopleAtHome</name>
@@ -724,7 +559,7 @@
 			<url>/data/environment/people/count</url>
 			<mimetype>text/plain</mimetype>
 			<data>{count(/data/people/*[home='true'])}</data>
-			<notBefore>1519221992</notBefore>
+			<notBefore>1519688849</notBefore>
 			<au:capability>
 	            <comment>This allows counting people</comment>
                 <cid>id-action-countpeople-read</cid>
@@ -806,7 +641,7 @@
 	        </au:capability>
 	    </au:defaultCapabilities>
 	    <au:exportedCapabilities>
-	    <au:capability><xpath>/action/ringringer</xpath><comment/><sub>http://button.local</sub><parent>id-jack-ringringer</parent><get>self</get><iss>https://flauwte.dis.cwi.nl:9333/issuer</iss><cid>token-7584012115343525939</cid><nvb>1519142281</nvb><nva>1550678282</nva><aud>https://flauwte.dis.cwi.nl:9333/data</aud></au:capability></au:exportedCapabilities>
+	    <au:capability><xpath>/action/ringringer</xpath><comment/><sub>http://button.local</sub><parent>id-jack-ringringer</parent><get>self</get><iss>https://flauwte.dis.cwi.nl:9333/issuer</iss><cid>token-7584012115343525939</cid><nvb>1519142281</nvb><nva>1550678282</nva><aud>https://flauwte.dis.cwi.nl:9333/data</aud></au:capability><au:capability><xpath>/action/ringringer</xpath><comment/><sub>http://button.local</sub><parent>id-jack-ringringer</parent><get>self</get><iss>https://igor.local:9333/issuer</iss><cid>token-6242114161456763439</cid><nvb>1519596196</nvb><nva>1551132197</nva><aud>https://igor.local:9333/data</aud></au:capability><au:capability><xpath>/action/ringringer</xpath><comment/><sub>http://button.local</sub><parent>id-jack-ringringer</parent><get>self</get><iss>https://igor.local:9333/issuer</iss><cid>token-14385432082692162652</cid><nvb>1519676872</nvb><nva>1551212873</nva><aud>https://igor.local:9333/data</aud></au:capability></au:exportedCapabilities>
 	    <au:unusedCapabilities>
 	        <au:capability>
 	            <comment>This capabiliy allows everything</comment>
