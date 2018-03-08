@@ -645,8 +645,7 @@
 	            <delete/>
 	        </au:capability>
 	    </au:defaultCapabilities>
-	    <au:exportedCapabilities>
-	    <au:capability><obj>/action/ringringer</obj><comment/><sub>http://button.local</sub><parent>id-jack-ringringer</parent><get>self</get><iss>https://flauwte.dis.cwi.nl:9333/issuer</iss><cid>token-7584012115343525939</cid><nvb>1519142281</nvb><nva>1550678282</nva><aud>https://flauwte.dis.cwi.nl:9333/data</aud></au:capability></au:exportedCapabilities>
+	    <au:exportedCapabilities></au:exportedCapabilities>
 	    <au:unusedCapabilities>
 	        <au:capability>
 	            <comment>This capabiliy allows everything</comment>
