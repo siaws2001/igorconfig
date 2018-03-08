@@ -125,15 +125,6 @@
 	            <post>descendant</post>
 	            <delete>descendant</delete>
 	        </au:capability>
-	        <au:capability>
-	            <comment>This allows running action/ringringer</comment>
-	            <cid>id-pauline-ringringer</cid>
-	            <obj>/action/ringringer</obj>
-	            <get>self</get>
-	            <iss>https://igor.local:9333/issuer</iss>
-	            <aud>https://igor.local:9333/data</aud>
-	            <cid>1B79E63F-2C8F-439F-A0BE-A2C18C91FD4C</cid>
-	        </au:capability>
             <encryptedPassword>$pbkdf2-sha256$29000$qTWmVCql9H6PUYqx9h4jhA$CMpYr3VTVFTlYLZ6Zihvhc/GnY1b1ZDc6q7d4HhZ3lA</encryptedPassword>
 	        <plugindata>
                 <ble>
