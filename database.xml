@@ -99,25 +99,25 @@
 	        <au:capability>
 	            <comment>This allows reading environment</comment>
 	            <cid>id-pauline-readenv</cid>
-	            <xpath>/data/environment</xpath>
+	            <obj>/data/environment</obj>
 	            <get>descendant-or-self</get>
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows reading status</comment>
 	            <cid>id-pauline-readstatus</cid>
-	            <xpath>/data/status</xpath>
+	            <obj>/data/status</obj>
 	            <get>descendant-or-self</get>
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows reading static web pages</comment>
 	            <cid>id-pauline-readstatic</cid>
-	            <xpath>/static</xpath>
+	            <obj>/static</obj>
 	            <get>child</get>
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows all access to own data</comment>
 	            <cid>id-pauline-readself</cid>
-	            <xpath>/data/identities/pauline</xpath>
+	            <obj>/data/identities/pauline</obj>
 	            <get>descendant-or-self</get>
 	            <put>descendant</put>
 	            <post>descendant</post>
@@ -126,13 +126,13 @@
 	        <au:capability>
 	            <comment>This allows reading people data</comment>
 	            <cid>id-pauline-readpeople</cid>
-	            <xpath>/data/people</xpath>
+	            <obj>/data/people</obj>
 	            <get>descendant-or-self</get>
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows writing pauline people data</comment>
 	            <cid>id-pauline-writepeopleself</cid>
-	            <xpath>/data/people/pauline</xpath>
+	            <obj>/data/people/pauline</obj>
 	            <put>descendant</put>
 	            <post>descendant</post>
 	            <delete>descendant</delete>
@@ -140,7 +140,7 @@
 	        <au:capability>
 	            <comment>This allows reading identity existence, and adding or deleting users</comment>
 	            <cid>id-pauline-readidentities</cid>
-	            <xpath>/identities</xpath>
+	            <obj>/identities</obj>
 	            <get>self</get>
 	            <post>descendant</post>
 	            <delete>descendant</delete>
@@ -148,7 +148,7 @@
 	        <au:capability>
 	            <comment>This allows accessing capability information</comment>
                 <cid>id-pauline-capabilities</cid>
-	            <xpath>/internal/accessControl</xpath>
+	            <obj>/internal/accessControl</obj>
 	            <get>child</get>
 	            <put/>
 	            <post/>
@@ -157,7 +157,7 @@
 	        <au:capability>
 	            <comment>This allows running action/ringringer</comment>
 	            <cid>id-pauline-ringringer</cid>
-	            <xpath>/action/ringringer</xpath>
+	            <obj>/action/ringringer</obj>
 	            <get>self</get>
 	            <iss>https://igor.local:9333/issuer</iss>
 	            <aud>https://igor.local:9333/data</aud>
@@ -186,31 +186,31 @@
 	        <au:capability>
 	            <comment>This allows reading environment</comment>
 	            <cid>id-jack-readenv</cid>
-	            <xpath>/data/environment</xpath>
+	            <obj>/data/environment</obj>
 	            <get>descendant-or-self</get>
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows reading status</comment>
 	            <cid>id-jack-readstatus</cid>
-	            <xpath>/data/status</xpath>
+	            <obj>/data/status</obj>
 	            <get>descendant-or-self</get>
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows reading igor data</comment>
 	            <cid>id-jack-readigor</cid>
-	            <xpath>/data/services/igor</xpath>
+	            <obj>/data/services/igor</obj>
 	            <get>descendant-or-self</get>
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows reading static web pages</comment>
 	            <cid>id-jack-readstatic</cid>
-	            <xpath>/static</xpath>
+	            <obj>/static</obj>
 	            <get>child</get>
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows all access to own data</comment>
 	            <cid>id-jack-readself</cid>
-	            <xpath>/data/identities/jack</xpath>
+	            <obj>/data/identities/jack</obj>
 	            <get>descendant-or-self</get>
 	            <put>descendant</put>
 	            <post>descendant</post>
@@ -219,13 +219,13 @@
 	        <au:capability>
 	            <comment>This allows reading people data</comment>
 	            <cid>id-jack-readpeople</cid>
-	            <xpath>/data/people</xpath>
+	            <obj>/data/people</obj>
 	            <get>descendant-or-self</get>
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows writing jack people data</comment>
 	            <cid>id-jack-writepeopleself</cid>
-	            <xpath>/data/people/jack</xpath>
+	            <obj>/data/people/jack</obj>
 	            <put>descendant</put>
 	            <post>descendant</post>
 	            <delete>descendant</delete>
@@ -233,13 +233,13 @@
 	        <au:capability>
 	            <comment>This allows accessing capability information</comment>
                 <cid>id-jack-capabilities</cid>
-	            <xpath>/internal/accessControl</xpath>
+	            <obj>/internal/accessControl</obj>
 	            <get>child</get>
 	            <put/>
 	            <post/>
 	            <delete/>
 	        </au:capability>
-	        <au:capability><comment>This allows Jack running action/ringringer</comment><xpath>/action/ringringer</xpath><get>self</get><cid>id-jack-ringringer</cid><delegate>true</delegate><child>token-7584012115343525939</child></au:capability>
+	        <au:capability><comment>This allows Jack running action/ringringer</comment><obj>/action/ringringer</obj><get>self</get><cid>id-jack-ringringer</cid><delegate>true</delegate><child>token-7584012115343525939</child></au:capability>
 
 	        <plugindata>
                 <ble>
@@ -249,12 +249,12 @@
                     </device>
                 </ble>
 	        </plugindata>
-	    <au:capability><xpath>/data</xpath><comment>Readonly access from admin to jack</comment><parent>id-admin-readall</parent><cid>token-17388627758257581876</cid><put/><post/><get>descendant-or-self</get><delete/></au:capability></jack>
+	    <au:capability><obj>/data</obj><comment>Readonly access from admin to jack</comment><parent>id-admin-readall</parent><cid>token-17388627758257581876</cid><put/><post/><get>descendant-or-self</get><delete/></au:capability></jack>
 	    <steven>
 	        <au:capability>
 	            <comment>This allows reading environment</comment>
                 <cid>id-default-environment</cid>
-	            <xpath>/data/environment</xpath>
+	            <obj>/data/environment</obj>
 	            <get>descendant-or-self</get>
 	            <put/>
 	            <post/>
@@ -263,7 +263,7 @@
 	        <au:capability>
 	            <comment>This allows reading status</comment>
                 <cid>id-default-status</cid>
-	            <xpath>/data/status</xpath>
+	            <obj>/data/status</obj>
 	            <get>descendant-or-self</get>
 	            <put/>
 	            <post/>
@@ -272,7 +272,7 @@
 	        <au:capability>
 	            <comment>This allows reading igor data</comment>
                 <cid>id-default-igor</cid>
-	            <xpath>/data/services/igor</xpath>
+	            <obj>/data/services/igor</obj>
 	            <get>descendant-or-self</get>
 	            <put/>
 	            <post/>
@@ -281,7 +281,7 @@
 	        <au:capability>
 	            <comment>This allows reading static web pages</comment>
                 <cid>id-default-static</cid>
-	            <xpath>/static</xpath>
+	            <obj>/static</obj>
 	            <get>child</get>
 	            <put/>
 	            <post/>
@@ -290,7 +290,7 @@
 	        <au:capability>
 	            <comment>This allows accessing capability information</comment>
                 <cid>id-default-capabilities</cid>
-	            <xpath>/internal/accessControl</xpath>
+	            <obj>/internal/accessControl</obj>
 	            <get>child</get>
 	            <put/>
 	            <post/>
@@ -308,25 +308,25 @@
 	    </steven>
 	    <admin>
             <encryptedPassword>$pbkdf2-sha256$29000$FKK0VsqZk3KOkTKmFEJISQ$TgZO5yhvrztQDtT2A0HQx5jzPvFcb.QFDPJuTNJUyO0</encryptedPassword>
-	        <au:capability><comment>This allows everything. Dangerous!</comment><xpath>/data</xpath><get>descendant-or-self</get><cid>id-admin-readall</cid><delegate>true</delegate><child>token-17388627758257581876</child><put>descendant-or-self</put><post>descendant</post><delete>descendant</delete></au:capability>
+	        <au:capability><comment>This allows everything. Dangerous!</comment><obj>/data</obj><get>descendant-or-self</get><cid>id-admin-readall</cid><delegate>true</delegate><child>token-17388627758257581876</child><put>descendant-or-self</put><post>descendant</post><delete>descendant</delete></au:capability>
 	        <au:capability>
 	            <comment>This allows reading static web pages</comment>
 	            <cid>id-admin-readstatic</cid>
-	            <xpath>/static</xpath>
+	            <obj>/static</obj>
 	            <get>child</get>
 	            <delegate>true</delegate>
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows all actions. Dangerous!</comment>
 	            <cid>id-admin-allactions</cid>
-	            <xpath>/action</xpath>
+	            <obj>/action</obj>
 	            <get>descendant</get>
 	            <delegate>true</delegate>
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows all internal actions. Dangerous!</comment>
 	            <cid>id-admin-internalactions</cid>
-	            <xpath>/internal</xpath>
+	            <obj>/internal</obj>
 	            <get>descendant</get>
 	            <delegate>true</delegate>
 	        </au:capability>
@@ -336,13 +336,13 @@
         <au:capability>
             <comment>This allows running any plugin</comment>
             <cid>id-anyaction-anyplugin</cid>
-            <xpath>/plugin</xpath>
+            <obj>/plugin</obj>
             <get>descendant</get>
         </au:capability>
         <au:capability>
             <comment>This allows running any pluginscript</comment>
             <cid>id-anyaction-anypluginscript</cid>
-            <xpath>/pluginscripts</xpath>
+            <obj>/pluginscripts</obj>
             <get>descendant</get>
         </au:capability>
 		<action>
@@ -360,7 +360,7 @@
 	        <au:capability>
 	            <comment>This allows setting the variable</comment>
                 <cid>id-action-setmessage</cid>
-	            <xpath>/data/environment/messages</xpath>
+	            <obj>/data/environment/messages</obj>
 	            <post>child</post>
 	        </au:capability>
 		    <notBefore>1520464883</notBefore>
@@ -376,25 +376,25 @@
 	        <au:capability>
 	            <comment>This allows setting the variable</comment>
                 <cid>id-action-bledevice-setmessage</cid>
-	            <xpath>/data/environment/messages</xpath>
+	            <obj>/data/environment/messages</obj>
 	            <post>child</post>
 	        </au:capability>
 			<au:capability>
 	            <comment>This allows getting plguindata/ble for user pauline</comment>
                 <cid>id-action-bledevice-pauline</cid>
-	            <xpath>/data/identities/pauline/plugindata/ble</xpath>
+	            <obj>/data/identities/pauline/plugindata/ble</obj>
 	            <get>descendant-or-self</get>
 	        </au:capability>
 			<au:capability>
 	            <comment>This allows getting plguindata/ble for user jack</comment>
                 <cid>id-action-bledevice-jack</cid>
-	            <xpath>/data/identities/jack/plugindata/ble</xpath>
+	            <obj>/data/identities/jack/plugindata/ble</obj>
 	            <get>descendant-or-self</get>
 	        </au:capability>
 			<au:capability>
 	            <comment>This allows getting plguindata/ble for user steven</comment>
                 <cid>id-action-bledevice-steven</cid>
-	            <xpath>/data/identities/steven/plugindata/ble</xpath>
+	            <obj>/data/identities/steven/plugindata/ble</obj>
 	            <get>descendant-or-self</get>
 	        </au:capability>
             <notBefore>1517497763</notBefore>
@@ -403,13 +403,13 @@
             <au:capability>
                 <comment>This allows running any pluginscript</comment>
                 <cid>id-action-messages-pluginscript</cid>
-                <xpath>/pluginscripts</xpath>
+                <obj>/pluginscripts</obj>
                 <get>descendant</get>
             </au:capability>
 	        <au:capability>
 	            <comment>This allows reading environment</comment>
                 <cid>id-action-messages-readenv</cid>
-	            <xpath>/data/environment</xpath>
+	            <obj>/data/environment</obj>
 	            <get>descendant-or-self</get>
 	            <put/>
 	            <post/>
@@ -426,7 +426,7 @@
             <au:capability>
                 <comment>This allows firing /internal/started</comment>
                 <cid>id-action-started-fire</cid>
-                <xpath>/internal/started</xpath>
+                <obj>/internal/started</obj>
                 <get>self</get>
             </au:capability>
 	        <name>start</name>
@@ -437,7 +437,7 @@
             <au:capability>
                 <comment>This allows firing /internal/save</comment>
                 <cid>id-action-save-save</cid>
-                <xpath>/internal/save</xpath>
+                <obj>/internal/save</obj>
                 <get>self</get>
             </au:capability>
 			<name>save</name>
@@ -456,7 +456,7 @@
 	        <au:capability>
 	            <comment>This allows setting the variable</comment>
                 <cid>id-action-cleanup-delete</cid>
-	            <xpath>/data/environment/messages</xpath>
+	            <obj>/data/environment/messages</obj>
 	            <delete>child</delete>
 	        </au:capability>
             <notBefore>1520464883</notBefore>
@@ -477,7 +477,7 @@
 	        <au:capability>
 	            <comment>This allows setting the variable</comment>
                 <cid>id-action-checknight-night</cid>
-	            <xpath>/data/environment/night</xpath>
+	            <obj>/data/environment/night</obj>
 	            <put>self</put>
 	        </au:capability>
 		    <notBefore>1520464883</notBefore>
@@ -492,7 +492,7 @@
 	        <au:capability>
 	            <comment>This allows setting the variable</comment>
                 <cid>id-action-checklate-latereminder</cid>
-	            <xpath>/data/environment/latereminder</xpath>
+	            <obj>/data/environment/latereminder</obj>
 	            <put>self</put>
 	        </au:capability>
 		    <notBefore>1520464883</notBefore>
@@ -507,7 +507,7 @@
 	        <au:capability>
 	            <comment>This allows setting the variable</comment>
                 <cid>id-action-checkmorngin-morning</cid>
-	            <xpath>/data/environment/morninggreeting</xpath>
+	            <obj>/data/environment/morninggreeting</obj>
 	            <put>self</put>
 	        </au:capability>
 		    <notBefore>1520464883</notBefore>
@@ -524,13 +524,13 @@
 	        <au:capability>
 	            <comment>This allows getting the device data</comment>
                 <cid>id-action-updatepeople-read</cid>
-	            <xpath>/data/environment/devices</xpath>
+	            <obj>/data/environment/devices</obj>
 	            <get>descendant-or-self</get>
 	        </au:capability>
 	        <au:capability>
 	            <comment>This allows getting and setting people data</comment>
                 <cid>id-action-updatepeople-peopledata</cid>
-	            <xpath>/data/people</xpath>
+	            <obj>/data/people</obj>
 	            <get>descendant</get>
 	            <put>descendant</put>
 	        </au:capability>
@@ -567,13 +567,13 @@
             <au:capability>
                 <comment>This allows running any plugin</comment>
                 <cid>id-action-lan-plugin</cid>
-                <xpath>/plugin</xpath>
+                <obj>/plugin</obj>
                 <get>descendant</get>
             </au:capability>
 	        <au:capability>
 	            <comment>This allows reading igor data</comment>
                 <cid>id-action-lan-readigor</cid>
-	            <xpath>/data/services/igor</xpath>
+	            <obj>/data/services/igor</obj>
 	            <get>descendant-or-self</get>
 	            <put/>
 	            <post/>
@@ -602,7 +602,7 @@
 	        <au:capability>
 	            <comment>This allows setting the variable</comment>
                 <cid>id-action-bellbutton-messages</cid>
-	            <xpath>/data/environment/messages</xpath>
+	            <obj>/data/environment/messages</obj>
 	            <post>child</post>
 	        </au:capability>
             <notBefore>1513551158</notBefore>
@@ -617,7 +617,7 @@
 	        <au:capability>
 	            <comment>This allows setting the variable</comment>
                 <cid>id-action-turnbellbutton-messages</cid>
-	            <xpath>/data/environment/messages</xpath>
+	            <obj>/data/environment/messages</obj>
 	            <post>child</post>
 	        </au:capability>
             <notBefore>1508419926</notBefore>
@@ -635,7 +635,7 @@
 	        <au:capability>
 	            <comment>This allows reading plugin data</comment>
                 <cid>id-action-ringringer-readplugindata</cid>
-	            <xpath>/data/plugindata/ringer</xpath>
+	            <obj>/data/plugindata/ringer</obj>
 	            <get>descendant-or-self</get>
 	        </au:capability>
             <url>http://{/data/plugindata/ringer/host}/api/alarm</url>
@@ -657,7 +657,7 @@
 	        <au:capability>
 	            <comment>This allows setting the variable</comment>
                 <cid>id-action-setmessage</cid>
-	            <xpath>/data/environment/messages</xpath>
+	            <obj>/data/environment/messages</obj>
 	            <post>child</post>
 	        </au:capability>
             <notBefore>1519211259</notBefore>
@@ -666,7 +666,7 @@
 			<au:capability>
                 <comment>This allows running any pluginscript</comment>
                 <cid>id-action-blepull-pluginscript</cid>
-                <xpath>/pluginscripts</xpath>
+                <obj>/pluginscripts</obj>
                 <get>descendant</get>
             </au:capability>
 			<interval>60</interval>
@@ -679,7 +679,7 @@
 			<au:capability>
 	            <comment>This allows putting variable into environment/devices</comment>
                 <cid>id-action-bledata-devices</cid>
-	            <xpath>/data/environment/devices</xpath>
+	            <obj>/data/environment/devices</obj>
 	            <get>descendant-or-self</get>
 	            <put>descendant</put>
 	            <post/>
@@ -688,25 +688,25 @@
 			<au:capability>
 	            <comment>This allows getting /data/sensors/ble</comment>
                 <cid>id-action-bledata-sensors</cid>
-	            <xpath>/data/sensors/ble</xpath>
+	            <obj>/data/sensors/ble</obj>
 	            <get>descendant-or-self</get>
 	        </au:capability>
 			<au:capability>
 	            <comment>This allows getting plguindata/ble for user pauline</comment>
                 <cid>id-action-bledata-pauline</cid>
-	            <xpath>/data/identities/pauline/plugindata/ble</xpath>
+	            <obj>/data/identities/pauline/plugindata/ble</obj>
 	            <get>descendant-or-self</get>
 	        </au:capability>
 			<au:capability>
 	            <comment>This allows getting plguindata/ble for user jack</comment>
                 <cid>id-action-bledata-jack</cid>
-	            <xpath>/data/identities/jack/plugindata/ble</xpath>
+	            <obj>/data/identities/jack/plugindata/ble</obj>
 	            <get>descendant-or-self</get>
 	        </au:capability>
 			<au:capability>
 	            <comment>This allows getting plguindata/ble for user steven</comment>
                 <cid>id-action-bledata-steven</cid>
-	            <xpath>/data/identities/steven/plugindata/ble</xpath>
+	            <obj>/data/identities/steven/plugindata/ble</obj>
 	            <get>descendant-or-self</get>
 	        </au:capability>
 			<xpath>/data/sensors/ble/bleDevice</xpath>
@@ -734,13 +734,13 @@
 			<au:capability>
 	            <comment>This allows counting people</comment>
                 <cid>id-action-countpeople-read</cid>
-	            <xpath>/data/people</xpath>
+	            <obj>/data/people</obj>
 	            <get>descendant-or-self</get>
 	        </au:capability>
 			<au:capability>
 	            <comment>This allows setting peoplecount</comment>
                 <cid>id-action-countpeople-write</cid>
-	            <xpath>/data/environment/people/count</xpath>
+	            <obj>/data/environment/people/count</obj>
 	            <put>self</put>
 	        </au:capability>
 		</action>
@@ -755,7 +755,7 @@
 	        <au:capability>
 	            <comment>This allows accessing sensors/ble</comment>
                 <cid>id-plugin-ble-self</cid>
-	            <xpath>/data/sensors/ble</xpath>
+	            <obj>/data/sensors/ble</obj>
 	            <get>descendant-or-self</get>
 	            <put>descendant</put>
 	            <post>descendant</post>
@@ -768,7 +768,7 @@
 	        <au:capability>
 	            <comment>This allows reading environment</comment>
                 <cid>id-default-environment</cid>
-	            <xpath>/data/environment</xpath>
+	            <obj>/data/environment</obj>
 	            <get>descendant-or-self</get>
 	            <put/>
 	            <post/>
@@ -777,7 +777,7 @@
 	        <au:capability>
 	            <comment>This allows reading status</comment>
                 <cid>id-default-status</cid>
-	            <xpath>/data/status</xpath>
+	            <obj>/data/status</obj>
 	            <get>descendant-or-self</get>
 	            <put/>
 	            <post/>
@@ -786,7 +786,7 @@
 	        <au:capability>
 	            <comment>This allows reading igor data</comment>
                 <cid>id-default-igor</cid>
-	            <xpath>/data/services/igor</xpath>
+	            <obj>/data/services/igor</obj>
 	            <get>descendant-or-self</get>
 	            <put/>
 	            <post/>
@@ -795,7 +795,7 @@
 	        <au:capability>
 	            <comment>This allows reading static web pages</comment>
                 <cid>id-default-static</cid>
-	            <xpath>/static</xpath>
+	            <obj>/static</obj>
 	            <get>child</get>
 	            <put/>
 	            <post/>
@@ -804,7 +804,7 @@
 	        <au:capability>
 	            <comment>This allows accessing capability information</comment>
                 <cid>id-default-capabilities</cid>
-	            <xpath>/internal/accessControl</xpath>
+	            <obj>/internal/accessControl</obj>
 	            <get>child</get>
 	            <put/>
 	            <post/>
@@ -812,12 +812,12 @@
 	        </au:capability>
 	    </au:defaultCapabilities>
 	    <au:exportedCapabilities>
-	    <au:capability><xpath>/action/ringringer</xpath><comment/><sub>http://button.local</sub><parent>id-jack-ringringer</parent><get>self</get><iss>https://flauwte.dis.cwi.nl:9333/issuer</iss><cid>token-7584012115343525939</cid><nvb>1519142281</nvb><nva>1550678282</nva><aud>https://flauwte.dis.cwi.nl:9333/data</aud></au:capability></au:exportedCapabilities>
+	    <au:capability><obj>/action/ringringer</obj><comment/><sub>http://button.local</sub><parent>id-jack-ringringer</parent><get>self</get><iss>https://flauwte.dis.cwi.nl:9333/issuer</iss><cid>token-7584012115343525939</cid><nvb>1519142281</nvb><nva>1550678282</nva><aud>https://flauwte.dis.cwi.nl:9333/data</aud></au:capability></au:exportedCapabilities>
 	    <au:unusedCapabilities>
 	        <au:capability>
 	            <comment>This capabiliy allows everything</comment>
                 <cid>id-dangerous-everything</cid>
-	            <xpath>/data</xpath>
+	            <obj>/data</obj>
 	            <get>descendant-or-self</get>
 	            <put>descendant</put>
 	            <post>descendant</post>
