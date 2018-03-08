@@ -26,6 +26,8 @@
 			    
 			    </message><message>The time is now 21 hours and 6 minutes.
 			    
+			    </message><message>The time is now 21 hours and 10 minutes.
+			    
 			    </message></messages>
 		<devices><keys.jack/><keys.pauline/><keys.steven/></devices>
 		<lights/>
@@ -41,7 +43,7 @@
                 <lastsuccess>1515063013.83</lastsuccess>
                 <ignoreerrorsuntil/>
                 <errormessage/>
-            <lastActivity>1520539577.15</lastActivity><lastSuccess>1520539577.15</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></core>
+            <lastActivity>1520539816.84</lastActivity><lastSuccess>1520539816.84</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></core>
             <save>
                 <alive>true</alive>
                 <lastactivity>1515073813.81</lastactivity>
@@ -71,8 +73,8 @@
 		<services>
 		    <announceTime>
 		        <alive>true</alive>
-		        <lastActivity>1520539578.24</lastActivity>
-		        <lastSuccess>1520539578.24</lastSuccess>
+		        <lastActivity>1520539817.88</lastActivity>
+		        <lastSuccess>1520539817.88</lastSuccess>
 		        <ignoreErrorsUntil></ignoreErrorsUntil>
 		        <errorMessage></errorMessage>
 		    <lastFailure>1520512431.47</lastFailure></announceTime>
@@ -91,7 +93,7 @@
 	<devices>
 	</devices>
 	<services>
-	    <igor><protocol>https</protocol><url>https://boom.local:9333/data</url><host>boom.local</host><version>0.6</version><startTime>1520539576</startTime><fingerprint>D9:42:0D:B9:4C:11:20:C4:B4:D8:EC:EB:B0:25:57:FE:E7:A6:CE:D4</fingerprint><rebootCount>118</rebootCount><ticker>0</ticker><port>9333</port></igor>
+	    <igor><protocol>https</protocol><url>https://boom.local:9333/data</url><host>boom.local</host><version>0.6</version><startTime>1520539816</startTime><fingerprint>D9:42:0D:B9:4C:11:20:C4:B4:D8:EC:EB:B0:25:57:FE:E7:A6:CE:D4</fingerprint><rebootCount>119</rebootCount><ticker>0</ticker><port>9333</port></igor>
 	</services>
 	<people>
 	    <jack>
@@ -261,6 +263,12 @@
             <obj>/pluginscripts</obj>
             <get>descendant</get>
         </au:capability>
+        <au:capability>
+            <comment>This allows triggering any action</comment>
+            <cid>id-anyaction-anyaction</cid>
+            <obj>/action</obj>
+            <get>child</get>
+        </au:capability>
 		<action>
 			<name>updateMessage</name>
 			<interval>500</interval>
@@ -279,7 +287,7 @@
 	            <obj>/data/environment/messages</obj>
 	            <post>child</post>
 	        </au:capability>
-		    <notBefore>1520539576</notBefore>
+		    <notBefore>1520539816</notBefore>
 		</action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
@@ -320,7 +328,7 @@
 			<condition>not(string(/data/environment/night))</condition>
 			<url>/pluginscripts/say/message?args={.}</url>
 			<representing>services/say</representing>
-		    <notBefore>1520539578</notBefore>
+		    <notBefore>1520539817</notBefore>
 		</action>
 	    <action>
             <au:capability>
@@ -346,7 +354,7 @@
 			<url>/internal/save</url>
 			<representing>igor/save</representing>
 			<xpath>/data/plugindata//* | /data/actions/* | /data/triggers/* | /data/identities//* | /data/sandbox/*</xpath>
-		    <notBefore>1520539636</notBefore>
+		    <notBefore>1520539876</notBefore>
 		</action>
         <action>
             <name>cleanup</name>
@@ -359,7 +367,7 @@
 	            <obj>/data/environment/messages</obj>
 	            <delete>child</delete>
 	        </au:capability>
-            <notBefore>1520539576</notBefore>
+            <notBefore>1520539816</notBefore>
         </action>
 		<action>
 			<name>updateActions</name>
@@ -380,7 +388,7 @@
 	            <obj>/data/environment/night</obj>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1520539576</notBefore>
+		    <notBefore>1520539816</notBefore>
 		</action>
 		<action>
             <name>checkLate</name>
@@ -395,7 +403,7 @@
 	            <obj>/data/environment/latereminder</obj>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1520539576</notBefore>
+		    <notBefore>1520539816</notBefore>
 		</action>
 		<action>
             <name>checkMorning</name>
@@ -410,7 +418,7 @@
 	            <obj>/data/environment/morninggreeting</obj>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1520539576</notBefore>
+		    <notBefore>1520539816</notBefore>
 		</action>
 		<action>
 			<name>updatePeople</name>
@@ -461,24 +469,24 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=internet&amp;ip=google.com.</url>
 			<aggregate>true</aggregate>
-		    <notBefore>1520539576</notBefore>
+		    <notBefore>1520539816</notBefore>
 		</action>
 		<action>
 			<interval>60</interval>
 			<url>/plugin/lan?name=igor&amp;service=igor/web&amp;ip={/data/services/igor/host}&amp;port={/data/services/igor/port}</url>
 			<aggregate>true</aggregate>
-			<notBefore>1520539576</notBefore>
+			<notBefore>1520539816</notBefore>
 		</action>
 		<action>
 			<name>systemHealth</name>
 			<interval>60</interval>
 			<xpath>/data/status/*/*/errorMessage</xpath>
 			<url>/plugin/systemHealth</url>
-			<notBefore>1520539578</notBefore>
+			<notBefore>1520539818</notBefore>
 			<aggregate>true</aggregate>
 		</action>
         <action>
-            <name>bellbutton</name>
+            <name>bellbutton1pressed</name>
             <url>/data/environment/messages/message</url>
             <representing>sensors/button</representing>
             <method>POST</method>
@@ -493,7 +501,13 @@
             <notBefore>1513551158</notBefore>
         </action>
         <action>
-            <name>turnbellbutton</name>
+            <name>bellbutton1pressed</name>
+            <url>/action/ringringer</url>
+            <representing>sensors/button</representing>
+            <notBefore>1513551158</notBefore>
+        </action>
+        <action>
+            <name>bellbutton2toggled</name>
             <url>/data/environment/messages/message</url>
             <representing>sensors/button</representing>
             <method>POST</method>
@@ -510,14 +524,6 @@
         <action>
             <name>ringringer</name>
 	        <au:capability>
-	            <comment>This allows ringing the ringer on the iotsa buzzer</comment>
-                <cid>id-action-ringringer-alarm</cid>
-	            <iss>https://igor.local:9333/issuer</iss>
-	            <aud>http://ringer.local</aud>
-	            <obj>/api/alarm</obj>
-	            <put>self</put>
-	        </au:capability>
-	        <au:capability>
 	            <comment>This allows reading plugin data</comment>
                 <cid>id-action-ringringer-readplugindata</cid>
 	            <obj>/data/plugindata/ringer</obj>
@@ -530,29 +536,12 @@
             <representing>devices/ringer</representing>
             <notBefore>1519211259</notBefore>
         </action>
-        <action>
-            <name>ringringer</name>
-			<url>/data/environment/messages/message</url>
-			<representing>services/announceRinger</representing>
-			<method>POST</method>
-			<mimetype>text/plain</mimetype>
-			<data>
-			    The buzzer should be buzzing
-			</data>
-	        <au:capability>
-	            <comment>This allows setting the variable</comment>
-                <cid>id-action-setmessage</cid>
-	            <obj>/data/environment/messages</obj>
-	            <post>child</post>
-	        </au:capability>
-            <notBefore>1519211259</notBefore>
-        </action>
 		<action>
 			<interval>60</interval>
 			<url>/pluginscripts/ble/pull</url>
 			<representing>sensors/ble</representing>
 			<aggregate>true</aggregate>
-			<notBefore>1520539576</notBefore>
+			<notBefore>1520539816</notBefore>
 		</action>
 		<action>
 			<au:capability>
@@ -609,7 +598,7 @@
 			<url>/data/environment/people/count</url>
 			<mimetype>text/plain</mimetype>
 			<data>{count(/data/people/*[home='true'])}</data>
-			<notBefore>1520539576</notBefore>
+			<notBefore>1520539816</notBefore>
 			<au:capability>
 	            <comment>This allows counting people</comment>
                 <cid>id-action-countpeople-read</cid>
