@@ -1,8 +1,8 @@
 <?xml version="1.0" ?><data xmlns:au="http://jackjansen.nl/igor/authentication">
 	<environment>
-		<morninggreeting></morninggreeting>
-		<latereminder></latereminder>
-		<night></night>
+		<morninggreeting>true</morninggreeting>
+		<latereminder>true</latereminder>
+		<night>true</night>
 		<location/>
 		<energy/>
 		<weather/>
@@ -10,13 +10,17 @@
 		    <count>1</count>
 		</people>
         <messages>
-        <message>The time is now 10 hours and 49 minutes.
-			    
-			    </message></messages>
-		<devices><keys.jack/><keys.pauline>true</keys.pauline><keys.steven/></devices>
+        <message>The time is now 0 hours and 47 minutes.
+			    Good morning, you are early!
+			    Its late, you should be sleeping!</message><message>The time is now 23 hours and 1 minutes.
+			    Good morning, you are early!
+			    Its late, you should be sleeping!</message><message>The time is now 23 hours and 17 minutes.
+			    Good morning, you are early!
+			    Its late, you should be sleeping!</message></messages>
+		<devices><keys.jack/><keys.pauline>true</keys.pauline><keys.steven/><chromecast.pauline>true</chromecast.pauline></devices>
 		<lights/>
 		<systemHealth>
-			<messages/>
+			<messages><ble>502 Command /home/pauline/.igor/plugins/ble/scripts/pull.sh exited with status code=1: /usr/local/bin/igorVar: http://localhost:8081/ble: Connection refused</ble></messages>
 		</systemHealth>
 	</environment>
 	<status>
@@ -27,24 +31,24 @@
                 <lastsuccess>1515063013.83</lastsuccess>
                 <ignoreerrorsuntil/>
                 <errormessage/>
-            <lastActivity>1521110442.08</lastActivity><lastSuccess>1521110442.08</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></core>
+            <lastActivity>1521325048.41</lastActivity><lastSuccess>1521325048.41</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></core>
             <save>
                 <alive>true</alive>
                 <lastactivity>1515073813.81</lastactivity>
                 <lastsuccess>1515073813.81</lastsuccess>
                 <ignoreerrorsuntil/>
                 <errormessage/>
-            <lastActivity>1521110449.07</lastActivity><lastSuccess>1521110449.07</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></save>
+            <lastActivity>1521157671.73</lastActivity><lastSuccess>1521157671.73</lastSuccess><ignoreErrorsUntil/><errorMessage/></save>
             <web>
                 <alive>true</alive>
                 <lastactivity>1515076154.56</lastactivity>
                 <lastsuccess>1515076154.56</lastsuccess>
                 <ignoreerrorsuntil/>
                 <errormessage/>
-            <lastActivity>1521111162.55</lastActivity><lastSuccess>1521111162.55</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></web>
+            <lastActivity>1521324096.77</lastActivity><lastSuccess>1521324096.77</lastSuccess><ignoreErrorsUntil/><errorMessage/></web>
         </igor>
 		<sensors>
-		    <ble><alive>true</alive><lastActivity>1521111165.12</lastActivity><lastFailure>1520805750.55</lastFailure><lastSuccess>1521111165.12</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></ble>
+		    <ble><alive/><lastActivity>1521157677.21</lastActivity><lastFailure>1521157677.21</lastFailure><lastSuccess>1521156904.89</lastSuccess><ignoreErrorsUntil/><errorMessage>502 Command /home/pauline/.igor/plugins/ble/scripts/pull.sh exited with status code=1: /usr/local/bin/igorVar: http://localhost:8081/ble: Connection refused</errorMessage></ble>
             <button>
                 <alive>true</alive>
                 <lastActivity>1520865913.16</lastActivity>
@@ -53,31 +57,31 @@
                 <errorMessage/>
             </button>
         </sensors>
-		<devices><ringer><alive>true</alive><lastActivity>1520865913.87</lastActivity><lastFailure>1520865646.63</lastFailure><errorMessage/><lastSuccess>1520865913.87</lastSuccess><ignoreErrorsUntil/></ringer></devices>
+		<devices><ringer><alive>true</alive><lastActivity>1521156458.73</lastActivity><lastFailure>1520865646.63</lastFailure><errorMessage/><lastSuccess>1521156458.73</lastSuccess><ignoreErrorsUntil/></ringer></devices>
 		<services>
 		    <announceTime>
 		        <alive>true</alive>
-		        <lastActivity>1521110942.58</lastActivity>
-		        <lastSuccess>1521110942.58</lastSuccess>
+		        <lastActivity>1521325052.34</lastActivity>
+		        <lastSuccess>1521325052.34</lastSuccess>
 		        <ignoreErrorsUntil></ignoreErrorsUntil>
 		        <errorMessage></errorMessage>
 		    <lastFailure>1520512431.47</lastFailure></announceTime>
 		    <internet>
 		        <alive>true</alive>
-		        <lastActivity>1521111161.39</lastActivity>
-		        <lastSuccess>1521111161.39</lastSuccess>
-		        <ignoreErrorsUntil></ignoreErrorsUntil>
-		        <errorMessage></errorMessage>
+		        <lastActivity>1521157676.08</lastActivity>
+		        <lastSuccess>1521157676.08</lastSuccess>
+		        <ignoreErrorsUntil/>
+		        <errorMessage/>
 		    </internet>
-		<say><alive>true</alive><lastActivity>1521110946.4</lastActivity><lastFailure>1516280253.03</lastFailure><errorMessage></errorMessage><lastSuccess>1521110946.4</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil></say><announceRinger><alive>true</alive><lastActivity>1519211259.38</lastActivity><lastSuccess>1519211259.38</lastSuccess><ignoreErrorsUntil/><errorMessage/></announceRinger></services>
+		<say><alive>true</alive><lastActivity>1521155371.24</lastActivity><lastFailure>1516280253.03</lastFailure><errorMessage/><lastSuccess>1521155371.24</lastSuccess><ignoreErrorsUntil/></say><announceRinger><alive>true</alive><lastActivity>1519211259.38</lastActivity><lastSuccess>1519211259.38</lastSuccess><ignoreErrorsUntil/><errorMessage/></announceRinger></services>
 	</status>
 	<sensors>
-        <ble><lastActivity>1521111164.0</lastActivity><bleDevice><available>true</available><raw_advertisements>02010607ff4c0010020b00</raw_advertisements><advertisements><flags><le_general_discoverable>true</le_general_discoverable><bredr_not_supported>true</bredr_not_supported></flags><manufacturer_specific_data><raw>10020b00</raw><manufacturerID>76</manufacturerID></manufacturer_specific_data></advertisements><bdaddr_type>public</bdaddr_type><lastSeen>1521111163.98</lastSeen><address>8c:85:90:92:65:ff</address><rssi>-89</rssi><firstSeen>1521110887.44</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>02010613ff4c000c0e00e864ff8c4d0cdec3f7d1c029b1</raw_advertisements><advertisements><flags><le_general_discoverable>true</le_general_discoverable><bredr_not_supported>true</bredr_not_supported></flags><manufacturer_specific_data><raw>0c0e00e864ff8c4d0cdec3f7d1c029b1</raw><manufacturerID>76</manufacturerID></manufacturer_specific_data></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1521111163.71</lastSeen><address>7f:1b:db:cb:5f:02</address><rssi>-94</rssi><firstSeen>1521111033.57</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>0201060303edfe050954696c65</raw_advertisements><advertisements><unknown_0x03>edfe</unknown_0x03><flags><le_general_discoverable>true</le_general_discoverable><bredr_not_supported>true</bredr_not_supported></flags><complete_local_name>Tile</complete_local_name></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1521111163.95</lastSeen><address>fd:28:10:1e:ef:4d</address><rssi>-98</rssi><firstSeen>1521111087.01</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>02010607ff4c0010020b00</raw_advertisements><advertisements><flags><le_general_discoverable>true</le_general_discoverable><bredr_not_supported>true</bredr_not_supported></flags><manufacturer_specific_data><raw>10020b00</raw><manufacturerID>76</manufacturerID></manufacturer_specific_data></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1521111163.89</lastSeen><address>73:60:52:a2:6b:f7</address><rssi>-97</rssi><firstSeen>1521110964.4</firstSeen></bleDevice><bleDevice><available></available><raw_advertisements>1eff06000109200093412aefeec3f273befba96e8fb7ed5d944a7d29c9109a</raw_advertisements><advertisements><manufacturer_specific_data><raw>0109200093412aefeec3f273befba96e8fb7ed5d944a7d29c9109a</raw><manufacturerID>6</manufacturerID></manufacturer_specific_data></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1521111109.34</lastSeen><address>18:6b:8a:8c:14:99</address><rssi>-94</rssi><raw_evt_type>3</raw_evt_type></bleDevice><bleDevice><available>true</available><raw_advertisements>02010613ff4c000c0e08fdcb5e62af60864f491a5a8e84</raw_advertisements><advertisements><flags><le_general_discoverable>true</le_general_discoverable><bredr_not_supported>true</bredr_not_supported></flags><manufacturer_specific_data><raw>0c0e08fdcb5e62af60864f491a5a8e84</raw><manufacturerID>76</manufacturerID></manufacturer_specific_data></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1521111163.97</lastSeen><address>76:fb:33:c4:c6:c7</address><rssi>-86</rssi><firstSeen>1521110692.39</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>02010607ff4c0010020b00</raw_advertisements><advertisements><flags><le_general_discoverable>true</le_general_discoverable><bredr_not_supported>true</bredr_not_supported></flags><manufacturer_specific_data><raw>10020b00</raw><manufacturerID>76</manufacturerID></manufacturer_specific_data></advertisements><bdaddr_type>public</bdaddr_type><lastSeen>1521111159.02</lastSeen><address>78:4f:43:90:ed:5a</address><rssi>-89</rssi><firstSeen>1521110969.36</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>02010607ff4c0010020b00</raw_advertisements><advertisements><flags><le_general_discoverable>true</le_general_discoverable><bredr_not_supported>true</bredr_not_supported></flags><manufacturer_specific_data><raw>10020b00</raw><manufacturerID>76</manufacturerID></manufacturer_specific_data></advertisements><bdaddr_type>public</bdaddr_type><lastSeen>1521111163.71</lastSeen><address>98:01:a7:b4:9f:fc</address><rssi>-93</rssi><firstSeen>1521111034.12</firstSeen></bleDevice></ble>
+        <ble><lastActivity>1521325052.58</lastActivity><bleDevice><available>true</available><raw_advertisements>020105020a000319c1030302e0ff</raw_advertisements><advertisements><unknown_0x0a>00</unknown_0x0a><unknown_0x02>e0ff</unknown_0x02><flags><bredr_not_supported>true</bredr_not_supported><le_limited_discoverable>true</le_limited_discoverable></flags><unknown_0x19>c103</unknown_0x19></advertisements><bdaddr_type>public</bdaddr_type><lastSeen>1521325049.61</lastSeen><address>ff:ff:20:00:14:3f</address><rssi>-42</rssi><firstSeen>1521325040.61</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>03039ffe17169ffe02614b5448765467376e724900000162360c53ee</raw_advertisements><advertisements><unknown_0x16>9ffe02614b5448765467376e724900000162360c53ee</unknown_0x16><unknown_0x03>9ffe</unknown_0x03></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1521325049.39</lastSeen><address>41:7c:c2:d8:ba:da</address><rssi>-80</rssi><raw_evt_type>2</raw_evt_type><firstSeen>1521325034.99</firstSeen></bleDevice></ble>
 	</sensors>
 	<devices>
 	</devices>
 	<services>
-	    <igor><protocol>https</protocol><url>https://igor.local:9333/data</url><host>igor.local</host><version>0.6</version><startTime>1521110440</startTime><fingerprint>1D:72:7C:25:AA:E2:59:5F:FB:42:7D:07:17:20:A9:96:F4:21:43:03</fingerprint><rebootCount>139</rebootCount><ticker>0</ticker><port>9333</port></igor>
+	    <igor><protocol>https</protocol><url>https://igor.local:9333/data</url><host>igor.local</host><version>0.6</version><startTime>1521325047</startTime><fingerprint>02:3D:17:56:90:66:B0:D1:2D:17:6A:8E:96:4A:0E:98:8E:8D:C1:FB</fingerprint><rebootCount>144</rebootCount><ticker>0</ticker><port>9333</port></igor>
 	</services>
 	<people>
 	    <jack>
@@ -140,7 +144,7 @@
                     </device>
                 </ble>
 	        </plugindata>
-	    <au:capability><comment>Full access to ringer</comment><obj>/api</obj><aud>http://ringer.local</aud><cid>id-ringer-fullaccess</cid><iss>https://igor.local:9333/issuer</iss><get>descendant-or-self</get><delegate>true</delegate><child>token-9042156036763686898</child><put>descendant-or-self</put><post>descendant-or-self</post><delete>descendant-or-self</delete></au:capability><au:capability><comment>Allow bellbutton1pressed action</comment><child>token-6525156847752597847</child><obj>/action/bellbutton1pressed</obj><delegate>true</delegate><parent>id-admin-allactions</parent><get>self</get><cid>token-17047046862903558384</cid></au:capability></pauline>
+	    <au:capability><comment>Allow bellbutton1pressed action</comment><child>token-6525156847752597847</child><obj>/action/bellbutton1pressed</obj><delegate>true</delegate><parent>id-admin-allactions</parent><get>self</get><cid>token-17047046862903558384</cid></au:capability><au:capability><comment/><get>self</get><obj>/action/ringringer</obj><parent>id-jack-ringringer</parent><cid>token-9998596636520129723</cid></au:capability><au:capability><comment/><get>self</get><obj>/action/ringringer</obj><parent>id-admin-allactions</parent><cid>token-5463157923971389205</cid></au:capability></pauline>
 	    <jack>
             <encryptedPassword>$pbkdf2-sha256$29000$WQvhHIPQei9F6P0fY8xZCw$KlxQnmW0.qclx0vLKuamweCRoo8b.1QMnLfZUM2yHI8</encryptedPassword>
 	        <au:capability>
@@ -160,7 +164,7 @@
 	            <post>descendant</post>
 	            <delete>descendant</delete>
 	        </au:capability>
-	        <au:capability><comment>This allows Jack running action/ringringer</comment><obj>/action/ringringer</obj><get>self</get><cid>id-jack-ringringer</cid><delegate>true</delegate><child>token-7584012115343525939</child></au:capability>
+	        
 
 	        <plugindata>
                 <ble>
@@ -170,7 +174,7 @@
                     </device>
                 </ble>
 	        </plugindata>
-	    <au:capability><obj>/data</obj><comment>Readonly access from admin to jack</comment><parent>id-admin-readall</parent><cid>token-17388627758257581876</cid><put/><post/><get>descendant-or-self</get><delete/></au:capability></jack>
+	    <au:capability><obj>/data</obj><comment>Readonly access from admin to jack</comment><parent>id-admin-readall</parent><cid>token-17388627758257581876</cid><put/><post/><get>descendant-or-self</get><delete/></au:capability><au:capability><comment>This allows Jack running action/ringringer</comment><child>token-7584012115343525939</child><child>token-9998596636520129723</child><obj>/action/ringringer</obj><delegate>true</delegate><cid>id-jack-ringringer</cid><get>self</get></au:capability></jack>
 	    <steven>
             <encryptedPassword>$pbkdf2-sha256$29000$FKK0VsqZk3KOkTKmFEJISQ$TgZO5yhvrztQDtT2A0HQx5jzPvFcb.QFDPJuTNJUyO0</encryptedPassword>
 	        <plugindata>
@@ -185,7 +189,7 @@
 	    <admin>
             <encryptedPassword>$pbkdf2-sha256$29000$FKK0VsqZk3KOkTKmFEJISQ$TgZO5yhvrztQDtT2A0HQx5jzPvFcb.QFDPJuTNJUyO0</encryptedPassword>
 	        <au:capability><comment>This allows everything. Dangerous!</comment><obj>/data</obj><get>descendant-or-self</get><cid>id-admin-readall</cid><delegate>true</delegate><child>token-17388627758257581876</child><put>descendant-or-self</put><post>descendant</post><delete>descendant</delete></au:capability>
-	        <au:capability><comment>This allows all actions. Dangerous!</comment><obj>/action</obj><cid>id-admin-allactions</cid><get>descendant</get><delegate>true</delegate><child>token-17047046862903558384</child></au:capability>
+	        <au:capability><comment>This allows all actions. Dangerous!</comment><child>token-17047046862903558384</child><child>token-5463157923971389205</child><obj>/action</obj><delegate>true</delegate><get>descendant</get><cid>id-admin-allactions</cid></au:capability>
 	        <au:capability>
 	            <comment>This allows all internal actions. Dangerous!</comment>
 	            <cid>id-admin-internalactions</cid>
@@ -245,7 +249,7 @@
 	            <obj>/data/environment/messages</obj>
 	            <post>child</post>
 	        </au:capability>
-		    <notBefore>1521110941</notBefore>
+		    <notBefore>1521325047</notBefore>
 		</action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
@@ -279,14 +283,14 @@
 	            <obj>/data/identities/steven/plugindata/ble</obj>
 	            <get>descendant-or-self</get>
 	        </au:capability>
-            <notBefore>1520954503</notBefore>
+            <notBefore>1521325053</notBefore>
         </action>
 	    <action>	  
 			<xpath>/data/environment/messages/*</xpath>
 			<condition>not(string(/data/environment/night))</condition>
 			<url>/pluginscripts/say/message?args={.}</url>
 			<representing>services/say</representing>
-		    <notBefore>1521110942</notBefore>
+		    <notBefore>1521155360</notBefore>
 		</action>
 	    <action>
             <au:capability>
@@ -297,7 +301,7 @@
             </au:capability>
 	        <name>start</name>
 	        <url>/internal/started</url>
-	        <notBefore>1521110454</notBefore>
+	        <notBefore>1521325049</notBefore>
 	    </action>
 		<action>
             <au:capability>
@@ -312,7 +316,7 @@
 			<url>/internal/save</url>
 			<representing>igor/save</representing>
 			<xpath>/data/plugindata//* | /data/actions/* | /data/triggers/* | /data/identities//* | /data/sandbox/*</xpath>
-		    <notBefore>1521110500</notBefore>
+		    <notBefore>1521325107</notBefore>
 		</action>
         <action>
             <name>cleanup</name>
@@ -325,7 +329,7 @@
 	            <obj>/data/environment/messages</obj>
 	            <delete>child</delete>
 	        </au:capability>
-            <notBefore>1521111040</notBefore>
+            <notBefore>1521325047</notBefore>
         </action>
 		<action>
 			<name>updateActions</name>
@@ -346,7 +350,7 @@
 	            <obj>/data/environment/night</obj>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1521110441</notBefore>
+		    <notBefore>1521325047</notBefore>
 		</action>
 		<action>
             <name>checkLate</name>
@@ -361,7 +365,7 @@
 	            <obj>/data/environment/latereminder</obj>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1521110441</notBefore>
+		    <notBefore>1521325047</notBefore>
 		</action>
 		<action>
             <name>checkMorning</name>
@@ -376,7 +380,7 @@
 	            <obj>/data/environment/morninggreeting</obj>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1521110441</notBefore>
+		    <notBefore>1521325047</notBefore>
 		</action>
 		<action>
 			<name>updatePeople</name>
@@ -427,20 +431,20 @@
 			<interval>60</interval>
 			<url>/plugin/lan?name=internet&amp;ip=google.com.</url>
 			<aggregate>true</aggregate>
-		    <notBefore>1521111161</notBefore>
+		    <notBefore>1521325047</notBefore>
 		</action>
 		<action>
 			<interval>60</interval>
 			<url>/plugin/lan?name=igor&amp;service=igor/web&amp;ip={/data/services/igor/host}&amp;port={/data/services/igor/port}</url>
 			<aggregate>true</aggregate>
-			<notBefore>1521111162</notBefore>
+			<notBefore>1521325047</notBefore>
 		</action>
 		<action>
 			<name>systemHealth</name>
 			<interval>60</interval>
 			<xpath>/data/status/*/*/errorMessage</xpath>
 			<url>/plugin/systemHealth</url>
-			<notBefore>1521111178</notBefore>
+			<notBefore>1521325053</notBefore>
 			<aggregate>true</aggregate>
 		</action>
         <action>
@@ -492,14 +496,14 @@
             <method>PUT</method>
             <mimetype>application/json</mimetype>
             <representing>devices/ringer</representing>
-            <notBefore>1520865913</notBefore>
+            <notBefore>1521156458</notBefore>
         <au:capability><comment>Delegated with only get/put on /api/alarm</comment><obj>/api/alarm</obj><aud>http://ringer.local</aud><parent>id-ringer-fullaccess</parent><cid>token-9042156036763686898</cid><iss>https://igor.local:9333/issuer</iss><get>self</get><put>self</put><post/><delete/></au:capability></action>
 		<action>
 			<interval>60</interval>
 			<url>/pluginscripts/ble/pull</url>
 			<representing>sensors/ble</representing>
 			<aggregate>true</aggregate>
-			<notBefore>1521111162</notBefore>
+			<notBefore>1521325047</notBefore>
 		</action>
 		<action>
 			<au:capability>
@@ -546,7 +550,7 @@
 			<mimetype>text/plain</mimetype>
 			<data>{available}</data>
 			<multiple>True</multiple>
-			<notBefore>1520954503</notBefore>
+			<notBefore>1521325053</notBefore>
 		</action>
 		<action>
 			<name>countPeopleAtHome</name>
@@ -556,7 +560,7 @@
 			<url>/data/environment/people/count</url>
 			<mimetype>text/plain</mimetype>
 			<data>{count(/data/people/*[home='true'])}</data>
-			<notBefore>1521110441</notBefore>
+			<notBefore>1521325047</notBefore>
 			<au:capability>
 	            <comment>This allows counting people</comment>
                 <cid>id-action-countpeople-read</cid>
@@ -637,7 +641,7 @@
 	            <delete/>
 	        </au:capability>
 	    </au:defaultCapabilities>
-	    <au:exportedCapabilities><au:capability><comment></comment><obj>/action/bellbutton1pressed</obj><aud>https://igor.local:9333/data</aud><parent>token-17047046862903558384</parent><get>self</get><iss>https://igor.local:9333/issuer</iss><cid>token-6525156847752597847</cid><nvb>1521111183</nvb><nva>1552647184</nva></au:capability></au:exportedCapabilities>
+	    <au:exportedCapabilities><au:capability><comment/><obj>/action/bellbutton1pressed</obj><aud>https://igor.local:9333/data</aud><parent>token-17047046862903558384</parent><get>self</get><iss>https://igor.local:9333/issuer</iss><cid>token-6525156847752597847</cid><nvb>1521111183</nvb><nva>1552647184</nva></au:capability></au:exportedCapabilities>
 	    <au:unusedCapabilities>
 	        <au:capability>
 	            <comment>This capabiliy allows everything</comment>
