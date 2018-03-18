@@ -1,8 +1,8 @@
 <?xml version="1.0" ?><data xmlns:au="http://jackjansen.nl/igor/authentication">
 	<environment>
-		<morninggreeting/>
-		<latereminder/>
-		<night/>
+		<morninggreeting>true</morninggreeting>
+		<latereminder>true</latereminder>
+		<night>true</night>
 		<location/>
 		<energy/>
 		<weather/>
@@ -10,15 +10,19 @@
 		    <count>1</count>
 		</people>
         <messages>
-        <message>The time is now 17 hours and 17 minutes.
-			    
-			    </message><message>Igor has found keys.pauline. We are at home.</message><message>Igor has found keys.pauline. We are at home.</message><message>Igor has found keys.pauline. We are at home.</message><message>Igor has found keys.pauline. We are at home.</message><message>Igor has found keys.pauline. We are at home.</message><message>Igor has found keys.pauline. We are at home.</message><message>The time is now 17 hours and 26 minutes.
-			    
-			    </message></messages>
+        <message>The time is now 0 hours and 47 minutes.
+			    Good morning, you are early!
+			    Its late, you should be sleeping!</message><message>The time is now 23 hours and 1 minutes.
+			    Good morning, you are early!
+			    Its late, you should be sleeping!</message><message>The time is now 23 hours and 17 minutes.
+			    Good morning, you are early!
+			    Its late, you should be sleeping!</message><message>The time is now 0 hours and 54 minutes.
+			    Good morning, you are early!
+			    Its late, you should be sleeping!</message></messages>
 		<devices><keys.jack/><keys.pauline>true</keys.pauline><keys.steven/><chromecast.pauline>true</chromecast.pauline></devices>
 		<lights/>
 		<systemHealth>
-			<messages><ringer>ConnectionError: ('Connection aborted.', gaierror(-2, 'Name or service not known'))</ringer></messages>
+			<messages><ble>502 Command /home/pauline/.igor/plugins/ble/scripts/pull.sh exited with status code=1: /usr/local/bin/igorVar: http://localhost:8081/ble: Connection refused</ble></messages>
 		</systemHealth>
 	</environment>
 	<status>
@@ -29,57 +33,57 @@
                 <lastsuccess>1515063013.83</lastsuccess>
                 <ignoreerrorsuntil/>
                 <errormessage/>
-            <lastActivity>1520958390.87</lastActivity><lastSuccess>1520958390.87</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></core>
+            <lastActivity>1521330884.83</lastActivity><lastSuccess>1521330884.83</lastSuccess><ignoreErrorsUntil></ignoreErrorsUntil><errorMessage></errorMessage></core>
             <save>
                 <alive>true</alive>
                 <lastactivity>1515073813.81</lastactivity>
                 <lastsuccess>1515073813.81</lastsuccess>
                 <ignoreerrorsuntil/>
                 <errormessage/>
-            <lastActivity>1520957948.36</lastActivity><lastSuccess>1520957948.36</lastSuccess><ignoreErrorsUntil/><errorMessage/></save>
+            <lastActivity>1521157671.73</lastActivity><lastSuccess>1521157671.73</lastSuccess><ignoreErrorsUntil/><errorMessage/></save>
             <web>
                 <alive>true</alive>
                 <lastactivity>1515076154.56</lastactivity>
                 <lastsuccess>1515076154.56</lastsuccess>
                 <ignoreerrorsuntil/>
                 <errormessage/>
-            <lastActivity>1520958136.05</lastActivity><lastSuccess>1520958136.05</lastSuccess><ignoreErrorsUntil/><errorMessage/><lastFailure>1520828657.35</lastFailure></web>
+            <lastActivity>1521324096.77</lastActivity><lastSuccess>1521324096.77</lastSuccess><ignoreErrorsUntil/><errorMessage/></web>
         </igor>
 		<sensors>
-		    <ble><alive>true</alive><lastActivity>1520958138.28</lastActivity><lastFailure>1520893892.69</lastFailure><lastSuccess>1520958138.28</lastSuccess><ignoreErrorsUntil/><errorMessage/></ble>
+		    <ble><alive/><lastActivity>1521157677.21</lastActivity><lastFailure>1521157677.21</lastFailure><lastSuccess>1521156904.89</lastSuccess><ignoreErrorsUntil/><errorMessage>502 Command /home/pauline/.igor/plugins/ble/scripts/pull.sh exited with status code=1: /usr/local/bin/igorVar: http://localhost:8081/ble: Connection refused</errorMessage></ble>
             <button>
                 <alive>true</alive>
-                <lastActivity>1513551158.04</lastActivity>
-                <lastSuccess>1513551158.04</lastSuccess>
+                <lastActivity>1520865913.16</lastActivity>
+                <lastSuccess>1520865913.16</lastSuccess>
                 <ignoreErrorsUntil/>
                 <errorMessage/>
             </button>
         </sensors>
-		<devices><ringer><alive/><lastActivity>1519677466.12</lastActivity><lastFailure>1519677466.12</lastFailure><errorMessage>ConnectionError: ('Connection aborted.', gaierror(-2, 'Name or service not known'))</errorMessage></ringer></devices>
+		<devices><ringer><alive>true</alive><lastActivity>1521156458.73</lastActivity><lastFailure>1520865646.63</lastFailure><errorMessage/><lastSuccess>1521156458.73</lastSuccess><ignoreErrorsUntil/></ringer></devices>
 		<services>
 		    <announceTime>
 		        <alive>true</alive>
-		        <lastActivity>1520958393.47</lastActivity>
-		        <lastSuccess>1520958393.47</lastSuccess>
+		        <lastActivity>1521330885.34</lastActivity>
+		        <lastSuccess>1521330885.34</lastSuccess>
 		        <ignoreErrorsUntil></ignoreErrorsUntil>
 		        <errorMessage></errorMessage>
-		    </announceTime>
+		    <lastFailure>1520512431.47</lastFailure></announceTime>
 		    <internet>
 		        <alive>true</alive>
-		        <lastActivity>1520958135.51</lastActivity>
-		        <lastSuccess>1520958135.51</lastSuccess>
+		        <lastActivity>1521157676.08</lastActivity>
+		        <lastSuccess>1521157676.08</lastSuccess>
 		        <ignoreErrorsUntil/>
 		        <errorMessage/>
-		    <lastFailure>1520828650.66</lastFailure></internet>
-		<say><alive>true</alive><lastActivity>1520958142.07</lastActivity><lastFailure>1516280253.03</lastFailure><errorMessage/><lastSuccess>1520958142.07</lastSuccess><ignoreErrorsUntil/></say><announceRinger><alive>true</alive><lastActivity>1519677456.86</lastActivity><lastSuccess>1519677456.86</lastSuccess><ignoreErrorsUntil/><errorMessage/></announceRinger></services>
+		    </internet>
+		<say><alive>true</alive><lastActivity>1521155371.24</lastActivity><lastFailure>1516280253.03</lastFailure><errorMessage/><lastSuccess>1521155371.24</lastSuccess><ignoreErrorsUntil/></say><announceRinger><alive>true</alive><lastActivity>1519211259.38</lastActivity><lastSuccess>1519211259.38</lastSuccess><ignoreErrorsUntil/><errorMessage/></announceRinger></services>
 	</status>
 	<sensors>
-        <ble><lastActivity>1520958136.96</lastActivity><bleDevice><available>true</available><raw_advertisements>02010607ff4c0010020b00</raw_advertisements><advertisements><flags><le_general_discoverable>true</le_general_discoverable><bredr_not_supported>true</bredr_not_supported></flags><manufacturer_specific_data><raw>10020b00</raw><manufacturerID>76</manufacturerID></manufacturer_specific_data></advertisements><bdaddr_type>public</bdaddr_type><lastSeen>1520958134.58</lastSeen><address>ac:bc:32:bc:d3:08</address><rssi>-97</rssi><firstSeen>1520957534.57</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>02011a0aff4c0010050310bcb9a2</raw_advertisements><advertisements><flags><simultaneous_le_bredr_c>true</simultaneous_le_bredr_c><le_general_discoverable>true</le_general_discoverable><simultaneous_le_bredr_h>true</simultaneous_le_bredr_h></flags><manufacturer_specific_data><raw>10050310bcb9a2</raw><manufacturerID>76</manufacturerID></manufacturer_specific_data></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1520958111.93</lastSeen><address>5a:ed:2a:f3:ee:0d</address><rssi>-73</rssi><firstSeen>1520958101.37</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>1eff0600010920006a97306f934ef8122c83a10feab454ad909ea349816488</raw_advertisements><advertisements><manufacturer_specific_data><raw>010920006a97306f934ef8122c83a10feab454ad909ea349816488</raw><manufacturerID>6</manufacturerID></manufacturer_specific_data></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1520958126.45</lastSeen><address>2e:5f:6f:37:0b:23</address><rssi>-86</rssi><raw_evt_type>3</raw_evt_type><firstSeen>1520958126.45</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>020105020a000319c1030302e0ff</raw_advertisements><advertisements><unknown_0x0a>00</unknown_0x0a><unknown_0x02>e0ff</unknown_0x02><flags><bredr_not_supported>true</bredr_not_supported><le_limited_discoverable>true</le_limited_discoverable></flags><unknown_0x19>c103</unknown_0x19></advertisements><bdaddr_type>public</bdaddr_type><lastSeen>1520958136.15</lastSeen><address>ff:ff:20:00:14:3f</address><rssi>-55</rssi><firstSeen>1520955137.13</firstSeen></bleDevice><bleDevice><available/><bdaddr_type>random</bdaddr_type><advertisements><flags><le_general_discoverable>true</le_general_discoverable><bredr_not_supported>true</bredr_not_supported></flags><manufacturer_specific_data><raw>10020b00</raw><manufacturerID>76</manufacturerID></manufacturer_specific_data></advertisements><raw_advertisements>02010607ff4c0010020b00</raw_advertisements><lastSeen>1520958027.87</lastSeen><address>4b:09:db:03:88:b3</address><rssi>-88</rssi></bleDevice><bleDevice><available>true</available><raw_advertisements>0201061106ba5689a6fabfa2bd01467d6e00fbabad08160a181604175103</raw_advertisements><advertisements><unknown_0x16>0a181604175103</unknown_0x16><flags><le_general_discoverable>true</le_general_discoverable><bredr_not_supported>true</bredr_not_supported></flags><unknown_0x06>ba5689a6fabfa2bd01467d6e00fbabad</unknown_0x06></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1520958120.0</lastSeen><address>f7:64:37:92:fe:09</address><rssi>-81</rssi><firstSeen>1520958098.07</firstSeen></bleDevice><bleDevice><available/><bdaddr_type>random</bdaddr_type><advertisements><flags><simultaneous_le_bredr_c>true</simultaneous_le_bredr_c><le_general_discoverable>true</le_general_discoverable><simultaneous_le_bredr_h>true</simultaneous_le_bredr_h></flags><manufacturer_specific_data><raw>0c0e00070af51cf36b2deb656cccadfe</raw><manufacturerID>76</manufacturerID></manufacturer_specific_data></advertisements><raw_advertisements>02011a13ff4c000c0e00070af51cf36b2deb656cccadfe</raw_advertisements><lastSeen>1520958052.32</lastSeen><address>4b:53:b1:ac:0e:11</address><rssi>-97</rssi></bleDevice><bleDevice><available>true</available><raw_advertisements>02010607ff4c0010020b00</raw_advertisements><advertisements><flags><le_general_discoverable>true</le_general_discoverable><bredr_not_supported>true</bredr_not_supported></flags><manufacturer_specific_data><raw>10020b00</raw><manufacturerID>76</manufacturerID></manufacturer_specific_data></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1520958136.42</lastSeen><address>6f:74:cc:5e:c1:25</address><rssi>-81</rssi><firstSeen>1520957532.87</firstSeen></bleDevice><bleDevice><available/><bdaddr_type>random</bdaddr_type><advertisements><flags><le_general_discoverable>true</le_general_discoverable><bredr_not_supported>true</bredr_not_supported></flags><manufacturer_specific_data><raw>0c0e0010691e3bf903e12476260d2e3e</raw><manufacturerID>76</manufacturerID></manufacturer_specific_data></advertisements><raw_advertisements>02010613ff4c000c0e0010691e3bf903e12476260d2e3e</raw_advertisements><lastSeen>1520958040.92</lastSeen><address>76:a9:b7:d9:ac:b1</address><rssi>-92</rssi></bleDevice><bleDevice><available/><raw_advertisements>1eff0600010920001f7875b9c9a29bc9fba80df3fbddf59d11415c6bcd761b</raw_advertisements><advertisements><manufacturer_specific_data><raw>010920001f7875b9c9a29bc9fba80df3fbddf59d11415c6bcd761b</raw><manufacturerID>6</manufacturerID></manufacturer_specific_data></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1520958105.83</lastSeen><address>26:2c:f6:f6:d7:ef</address><rssi>-86</rssi><raw_evt_type>3</raw_evt_type></bleDevice><bleDevice><available>true</available><raw_advertisements>02010607ff4c0010020b00</raw_advertisements><advertisements><flags><le_general_discoverable>true</le_general_discoverable><bredr_not_supported>true</bredr_not_supported></flags><manufacturer_specific_data><raw>10020b00</raw><manufacturerID>76</manufacturerID></manufacturer_specific_data></advertisements><bdaddr_type>public</bdaddr_type><lastSeen>1520958136.87</lastSeen><address>78:4f:43:90:ed:5a</address><rssi>-53</rssi><firstSeen>1520958054.79</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>02011a09ffc4001733021315800303b9fe081b006998d32ae6b4</raw_advertisements><advertisements><flags><simultaneous_le_bredr_c>true</simultaneous_le_bredr_c><le_general_discoverable>true</le_general_discoverable><simultaneous_le_bredr_h>true</simultaneous_le_bredr_h></flags><unknown_0x03>b9fe</unknown_0x03><unknown_0x1b>006998d32ae6b4</unknown_0x1b><manufacturer_specific_data><raw>173302131580</raw><manufacturerID>196</manufacturerID></manufacturer_specific_data></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1520958132.27</lastSeen><address>71:6d:5b:21:08:62</address><rssi>-88</rssi><firstSeen>1520957546.45</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>02010613ff4c000c0e08d76c44160e7d72c27578579a1a</raw_advertisements><advertisements><flags><le_general_discoverable>true</le_general_discoverable><bredr_not_supported>true</bredr_not_supported></flags><manufacturer_specific_data><raw>0c0e08d76c44160e7d72c27578579a1a</raw><manufacturerID>76</manufacturerID></manufacturer_specific_data></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1520958136.86</lastSeen><address>44:26:0a:f5:f8:c2</address><rssi>-69</rssi><firstSeen>1520958048.33</firstSeen></bleDevice><bleDevice><available/><bdaddr_type>public</bdaddr_type><advertisements><flags><le_general_discoverable>true</le_general_discoverable><bredr_not_supported>true</bredr_not_supported></flags><manufacturer_specific_data><raw>10020b00</raw><manufacturerID>76</manufacturerID></manufacturer_specific_data></advertisements><raw_advertisements>02010607ff4c0010020b00</raw_advertisements><lastSeen>1520958038.0</lastSeen><address>f4:0f:24:17:6d:08</address><rssi>-90</rssi></bleDevice></ble>
+        <ble><lastActivity>1521325052.58</lastActivity><bleDevice><available>true</available><raw_advertisements>020105020a000319c1030302e0ff</raw_advertisements><advertisements><unknown_0x0a>00</unknown_0x0a><unknown_0x02>e0ff</unknown_0x02><flags><bredr_not_supported>true</bredr_not_supported><le_limited_discoverable>true</le_limited_discoverable></flags><unknown_0x19>c103</unknown_0x19></advertisements><bdaddr_type>public</bdaddr_type><lastSeen>1521325049.61</lastSeen><address>ff:ff:20:00:14:3f</address><rssi>-42</rssi><firstSeen>1521325040.61</firstSeen></bleDevice><bleDevice><available>true</available><raw_advertisements>03039ffe17169ffe02614b5448765467376e724900000162360c53ee</raw_advertisements><advertisements><unknown_0x16>9ffe02614b5448765467376e724900000162360c53ee</unknown_0x16><unknown_0x03>9ffe</unknown_0x03></advertisements><bdaddr_type>random</bdaddr_type><lastSeen>1521325049.39</lastSeen><address>41:7c:c2:d8:ba:da</address><rssi>-80</rssi><raw_evt_type>2</raw_evt_type><firstSeen>1521325034.99</firstSeen></bleDevice></ble>
 	</sensors>
 	<devices>
 	</devices>
 	<services>
-	    <igor><protocol>https</protocol><url>https://igor.local:9333/data</url><host>igor.local</host><version>0.6</version><startTime>1520958390</startTime><fingerprint>02:3D:17:56:90:66:B0:D1:2D:17:6A:8E:96:4A:0E:98:8E:8D:C1:FB</fingerprint><rebootCount>135</rebootCount><ticker>0</ticker><port>9333</port></igor>
+	    <igor><protocol>https</protocol><url>https://igor.local:9333/data</url><host>igor.local</host><version>0.6</version><startTime>1521330884</startTime><fingerprint>02:3D:17:56:90:66:B0:D1:2D:17:6A:8E:96:4A:0E:98:8E:8D:C1:FB</fingerprint><rebootCount>145</rebootCount><ticker>0</ticker><port>9333</port></igor>
 	</services>
 	<people>
 	    <jack>
@@ -94,7 +98,7 @@
 	</people>
 	<identities>
 	    <pauline>
-            <encryptedPassword>$pbkdf2-sha256$29000$qTWmVCql9H6PUYqx9h4jhA$CMpYr3VTVFTlYLZ6Zihvhc/GnY1b1ZDc6q7d4HhZ3lA</encryptedPassword>
+	    <encryptedPassword>$pbkdf2-sha256$29000$qTWmVCql9H6PUYqx9h4jhA$CMpYr3VTVFTlYLZ6Zihvhc/GnY1b1ZDc6q7d4HhZ3lA</encryptedPassword>
 	        <plugindata>
                 <ble>
                     <device>
@@ -111,14 +115,9 @@
                     </device>
                 </ble>
 	        </plugindata>
-            <au:capability><comment>Full access to ringer</comment><obj>/api</obj><aud>http://ringer.local</aud><get>descendant-or-self</get><iss>https://igor.local:9333/issuer</iss><cid>id-ringer-fullaccess</cid><delegate>true</delegate><child>token-6624303230615969391</child><put>descendant-or-self</put><post>descendant-or-self</post><delete>descendant-or-self</delete></au:capability>
-	    <au:capability><comment/><obj>/data/identities/pauline</obj><delegate>true</delegate><parent>id-admin-readall</parent><cid>token-3252573452592306550</cid><put>descendant-or-self</put><post>descendant</post><get>descendant-or-self</get><delete>descendant</delete></au:capability>
-<au:capability><comment/><obj>/data/people</obj><delegate>true</delegate><parent>id-admin-readall</parent><cid>token-4935050510831257449</cid><put>descendant-or-self</put><post>descendant</post><get>descendant-or-self</get><delete>descendant</delete></au:capability><au:capability><comment/><obj>/data/</obj><parent>id-admin-readall</parent><cid>token-8130942078460575831</cid><put>descendant-or-self</put><post>descendant</post><get>descendant-or-self</get><delete>descendant</delete></au:capability>
-<au:capability><comment/><obj>/data</obj><parent>id-admin-readall</parent><cid>token-6626544321529846268</cid><put>descendant-or-self</put><post>descendant</post><get>descendant-or-self</get><delete>descendant</delete></au:capability>
-</pauline>
+	    </pauline>
 	    <jack>
             <encryptedPassword>$pbkdf2-sha256$29000$WQvhHIPQei9F6P0fY8xZCw$KlxQnmW0.qclx0vLKuamweCRoo8b.1QMnLfZUM2yHI8</encryptedPassword>
-
 	        <plugindata>
                 <ble>
                     <device>
@@ -127,7 +126,7 @@
                     </device>
                 </ble>
 	        </plugindata>
-        </jack>
+	    </jack>
 	    <steven>
             <encryptedPassword>$pbkdf2-sha256$29000$FKK0VsqZk3KOkTKmFEJISQ$TgZO5yhvrztQDtT2A0HQx5jzPvFcb.QFDPJuTNJUyO0</encryptedPassword>
 	        <plugindata>
@@ -141,27 +140,27 @@
 	    </steven>
 	    <admin>
             <encryptedPassword>$pbkdf2-sha256$29000$FKK0VsqZk3KOkTKmFEJISQ$TgZO5yhvrztQDtT2A0HQx5jzPvFcb.QFDPJuTNJUyO0</encryptedPassword>
-	        <au:capability><comment>This allows everything. Dangerous!</comment><obj>/data</obj><get>descendant-or-self</get><cid>id-admin-readall</cid><delegate>true</delegate><child>token-17388627758257581876</child><child>token-3252573452592306550</child><child>token-4935050510831257449</child><child>token-8130942078460575831</child><child>token-6626544321529846268</child><put>descendant-or-self</put><post>descendant</post><delete>descendant</delete></au:capability>
-	        <au:capability>
-	            <comment>This allows reading static web pages</comment>
-	            <cid>id-admin-readstatic</cid>
-	            <obj>/static</obj>
-	            <get>child</get>
-	            <delegate>true</delegate>
-	        </au:capability>
-	        <au:capability>
-	            <comment>This allows all actions. Dangerous!</comment>
-	            <cid>id-admin-allactions</cid>
-	            <obj>/action</obj>
-	            <get>descendant</get>
-	            <delegate>true</delegate>
-	        </au:capability>
+	        <au:capability><comment>This allows everything. Dangerous!</comment><obj>/data</obj><get>descendant-or-self</get><cid>id-admin-readall</cid><delegate>true</delegate><put>descendant-or-self</put><post>descendant</post><delete>descendant</delete></au:capability>
+	        <au:capability><comment>This allows all actions. Dangerous!</comment><obj>/action</obj><delegate>true</delegate><get>descendant</get><cid>id-admin-allactions</cid></au:capability>
 	        <au:capability>
 	            <comment>This allows all internal actions. Dangerous!</comment>
 	            <cid>id-admin-internalactions</cid>
 	            <obj>/internal</obj>
 	            <get>descendant</get>
 	            <delegate>true</delegate>
+	        </au:capability>
+	        
+	        <au:capability>
+	        	<comment>Full access to button</comment>
+	        	<cid>id-button-fullaccess</cid>
+	        	<get>descendant-or-self</get>
+	        	<post>descendant-or-self</post>
+	        	<put>descendant-or-self</put>
+	        	<delete>descendant-or-self</delete>
+	        	<delegate>true</delegate>
+	        	<obj>/api</obj>
+	            <iss>https://igor.local:9333/issuer</iss>
+	            <aud>http://button.local</aud>
 	        </au:capability>
 	    </admin>
 	</identities>
@@ -177,6 +176,12 @@
             <cid>id-anyaction-anypluginscript</cid>
             <obj>/pluginscripts</obj>
             <get>descendant</get>
+        </au:capability>
+        <au:capability>
+            <comment>This allows triggering any action</comment>
+            <cid>id-anyaction-anyaction</cid>
+            <obj>/action</obj>
+            <get>child</get>
         </au:capability>
 		<action>
 			<name>updateMessage</name>
@@ -196,7 +201,7 @@
 	            <obj>/data/environment/messages</obj>
 	            <post>child</post>
 	        </au:capability>
-		    <notBefore>1520958390</notBefore>
+		    <notBefore>1521330884</notBefore>
 		</action>
 		<action>
             <xpath>/data/sensors/ble/bleDevice</xpath>
@@ -230,14 +235,14 @@
 	            <obj>/data/identities/steven/plugindata/ble</obj>
 	            <get>descendant-or-self</get>
 	        </au:capability>
-            <notBefore>1520958137</notBefore>
+            <notBefore>1521325053</notBefore>
         </action>
-	    <action>
+	    <action>	  
 			<xpath>/data/environment/messages/*</xpath>
 			<condition>not(string(/data/environment/night))</condition>
 			<url>/pluginscripts/say/message?args={.}</url>
 			<representing>services/say</representing>
-		    <notBefore>1520958391</notBefore>
+		    <notBefore>1521155360</notBefore>
 		</action>
 	    <action>
             <au:capability>
@@ -248,7 +253,7 @@
             </au:capability>
 	        <name>start</name>
 	        <url>/internal/started</url>
-	        <notBefore>1520957838</notBefore>
+	        <notBefore>1521330885</notBefore>
 	    </action>
 		<action>
             <au:capability>
@@ -263,7 +268,7 @@
 			<url>/internal/save</url>
 			<representing>igor/save</representing>
 			<xpath>/data/plugindata//* | /data/actions/* | /data/triggers/* | /data/identities//* | /data/sandbox/*</xpath>
-		    <notBefore>1520958450</notBefore>
+		    <notBefore>1521330944</notBefore>
 		</action>
         <action>
             <name>cleanup</name>
@@ -276,7 +281,7 @@
 	            <obj>/data/environment/messages</obj>
 	            <delete>child</delete>
 	        </au:capability>
-            <notBefore>1520958390</notBefore>
+            <notBefore>1521330884</notBefore>
         </action>
 		<action>
 			<name>updateActions</name>
@@ -297,7 +302,7 @@
 	            <obj>/data/environment/night</obj>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1520958390</notBefore>
+		    <notBefore>1521330884</notBefore>
 		</action>
 		<action>
             <name>checkLate</name>
@@ -312,7 +317,7 @@
 	            <obj>/data/environment/latereminder</obj>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1520958390</notBefore>
+		    <notBefore>1521330884</notBefore>
 		</action>
 		<action>
             <name>checkMorning</name>
@@ -327,7 +332,7 @@
 	            <obj>/data/environment/morninggreeting</obj>
 	            <put>self</put>
 	        </au:capability>
-		    <notBefore>1520958390</notBefore>
+		    <notBefore>1521330884</notBefore>
 		</action>
 		<action>
 			<name>updatePeople</name>
@@ -351,29 +356,51 @@
 	            <get>descendant</get>
 	            <put>descendant</put>
 	        </au:capability>
-		<notBefore>1520871254</notBefore></action>
+		<notBefore>1520938465</notBefore></action>
+		<action>
+			<name>locationpauline</name>
+			<url>/data/plugindata/ringer/host</url>
+			<method>PUT</method>
+			<mimetype>text/plain</mimetype>
+			<data>ringer.fritz.box</data>
+		</action>
+		<action>
+			<name>locationjack</name>
+			<url>/data/plugindata/ringer/host</url>
+			<method>PUT</method>
+			<mimetype>text/plain</mimetype>
+			<data>ringer.local</data>
+		    <notBefore>1510349263</notBefore>
+		</action>
+		<action>
+			<name>locationcwi</name>
+			<url>/data/plugindata/ringer/host</url>
+			<method>PUT</method>
+			<mimetype>text/plain</mimetype>
+			<data>ringer.local</data>
+		</action>
 		<action>
 			<interval>60</interval>
 			<url>/plugin/lan?name=internet&amp;ip=google.com.</url>
 			<aggregate>true</aggregate>
-		    <notBefore>1520958390</notBefore>
+		    <notBefore>1521330884</notBefore>
 		</action>
 		<action>
 			<interval>60</interval>
 			<url>/plugin/lan?name=igor&amp;service=igor/web&amp;ip={/data/services/igor/host}&amp;port={/data/services/igor/port}</url>
 			<aggregate>true</aggregate>
-			<notBefore>1520958390</notBefore>
+			<notBefore>1521330884</notBefore>
 		</action>
 		<action>
 			<name>systemHealth</name>
 			<interval>60</interval>
 			<xpath>/data/status/*/*/errorMessage</xpath>
 			<url>/plugin/systemHealth</url>
-			<notBefore>1520958394</notBefore>
+			<notBefore>1521330885</notBefore>
 			<aggregate>true</aggregate>
 		</action>
         <action>
-            <name>bellbutton</name>
+            <name>bellbutton1pressed</name>
             <url>/data/environment/messages/message</url>
             <representing>sensors/button</representing>
             <method>POST</method>
@@ -385,10 +412,16 @@
 	            <obj>/data/environment/messages</obj>
 	            <post>child</post>
 	        </au:capability>
-            <notBefore>1513551158</notBefore>
+            <notBefore>1520865911</notBefore>
         </action>
         <action>
-            <name>turnbellbutton</name>
+            <name>bellbutton1pressed</name>
+            <url>/action/ringringer</url>
+            <representing>sensors/button</representing>
+            <notBefore>1520865911</notBefore>
+        </action>
+        <action>
+            <name>bellbutton2toggled</name>
             <url>/data/environment/messages/message</url>
             <representing>sensors/button</representing>
             <method>POST</method>
@@ -404,7 +437,6 @@
         </action>
         <action>
             <name>ringringer</name>
-<au:capability><comment/><obj>/api/alarm</obj><aud>http://ringer.local</aud><parent>id-ringer-fullaccess</parent><cid>token-6624303230615969391</cid><iss>https://igor.local:9333/issuer</iss><get/><delegate>true</delegate><put>self</put><post/><delete/></au:capability>
 	        <au:capability>
 	            <comment>This allows reading plugin data</comment>
                 <cid>id-action-ringringer-readplugindata</cid>
@@ -414,40 +446,17 @@
             <url>http://{/data/plugindata/ringer/host}/api/alarm</url>
             <data>{{&quot;alarm&quot;:5}}</data>
             <method>PUT</method>
+            <mimetype>application/json</mimetype>
             <representing>devices/ringer</representing>
-            <notBefore>1519677456</notBefore>
+            <notBefore>1521156458</notBefore>
+        <au:capability><comment>Delegated with only get/put on /api/alarm</comment><obj>/api/alarm</obj><aud>http://ringer.local</aud><parent>id-ringer-fullaccess</parent><cid>token-9042156036763686898</cid><iss>https://igor.local:9333/issuer</iss><get>self</get><put>self</put><post/><delete/></au:capability>
         </action>
-
-        <action>
-            <name>ringringer</name>
-			<url>/data/environment/messages/message</url>
-			<representing>services/announceRinger</representing>
-			<method>POST</method>
-			<mimetype>text/plain</mimetype>
-			<data>
-			    The buzzer should be buzzing
-			</data>
-	        <au:capability>
-	            <comment>This allows setting the variable</comment>
-                <cid>id-action-setmessage</cid>
-	            <obj>/data/environment/messages</obj>
-	            <post>child</post>
-	        </au:capability>
-            <notBefore>1519677456</notBefore>
-        </action>
-
 		<action>
-			<au:capability>
-                <comment>This allows running any pluginscript</comment>
-                <cid>id-action-blepull-pluginscript</cid>
-                <obj>/pluginscripts</obj>
-                <get>descendant</get>
-            </au:capability>
 			<interval>60</interval>
 			<url>/pluginscripts/ble/pull</url>
 			<representing>sensors/ble</representing>
 			<aggregate>true</aggregate>
-			<notBefore>1520958390</notBefore>
+			<notBefore>1521330884</notBefore>
 		</action>
 		<action>
 			<au:capability>
@@ -494,7 +503,7 @@
 			<mimetype>text/plain</mimetype>
 			<data>{available}</data>
 			<multiple>True</multiple>
-			<notBefore>1520958137</notBefore>
+			<notBefore>1521325053</notBefore>
 		</action>
 		<action>
 			<name>countPeopleAtHome</name>
@@ -504,7 +513,7 @@
 			<url>/data/environment/people/count</url>
 			<mimetype>text/plain</mimetype>
 			<data>{count(/data/people/*[home='true'])}</data>
-			<notBefore>1520958390</notBefore>
+			<notBefore>1521330884</notBefore>
 			<au:capability>
 	            <comment>This allows counting people</comment>
                 <cid>id-action-countpeople-read</cid>
@@ -585,8 +594,7 @@
 	            <delete/>
 	        </au:capability>
 	    </au:defaultCapabilities>
-	    <au:exportedCapabilities>
-	    <au:capability><obj>/action/ringringer</obj><comment/><sub>http://button.local</sub><parent>id-jack-ringringer</parent><get>self</get><iss>https://flauwte.dis.cwi.nl:9333/issuer</iss><cid>token-7584012115343525939</cid><nvb>1519142281</nvb><nva>1550678282</nva><aud>https://flauwte.dis.cwi.nl:9333/data</aud></au:capability><au:capability><obj>/action/ringringer</obj><comment/><sub>http://button.local</sub><parent>id-jack-ringringer</parent><get>self</get><iss>https://igor.local:9333/issuer</iss><cid>token-6242114161456763439</cid><nvb>1519596196</nvb><nva>1551132197</nva><aud>https://igor.local:9333/data</aud></au:capability><au:capability><obj>/action/ringringer</obj><comment/><sub>http://button.local</sub><parent>id-jack-ringringer</parent><get>self</get><iss>https://igor.local:9333/issuer</iss><cid>token-14385432082692162652</cid><nvb>1519676872</nvb><nva>1551212873</nva><aud>https://igor.local:9333/data</aud></au:capability></au:exportedCapabilities>
+	    <au:exportedCapabilities><au:capability><comment/><obj>/action/bellbutton1pressed</obj><aud>https://igor.local:9333/data</aud><parent>token-17047046862903558384</parent><get>self</get><iss>https://igor.local:9333/issuer</iss><cid>token-6525156847752597847</cid><nvb>1521111183</nvb><nva>1552647184</nva></au:capability></au:exportedCapabilities>
 	    <au:unusedCapabilities>
 	        <au:capability>
 	            <comment>This capabiliy allows everything</comment>
@@ -620,8 +628,8 @@
 	            <externalKey>ringersharedkey</externalKey>
 	    	</au:sharedKey>
 	    	<au:sharedKey>
-	            <iss>http://igor.local:9333/issuer</iss>
-	            <sub>http://button.local</sub>
+	            <iss>https://igor.local:9333/issuer</iss>
+	            <aud>http://button.local</aud>
 	            <externalKey>buttonsharedkey</externalKey>
 	    	</au:sharedKey>
 	    </au:sharedKeys>
