@@ -14,4 +14,4 @@ c) Evaluation via interviews - the results from interviews and testing done with
 #
 d) Performance Benchmark - consists of instructions on how to perform the performance testing again, and also the summary of results
 #
-e) References - consists of the references used (in bib format) and the main reference paper used in this project
+e) References - consists of the references used (in bib format) and the past paper we referred to in this project
